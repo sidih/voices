@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="voices">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Voices of the Parliament</title>
+                <author>Fišer, Darja</author>
+                <author>Pahor de Maiti, Kristina</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>0.9</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Inštitut za novejšo zgodovino</publisher>
+                <date when="2021">2021</date>
+                <availability>
+                    <licence>http://creativecommons.org/licenses/by-nc-nd/4.0/</licence>
+                    <p>To delo je ponujeno pod <ref
+                            target="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative
+                            Commons Priznanje avtorstva-Nekomercialno-Brez predelav 4.0 Mednarodna
+                            licenco</ref>
+                    </p>
+                    <p rend="CIP"/>
+                </availability>
+                <idno type="ISBN"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <docTitle>
+                    <titlePart>Voices of the Parliament</titlePart>
+                </docTitle>
+                <docAuthor>Darja Fišer</docAuthor>
+                <docAuthor>Kristina Pahor de Maiti</docAuthor>
+                <docImprint>
+                    <publisher>Inštitut za novejšo zgodovino</publisher>
+                    <pubPlace>Ljubljana</pubPlace>
+                    <docDate>2021</docDate>
+                </docImprint>
+            </titlePage>
+            <divGen type="cip" xml:id="cip">
+                <head>Colophon</head>
+            </divGen>
+            <divGen type="teiHeader" xml:id="teiHeader">
+                <head>TEI header</head>
+            </divGen>
+            <divGen type="toc" xml:id="toc">
+                <head>Table of Contents</head>
+            </divGen>
+            <divGen type="toc" xml:id="images">
+                <head>List of Images</head>
+            </divGen>
+            <divGen type="search" xml:id="search">
+                <head>Search</head>
+            </divGen>
+            <div type="preface" xml:id="preface1">
+                <head xml:id="head-6">Introduction</head>
+                <p xml:id="p-4">Parliaments represent the main fora for political debate that shapes
+                    legislation which directly impacts our everyday lives. Parliamentary discourse
+                    is motivated by a wide range of communicative roles and reveals patterns of
+                    political agendas, ideological stances and institutional roles of members of
+                    parliament who represent the interests of citizens (<ref target="#Ilie.2017"
+                        >Ilie, 2017</ref>). This is also why parliaments have always been of
+                    interest to scholars from a range of disciplines in the humanities and social
+                    science.</p>
+                <p xml:id="p-5">Parliamentary proceedings are being increasingly made available in a
+                    digitized form, and turned into structured linguistic resources called corpora
+                    for many European languages. These are often available online and can be queried
+                    through dedicated tools called concordancers. Researchers use these to perform
+                    diverse linguistic, stylistic, cultural, societal and political studies (<ref
+                        target="#Biel.2018">Biel et al., 2018</ref>; <ref target="#Jaworska.2018"
+                        >Jaworska and Ryan, 2018</ref>). </p>
+                <p xml:id="p-6">While corpus methods are widely used in linguistics (<ref
+                        target="#Biber.2015">Biber and Reppen, 2015</ref>; <ref
+                        target="#McEnery.2011">McEnery and Hardie, 2011</ref>), including gender
+                    analysis (<ref target="#Baker.2014">Baker, 2014</ref>), this tutorial shows the
+                    potential of richly annotated language corpora for research of the
+                    socio-cultural context and changes over time that are reflected through language
+                    use. The tutorial encourages students and scholars of modern languages, as well
+                    as users from other fields of digital humanities and social sciences who are
+                    interested in the study of socio-cultural phenomena through language, to engage
+                    with user-friendly digital tools for the analysis of large text collections. The
+                    tutorial is designed in a way that takes full advantage of both linguistic
+                    annotations and the available speaker and text metadata to formulate powerful
+                    quantitative queries that are then further extended with manual qualitative
+                    analysis in order to ensure adequate framing and interpretation of the
+                    results.</p>
+                <p xml:id="p-7">The tutorial demonstrates the potential of parliamentary corpora
+                    research via concordancers without the need for programming skills. No prior
+                    experience in using language corpora and corpus querying tools is required in
+                    order to follow this tutorial. While the same analysis could be carried out on
+                    any parliamentary corpus with similar annotations and metadata, in this tutorial
+                    we will use the <ref target="http://hdl.handle.net/11356/1300">siParl 2.0
+                        corpus</ref> which contains parliamentary debates of the National Assembly
+                    of the Republic of Slovenia from 1990 to 2018, although knowledge of Slovenian
+                    is not required to follow the tutorial. To try out the analyses in other
+                    languages, we invite you to explore a parliamentary corpus of your choice from
+                    those <ref target="introduction">available through CLARIN</ref>.</p>
+            </div>
+            <div type="preface" xml:id="preface2">
+                <head xml:id="head-7">Instructions for use</head>
+                <p xml:id="p-8">This tutorial starts with a brief introduction to corpora and corpus
+                    analysis, followed by an introduction of the characteristics of specialized
+                    corpora of parliamentary debates and an overview of research into language and
+                    gender. The second part of the tutorial is a hands-on, which demonstrates the
+                    potential of some of the best-known corpus analysis techniques, such as
+                    concordances, frequency lists, keywords and collocations, to explore the topics
+                    female MPs debate in in the Slovenian Parliament over time and to compare and
+                    contrast their language use with that of their male counterparts. </p>
+                <p xml:id="p-9">All the resources and tools used in this tutorial are online and
+                    available under open license. Corpus querying will be demonstrated on the <ref
+                        target="https://nlp.fi.muni.cz/trac/noske">NoSketchEngine</ref>
+                    concordancer, while additional manual analysis and visualization of the results
+                    will be performed in a spreadsheet editor (e.g., <ref
+                        target="https://www.google.com/sheets/about/">Google Spreadsheet</ref> or
+                        <ref target="https://products.office.com/en/excel">MS Excel</ref>).</p>
+                <note rend="bluebox" xml:id="note-1">
+                    <p>Screencasts, explanations of corpus querying procedures and links to the
+                        results are provided in blue boxes for anyone who wishes to reproduce the
+                        searches on their own.</p>
+                </note>
+                <p xml:id="p-11">The siParl 2.0 corpus can be queried online through the <ref
+                        target="https://www.clarin.si/noske/">NoSketchEngine</ref> or <ref
+                        target="https://www.clarin.si/kontext/first_form?corpname=siparl20"
+                        >KonText</ref> concordancers at <ref target="http://clarin.si/"
+                        >CLARIN.SI</ref>, the Slovenian node of <ref target="https://www.clarin.eu/"
+                        >CLARIN ERIC</ref>, the European research infrastructure for language
+                    resources and technology. The siParl 2.0 corpus can also be <ref
+                        target="https://www.clarin.si/repository/xmlui/handle/11356/1300"
+                        >downloaded</ref> from the CLARIN.SI repository and then further analysed
+                    with other corpus or text mining tools. Tutorials showing how this can be done
+                    are available online, e.g., <ref
+                        target="https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc"
+                        >Corpus Analysis with Antconc</ref> and <ref
+                        target="https://programminghistorian.org/en/lessons/basic-text-processing-in-r"
+                        >Basic Text Processing in R</ref>.</p>
+                <p xml:id="p-12">This tutorial is an updated version of the <ref
+                        target="https://www.modernlanguagesopen.org/articles/10.3828/mlo.v0i0.295/"
+                        >original tutorial which was based on the previous version of the siParl
+                        corpus</ref>. In comparison to <ref
+                        target="http://hdl.handle.net/11356/1236">siParl 1.0</ref>, the siParl 2.0
+                    corpus contains richer and cleaner speaker and session metadata which makes it
+                    possible to distinguish between MPs and other speakers. In addition, speeches
+                    have been labelled with parliamentary terms, which simplifies comparative
+                    analysis across different legislative periods. Furthermore, additional
+                    linguistic annotation layers, such as Universal Dependency features, syntactic
+                    parses and named entities, have also been added to the corpus, but since these
+                    will not be used in this tutorial, we do not elaborate on them further. </p>
+                <p xml:id="p-13">If you wish to immediately proceed to hands-on exercises, skip to
+                    section 6 , since the following three sections (, and ) are dedicated to a
+                    general theoretical overview and an introduction to the basic terminology. Even
+                    though you can follow the tasks in section 6 without studying these three
+                    introductory sections, we strongly encourage you to do so before finishing this
+                    tutorial. They will give you the necessary theoretical foundations that will
+                    ensure a comprehensive understanding and independent use of the demonstrated
+                    analytical procedures and adequate interpretation of the results.</p>
+            </div>
+        </front>
+        <body>
+            <div type="chapter" xml:id="ch1">
+                <head xml:id="head-8">Corpora and concordancers</head>
+                <div type="subchapter" xml:id="ch1-sub1">
+                    <head xml:id="head-9">Corpora</head>
+                    <p xml:id="p-14">
+                        <ref target="https://en.wikipedia.org/wiki/Text_corpus">Language
+                            corpora</ref> are large collections of carefully selected
+                        machine-readable language data which can be used as the basis of linguistic
+                        descriptions or as a means of verifying hypotheses about a language.
+                        However, corpora are much more than just simple collections of texts in
+                        electronic form. They are formatted in one of the standard formats, such as
+                        the Extensible Markup Language or <ref
+                            target="https://www.w3schools.com/xml/">XML</ref>, and encoded according
+                        to a predetermined but usually flexible schema for the representation of
+                        texts in digital form. One of the most established encoding methods in
+                        linguistics and digital humanities is the Text Encoding Initiative, or <ref
+                            target="https://tei-c.org/">TEI</ref>.</p>
+                    <p xml:id="p-15">The basic unit in the corpus is the <ref
+                            target="https://www.sketchengine.eu/my_keywords/token/">token</ref>, the
+                        output of an automatic tokenization process which separates a raw text into
+                        smaller units, in our case words. The most common way of forming tokens is
+                        based on space between the words as a delimiter. Texts in corpora are
+                        linguistically annotated to facilitate corpus searches. The two most basic
+                        forms of linguistic annotation are <ref
+                            target="https://en.wikipedia.org/wiki/Part-of-speech_tagging"
+                            >part-of-speech tagging</ref>, which marks up the words in running texts
+                        with their part-of-speech, and <ref
+                            target="https://en.wikipedia.org/wiki/Lemmatisation"
+                        >lemmatization</ref>, which is the assignment of a base form or <ref
+                            target="https://en.wikipedia.org/wiki/Lemma_(morphology)">lemma</ref> to
+                        tokens (word forms). Lemmatization is especially important for corpora of
+                        morphologically rich languages, such as Slovenian, while less needed for
+                        weakly inflective languages, such as English. In addition to linguistic
+                        annotation, corpora are also enriched with metadata about the text (e.g.,
+                        date, type) and speakers (e.g., name, gender) that are needed for the
+                        contextualization of the search results but can also be used for more
+                        fine-grained corpus queries. </p>
+                    <figure xml:id="figure1">
+                        <graphic url="media/figure1.jpg"/>
+                        <head>Figure 1. Excerpt from a linguistically annotated and TEI encoded
+                            corpus.</head>
+                    </figure>
+                </div>
+                <div type="subchapter" xml:id="ch1-sub2">
+                    <head xml:id="head-11">Concordancers</head>
+                    <p xml:id="p-16">Corpora are queried with specialized corpus analysis tools,
+                        also called <ref target="http://corpora.lancs.ac.uk/clmtp/2-conc.php"
+                            >concordancers</ref>. Concordancers are either installed on a computer
+                        or accessed through a website and can be used to retrieve all instances of a
+                        sequence of tokens from the corpus. Many different concordances with similar
+                        functionalities exist (see <ref
+                            target="http://martinweisser.org/corpora_site/concordancers.html"
+                            >this</ref> detailed list for more examples) but some of the most
+                        popular ones are the offline <ref
+                            target="http://www.laurenceanthony.net/software/antconc/">AntConc</ref>
+                        (free) and <ref target="http://www.lexically.net/wordsmith/index.html"
+                            >WordSmith Tools</ref> (for which a license needs to be purchased),
+                        where you have to load your own corpora, and the online <ref
+                            target="https://www.english-corpora.org/">BYU concordancer</ref> (free
+                        registration required for full functionality) and <ref
+                            target="https://www.sketchengine.eu/documentation/corpus-querying/"
+                            >SketchEngine</ref> (free licence for students, teachers and researchers
+                        from academic institutions in the EU) which offer a lot of extensive
+                        preloaded corpora for many languages as well as the possibility to build and
+                        annotate your own. </p>
+                    <p xml:id="p-17">Most of the modern concordancing tools offer the following
+                        basic corpus analysis techniques that will also be used in this
+                        tutorial:</p>
+                    <list type="unordered" xml:id="list-1">
+                        <item>
+                            <ref
+                                target="https://www.sketchengine.eu/guide/concordance-a-tool-to-search-a-corpus/"
+                                >Concordances</ref> show all the hits of the searched word or phrase
+                            in the corpus together with its context. They can be randomized or
+                            sorted according to the searched word or phrase or by its left or right
+                            context, revealing typical patterns in which it is used. </item>
+                        <item>
+                            <ref target="https://www.sketchengine.eu/user-guide/word-list/"
+                                >Frequency lists</ref> summarize the frequencies of all the hits
+                            that correspond to the corpus query (either based on a selected word
+                            (phrase) or metadata) out of context, and can be sorted alphabetically
+                            or by frequency. </item>
+                        <item>
+                            <ref
+                                target="https://www.sketchengine.eu/guide/keywords-and-term-extraction/"
+                                >Keyword lists</ref> highlight what words are prominent in a focus
+                            corpus compared to a reference one. </item>
+                        <item>
+                            <ref target="https://www.sketchengine.eu/my_keywords/collocation/"
+                                >Collocation lists</ref> return a series of words that co-occur with
+                            the searched word more often than would be expected by chance.</item>
+                    </list>
+                    <p xml:id="p-18">Dedicated tutorials for concordancers (e.g., the <ref
+                            target="https://www.sketchengine.eu/quick-start-guide/">SketchEngine
+                            Quick Start Guide </ref>) as well as general corpus-linguistic courses
+                        (e.g., the course <ref
+                            target="https://www.futurelearn.com/courses/corpus-linguistics">Corpus
+                            Linguistics: Method, Analysis, Interpretation</ref>) are already
+                        available online, and we refer to them wherever possible. The focus of this
+                        tutorial, however, is to showcase how the functionalities of a popular
+                        concordance tool can be utilized and combined on a specialized corpus of
+                        parliamentary data in order to answer real-world research questions in a
+                        methodologically sound way, as such skills are still lacking, especially for
+                        students and scholars of (digital) humanities and social sciences who are
+                        interested in the study of socio-cultural phenomena through language use.
+                    </p>
+                </div>
+            </div>
+            <div type="chapter" xml:id="ch2">
+                <head xml:id="head-12">Parliamentary records</head>
+                <p xml:id="p-19">Parliamentary corpora are of different sizes and contain data of
+                    different modalities (written, spoken, gestural) and time periods in one or
+                    multiple languages. Although parliamentary debates are mainly provided as
+                    written texts (e.g., <ref
+                        target="https://repository.clarin.dk/repository/xmlui/handle/20.500.12115/8"
+                        >The Danish Parliament Corpus</ref>), they are sometimes also accessible as
+                    audio/video recordings coupled with corresponding transcriptions (e.g., <ref
+                        target="https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0005-CF9C-4"
+                        >Czech Parliamentary Meetings</ref>). When used as a <ref
+                        target="https://en.wikipedia.org/wiki/Synchrony_and_diachrony"
+                        >diachronic</ref> source, a parliamentary corpus enables in-depth research
+                    of linguistic and societal change over time. Most parliamentary corpora have
+                    rich <ref target="https://en.wikipedia.org/wiki/Metadata">metadata</ref> about
+                    the speeches (e.g., date of the speech, duration of the speech, agenda item to
+                    which the speech is related) or the speakers (e.g., gender, age, education,
+                    political affiliation, institutional role) which offer valuable insights into
+                    the context on the studied phenomenon (see <ref target="#Alasuutari.2018"
+                        >Alasuutari et al., 2018</ref>; <ref target="#Demmen.2018">Demmen et al.,
+                        2018</ref>). </p>
+                <div type="subchapter" xml:id="ch2-sub1">
+                    <head xml:id="head-13">Parliamentary discourse</head>
+                    <p xml:id="p-20">Parliaments are institutions governed by specific rules and
+                        conventions (see for example <ref target="https://erskinemay.parliament.uk/"
+                            >Erskine May</ref>, a description of the UK parliamentary procedure).
+                        These are shaped by sociohistorical traditions that influence the
+                        organization and operation of the parliament and also extend to language
+                        use, such as conventions for turn-taking or forms of address. These
+                        conventions, however, are not necessarily shared among different
+                        parliaments; e.g., interruptions are strictly prohibited in the Greek
+                        Parliament, whereas in the UK Parliament these are common and often not
+                        sanctioned (<ref target="#Ilie.2017">Ilie, 2017</ref>), which needs to be
+                        taken into consideration when forming queries or interpreting the results.
+                        Therefore, whenever this type of <ref
+                            target="https://en.wikipedia.org/wiki/Discourse">discourse </ref>is
+                        investigated, it is particularly important to understand the circumstances
+                        it was produced in.</p>
+                </div>
+                <div type="subchapter" xml:id="ch2-sub2">
+                    <head xml:id="head-14">Faithfulness of the records</head>
+                    <p xml:id="p-21">It should be noted that officially released records of
+                        parliamentary debates are not 100% verbatim <ref
+                            target="https://en.wikipedia.org/wiki/Transcription_(linguistics)"
+                            >transcriptions</ref>, and that minute-taking practices vary through
+                        history and across countries. Editing usually involves elimination of some
+                        typical characteristics of spoken language but may also include other
+                        interventions, such as the elimination of obvious language or factual
+                        errors, dialectal or colloquial expressions, and rude and obscene language.
+                        Editing guidelines are mostly not made public, which can substantially
+                        hinder research (for more source criticism, see <ref target="#Mollin.2007"
+                            >Mollin, 2007</ref>; <ref target="#Rix.2014">Rix, 2014</ref>).
+                        Furthermore, speeches by MPs are often, although not in all parliamentary
+                        traditions and all types of parliamentary sessions (interpellations,
+                        debates, question time, etc.) prepared in advance (i.e.
+                        written-to-be-spoken), which has a big impact on their stylistic features.
+                        These peculiarities together with the broader sociohistorical context always
+                        need to be taken into account when defining research questions, methodology
+                        and the interpretation of the results. </p>
+                    <p xml:id="p-22">Figure 2 shows an illustrative comparison of the official
+                        records of a speech by <ref
+                            target="https://en.wikipedia.org/wiki/Věra_Jourová">Věra Jourová </ref>,
+                        a Czech politician and European Commissioner for Justice, Consumers and
+                        Gender Equality (2014-2019) at the <ref
+                            target="http://www.europarl.europa.eu/doceo/document/CRE-8-2017-03-01-ITM-019_EN.html"
+                            >plenary session debate on the gender pay gap from 1/5/2017</ref>
+                        published on the website of the EU Parliament, together with a verbatim
+                        transcription of the <ref
+                            target="https://www.europarl.europa.eu/plenary/sl/vod.html?mode=unit&amp;vodLanguage=SL&amp;playerStartTime=20170301-20:04:18&amp;playerEndTime=20170301-20:09:42"
+                            >video clip</ref> of her speech created for this tutorial. A quick look
+                        at the differences in the two transcripts shows that transcriptions of EU
+                        Parliamentary debates might not be the best resource for studying the use of
+                        determiners, frequency of hesitations or false starts, or even the use of
+                        spontaneous humour in parliamentary speech. </p>
+                    <figure xml:id="figure2">
+                        <graphic url="media/figure2.jpg"/>
+                        <head>Figure 2. Comparison of official records and verbatim transcriptions
+                            from the EU Parliament.</head>
+                    </figure>
+                </div>
+                <div type="subchapter" xml:id="ch2-sub3">
+                    <head xml:id="head-16">Know your research dataset</head>
+                    <p xml:id="p-23">In order to make the best use of any given corpus, to formulate
+                        search queries correctly and interpret the results appropriately, it is
+                        important to understand what the selected corpus contains, how it was
+                        constructed and annotated, and what its limitations are. The level of <ref
+                            target="https://exmaralda.org/en/linguistic-annotation-wiki-en/"
+                            >annotation</ref>
+                        <hi rend="Hyperlink"/>varies from corpus to corpus, so the details for the
+                        selected corpus should always be checked. Such information is typically
+                        found on a dedicated webpage (e.g., <ref
+                            target="http://www.chlg.ac.uk/helipad/">Corpus of Historical Low
+                            German</ref>), inside the concordancer through which it is made
+                        available (e.g., <ref target="https://www.english-corpora.org/hansard/"
+                            >Hansard in the concordancer of Brigham Young University</ref>) or in
+                        the repository where the corpus is archived (e.g., <ref
+                            target="https://www.clarin.si/repository/xmlui/handle/11356/1209"
+                            >ParlaMeter-hr in the CLARIN.SI repository</ref>). You can read more
+                        about the encoding and annotation of parliamentary data in the <ref
+                            target="https://training.parthenos-project.eu/sample-page/digital-humanities-research-questions-and-methods/researching-parliamentary-records-in-the-digital-humanities/working-with-parliamentary-corpora/"
+                            >Parthenos training module on the collections of parliamentary
+                            records</ref>.</p>
+                </div>
+            </div>
+            <div type="chapter" xml:id="ch3">
+                <head xml:id="head-17"> Language and gender</head>
+                <p xml:id="p-24">Differences between the language of men and women have been the
+                    focus of much research in sociolinguistics, stylistics, rhetoric, gender
+                    studies, media studies and discourse analysis (see <ref target="#Eckert.2013"
+                        >Eckert and McConnell-Ginet, 2013</ref>; <ref target="#Wodak.2007">Wodak,
+                        2007</ref>). The results show that the differences are subtle but systematic
+                        (<ref target="#Newman.2008">Newman et al., 2008</ref>). Despite this,
+                    political communication studies have traditionally been based on male
+                    politicians, and only recently have scholars begun to consider the discourse of
+                    female politicians (see <ref target="#Marshall.2000">Marshall, 2000</ref>). </p>
+                <p xml:id="p-25">This is important because several authors (<ref
+                        target="#AntićGaber.2003">Antić Gaber and Ilonszki, 2003</ref>; <ref
+                        target="#Leijenaar.1997">Leijenaar, 1997</ref>; <ref
+                        target="#Wolbrecht.2002">Wolbrecht, 2002</ref>) have demonstrated that
+                    female legislators differ from their male counterparts in the issues they
+                    address, the positions they take, and the approaches they use in law-making. In
+                    their analysis of the representation of women in the UK Parliament after 1945,
+                        <ref target="#Blaxill.2016">Blaxill and Beelen (2016)</ref> showed a
+                    stronger emphasis on the topics related to women in speeches delivered by female
+                    MPs, who on average also contributed considerably more speeches about women in
+                    comparison to male MPs. In political science (see <ref target="#Osborn.2012"
+                        >Osborn, 2012</ref>), topics related to women are considered those that are,
+                    on the one hand, traditionally believed to be in the domain of women (for
+                    example, education, healthcare, etc.), and on the other that concern women’s
+                    well-being directly (for example, childcare, domestic violence, equality, etc.).
+                    Similarly, <ref target="#Bäck.2014">Bäck et al. (2014)</ref>, <ref
+                        target="#Hansen.2018">Hansen et al. (2018)</ref> and <ref
+                        target="#Mensah.2018">Mensah and Wood (2018)</ref> found in the corpora of
+                    parliamentary speeches from Sweden, Denmark and Ghana, respectively, that women
+                    more often spoke about soft policy areas in comparison to men who more often
+                    tackled hard policy areas. This terminology is adopted from political science
+                    (e.g., <ref target="#Wängnerud.1996">Wängnerud, 1996</ref>), where policy areas
+                    are divided into so-called hard (e.g., Macroeconomics, Energy, Transportation,
+                    Banking, Finance and Domestic Commerce, Space, Science and Technology, and
+                    Communications) and soft ones (e.g., Health, Labour, Employment and Immigration,
+                    Education, and Social Welfare). </p>
+                <p xml:id="p-26">We should note, however, that various parameters (e.g., social
+                    class, context, age, hierarchy) have been shown to influence language use and
+                    that gender is only one of them (<ref target="#Coates.1997">Coates, 1997</ref>;
+                        <ref target="#Litosseliti.2006">Litosseliti, 2006</ref>). Furthermore, as
+                    Bing and <ref target="#Bing.1998">Bergvall (1998)</ref> point out, similarities
+                    in language use of different genders are often overlooked despite being more
+                    outstanding than the differences. Likewise, <ref target="#Blaxill.2016">Blaxill
+                        and Beelen (2016)</ref> have shown a similar tendency in the context of
+                    parliamentary discourse research. Therefore, we always need to be careful not to
+                    jump to quick conclusions and over-interpret the results for the features we
+                    expect to see because we know the gender of the speaker (<ref
+                        target="#Goddard.2015">Goddard and Patterson, 2015</ref>).</p>
+            </div>
+            <div type="chapter" xml:id="ch4">
+                <head xml:id="head-18">Corpus analysis</head>
+                <p xml:id="p-27">In this section, we will explore a large corpus of Slovenian
+                    parliamentary debates. We will demonstrate how basic corpus analysis techniques
+                    (for more, see 3 ) can be used to answer three different research questions:</p>
+                <list type="unordered" xml:id="list-2">
+                    <item>In Task 1, we will <hi rend="italic">analyse the representation of women
+                            in the Slovenian Parliament</hi>. To do this, we will first learn <hi
+                            rend="bold">how to create subcorpora</hi>. Then, we will learn <hi
+                            rend="bold">how to build frequency lists</hi> showing the number of
+                        speakers and their contribution in the subcorpora.</item>
+                    <item>In Task 2, we will <hi rend="italic">examine the most prominent topics
+                            discussed by female speakers in comparison to their male counterparts
+                            and over time</hi>. We will gain an insight into the topics by first
+                        learning <hi rend="bold">how to extract keywords</hi> from the subcorpora.
+                        Next, in order to analyse their usage in context, we will learn <hi
+                            rend="bold">how to perform concordance analysis</hi>.</item>
+                    <item>In Task 3, we will <hi rend="italic">investigate how topics related to
+                            women have been debated by female and male speakers in the past 25
+                            years</hi>. We will first learn <hi rend="bold">how to use and compare
+                            relative frequencies</hi> in subcorpora of different sizes. Then, we
+                        will learn <hi rend="bold">how to extract collocations</hi> of selected
+                        nouns in the subcorpora.</item>
+                </list>
+                <div type="subchapter" xml:id="ch4-sub1">
+                    <head xml:id="head-19">The siParl 2.0 corpus </head>
+                    <p xml:id="p-28">The <ref target="http://hdl.handle.net/11356/1300">siParl
+                            corpus</ref> 2.0 (<ref target="#Pančur.2020">Pančur et al., 2020</ref>)
+                        is composed of parliamentary debates of the <ref
+                            target="https://en.wikipedia.org/wiki/National_Assembly_(Slovenia)"
+                            >National Assembly</ref> of the <ref
+                            target="https://en.wikipedia.org/wiki/Slovenia">Republic of
+                            Slovenia</ref> from 1990 to 2018. The corpus contains records of
+                        parliamentary debates from the <ref
+                            target="Slovenian_Spring,_democracy_and_independence">period of
+                            secession</ref> from <ref
+                            target="https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia"
+                            >Yugoslavia</ref> until the end of the seventh parliamentary term,
+                        minutes of the working bodies of the National Assembly of the Republic of
+                        Slovenia from the second to the seventh parliamentary terms, i.e. 1996-2018,
+                        and minutes of the Council of the President of the National Assembly from
+                        the second to the seventh parliamentary terms, 1996-2018. </p>
+                    <p xml:id="p-29">The corpus contains metadata about the speakers (e.g.,
+                        speaker’s name, gender, role, party), a typology of parliamentary sessions
+                        (e.g., regular/urgent/ceremonial meeting) and structural and editorial
+                        annotations (e.g., legislative period, session year/title, <ref
+                            target="https://en.wikipedia.org/wiki/Named_entity">named entity</ref>).
+                        The corpus is linguistically annotated for part-of-speech and lemma. It also
+                        contains some other annotation layers (e.g., Universal Dependencies,
+                        syntactic parsing) which will not be used in this tutorial. The corpus
+                        comprises over a million speeches or 200 million words delivered by almost
+                        8,500 speakers (e.g., Members of Parliament, members of the government,
+                        ministry representatives, representatives of professional organizations,
+                        non-governmental organizations, and interest groups). For general
+                        information about corpora and parliamentary records see sections 3 and 4 . </p>
+                    <p xml:id="p-30">This information is also summarized <ref
+                            target="https://www.clarin.si/noske/run.cgi/corp_info?corpname=siparl20&amp;struct_attr_stats=1"
+                            >in the concordancer</ref> (see Figures 3a and 3b):</p>
+                    <list type="unordered" xml:id="list-3">
+                        <item>Quantitative information about the size of the corpus is provided in
+                            the <hi rend="italic">Counts</hi> section (see <hi rend="italic">Item
+                                1</hi>). </item>
+                        <item>The basic tags for parts of speech are listed in <hi rend="italic"
+                                >Tags legend</hi> (see <hi rend="italic">Item 2</hi>) while the full
+                            tagset description is available through the link (see <hi rend="italic"
+                                >Item 3</hi>). </item>
+                        <item>The corpus is encoded in the form of structural attributes. The <hi
+                                rend="italic">session</hi> level represents a single session (see
+                                <hi rend="italic">Item 4</hi>) and conveys information such as
+                            session date, type and title (see Figure 3b).</item>
+                        <item>In addition, structural attributes at the <hi rend="italic"
+                                >speech</hi> level represent one utterance of a speaker (see <hi
+                                rend="italic">Item 5</hi>) and give information on speaker’s name,
+                            gender, role and party affiliation (see Figure 3b). </item>
+                    </list>
+                    <figure xml:id="figure3a">
+                        <graphic url="media/figure3a.jpg"/>
+                        <head>Figure 3a: The siParl 2.0 information page.</head>
+                    </figure>
+                    <figure xml:id="figure3b">
+                        <graphic url="media/figure3b.jpg"/>
+                        <head>Figure 3b: The siParl 2.0 information page with extended section
+                            “Structures and attributes”.</head>
+                    </figure>
+                </div>
+                <div type="subchapter" xml:id="ch4-sub2">
+                    <head xml:id="head-22">TASK 1: Representation of women in the Slovenian
+                        Parliament </head>
+                    <p xml:id="p-31">The Slovenian National Assembly has 90 MPs, including one
+                        representative for the Italian and one for the Hungarian minorities, who are
+                        members of <ref
+                            target="https://en.wikipedia.org/wiki/List_of_political_parties_in_Slovenia"
+                            >nine political parties</ref>. Slovenia is one of the youngest EU member
+                        states and has seen dramatic changes in gender equality in the past 30
+                        years. While in 1986 when Slovenia was still part of the Federal Socialist
+                        Republic of Yugoslavia, female MPs represented almost a quarter of all MPs,
+                        in 1992 when the National Assembly of the Republic of Slovenia was convened
+                        for the first time, this share notably significantly, so that only in ten
+                        MPs was female (<ref target="#AntićGaber.2017">Selišnik and Antić Gaber,
+                            2017</ref>). During the transition process, when social, political,
+                        economic and value systems changed fundamentally, women in Slovenia lost
+                        more of the economic and social gains of socialism than men, and were almost
+                        completely ousted from key political institutions. But in the seventh
+                        parliamentary term (1/8/2014-21/6/2018), which is the last one included in
+                        the siParl 2.0 corpus, female MPs held just over 40% of the seats, largely
+                        due to legislative measures enforcing gender quotas. <note place="foot"
+                            xml:id="ftn1" n="1">
+                            <p rend="footnote text"> The share is based on the official number of
+                                all female MPs listed in <ref target="#Kustec.2017">Kustec
+                                    (2017)</ref> and then divided by the number of all MPs (i.e.,
+                                90). This share is slightly higher than reported in our analysis for
+                                which we strictly took only the corpus data throughout the tutorial.
+                                Since all of the elected MPs rarely serve the whole term, they are
+                                then replaced by other MPs. This is reflected in the corpus which
+                                includes all MPs, not just the ones listed at the time of the
+                                elections. According to corpus data, the total number of MPs per
+                                term is thus greater than 90.</p>
+                        </note> According to the <ref
+                            target="https://eige.europa.eu/gender-equality-index/2017/compare-countries/index/bar"
+                            >EU gender equality value and political power index for 2017</ref>,
+                        Slovenia ranked among the top 10 EU countries in the proportion of women
+                        MPs.</p>
+                    <p xml:id="p-33">In Task 1, we are interested in comparing the contents of the
+                        siParl 2.0 corpus with the trends observed in parliamentary elections and
+                        the Slovenian society. </p>
+                    <div type="subchapter" xml:id="ch4-sub2-sub1">
+                        <head xml:id="head-23">Creating subcorpora</head>
+                        <p xml:id="p-34">By taking advantage of the metadata available in the corpus
+                            (see Figure 3b), we split the corpus into parts, called <ref
+                                target="https://www.sketchengine.eu/guide/create-a-subcorpus/"
+                                >subcorpora</ref>, according to the following criteria:</p>
+                        <list type="unordered" xml:id="list-4">
+                            <item>
+                                <hi rend="bold">Gender of the speaker.</hi> Each speaker in the
+                                corpus is labelled with one of the following gender categories based
+                                on the data provided by the official records of the National
+                                    Assembly<hi rend="italic">: male, female </hi>or<hi
+                                    rend="italic"> unknown</hi> (in cases when the metadata records
+                                are incomplete). In this tutorial we only use the first two
+                                categories, male and female, and disregard the speakers with unknown
+                                gender.</item>
+                            <item>
+                                <hi rend="bold">Role of the speaker. </hi>Each speaker in the corpus
+                                is attributed one of the two roles: <hi rend="italic">a Member of
+                                    Parliament (MP) </hi>or <hi rend="italic">external speaker.</hi>
+                                The latter are invited speakers who are not members of the
+                                Parliament, such as members of the government along with
+                                representatives of ministries and non-governmental organizations. In
+                                this tutorial, we only use the category of MPs since we wanted to
+                                study only the contributions by the elected representatives of the
+                                Slovenian people. </item>
+                            <item>
+                                <hi rend="bold">Type of the speaker.</hi> Apart from the role, each
+                                speaker in the corpus is also labelled with one of the following two
+                                speaker types<hi rend="italic">: chairperson </hi>or<hi
+                                    rend="italic"> regular speaker</hi>. Regular speakers are all
+                                the speakers in the Parliament who have been explicitly given the
+                                floor by the chairperson in charge of the meeting. In this tutorial
+                                we only use the category of regular speakers. We intentionally
+                                exclude the chairpersons because most of their speeches are
+                                regulated by bylaws and other procedures, and are not influenced by
+                                their party affiliation, gender or other factors, and would as such
+                                skew the results in our particular task.</item>
+                            <item>
+                                <hi rend="bold">Parliamentary term.</hi> Each speech in the corpus
+                                is categorized into the legislative period in which it was delivered
+                                (Term 1 – Term 7). Since it is out of scope for our study, we
+                                exclude from our analysis the <ref
+                                    target="Slovenian_Spring,_democracy_and_independence">period of
+                                    secession</ref> from <ref
+                                    target="https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia"
+                                    >Yugoslavia</ref> which is labelled as Term11 in the corpus. </item>
+                            <item>
+                                <hi rend="bold">Working body. </hi>The siParl 2.0 corpus contains
+                                speeches from plenary sessions, working bodies of the National
+                                Assembly (e.g., The Commission for Petitions, Human Rights and Equal
+                                Opportunities) and from the Council of the President of the National
+                                Assembly. In this tutorial we only analyse the speeches delivered at
+                                plenary sessions. </item>
+                        </list>
+                        <p xml:id="p-35">Based on these criteria, we first create a total of 14
+                            subcorpora, one for each of the seven parliamentary terms containing the
+                            speeches by female MPs and one for male MPs, in their role as regular
+                            speakers. In addition to these 14 subcorpora, we also create subcorpora
+                            that contain all speeches by male and female MPs for each term
+                            separately, and for all of the seven terms together. </p>
+                        <note rend="bluebox" xml:id="note-3">
+                            <p>A screencast of how to create a subcorpus in NoSketchEngine is
+                                available here.</p>
+                            <p>The created subcorpora and information on their size are available
+                                    <ref
+                                    target="https://www.clarin.si/noske/run.cgi/subcorp?corpname=siparl20"
+                                    >here</ref>.</p>
+                            <p>For advanced users of the tutorial we also provide an example of the
+                                CQL commands that are used to generate the following subcorpus: </p>
+                            <p>
+                                <hi rend="bold">Term1-Female</hi>
+                                <note place="foot" xml:id="ftn2" n="2">
+                                    <p rend="footnote text"> Since this tutorial is offered both in
+                                        English and Slovene, we gave the subcorpora in the
+                                        concordancer bilingual names. However, for clarity and
+                                        conciseness, we are only using the English part of the
+                                        subcorpora names in this version of the tutorial.</p>
+                                </note>
+                                <hi rend="bold">:</hi>
+                            </p>
+                            <p>&lt;speech gender="F" &amp; role_en="MP" &amp; type_en="Regular
+                                speaker"/&gt; within &lt;session mandate_en="Term 1 .*" &amp;
+                                organ="Državni zbor Republike Slovenije"/&gt;</p>
+                            <p>This command searches for all utterances (attribute <hi rend="italic"
+                                    >speech</hi>) spoken by speakers whose gender is female
+                                (attribute <hi rend="italic"> F</hi>), whose role is member of
+                                parliament (attribute MP) and whose type is regular speaker<hi
+                                    rend="italic"> (</hi>attribute <hi rend="italic">Regular
+                                    speaker</hi>) within the texts from the first parliamentary term
+                                (attribute <hi rend="italic">Term 1 .*</hi>) that were given in the
+                                    <hi rend="italic">National Assembly of the Republic of Slovenia
+                                </hi>(attribute (in Slovene): <hi rend="italic">Državni zbor
+                                    Republike Slovenije</hi>).</p>
+                            <p>In order to compile a subcorpus of speeches delivered by male MPs, we
+                                only need to change the <hi rend="italic">speech gender</hi>
+                                attribute in the CQL command above (i.e., <hi rend="italic">speech
+                                    gender="M"</hi>). Similarly, if we want a subcorpus containing
+                                all speeches from all terms delivered by both female and male MPs,
+                                we first have to include both genders through the <hi rend="italic"
+                                    >speech gender </hi>attribute (i.e., <hi rend="italic">speech
+                                    gender="F|M"</hi>) and all terms through the <hi rend="italic"
+                                    >session mandate </hi>attribute (i.e., <hi rend="italic">session
+                                    mandate_en="Term .*"</hi>).</p>
+                        </note>
+                    </div>
+                    <div type="subchapter" xml:id="ch4-sub2-sub2">
+                        <head xml:id="head-24">Using frequency lists</head>
+                        <p xml:id="p-44">Using the subcorpora created in the previous step, we will
+                            analyse the contribution of the female and male MPs across time with the
+                            help of one of the most basic corpus techniques, called <ref
+                                target="toggle-id-2-closed">frequency lists</ref>. These display
+                            query results from most frequent to least frequent. This technique can,
+                            for example, be used to build a frequency list of all the words uttered
+                            in the whole parliament or by a specific speaker. In this task, we will
+                            use this function to obtain information on the number of male and female
+                            MPs in each parliamentary term, and the number of speeches and tokens
+                            they uttered. </p>
+                        <note rend="bluebox" xml:id="note-5">
+                            <p>A screencast of how to create a frequency list in NoSketchEngine is
+                                available here.</p>
+                            <p>An example of two frequency lists can be seen in Figure 4.</p>
+                        </note>
+                        <figure xml:id="figure4">
+                            <graphic url="media/figure4.jpg"/>
+                            <head>
+                                <hi rend="bold">Figure 4. Frequency lists for the female MPs from
+                                    Term1.</hi>
+                                <ref
+                                    target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat1-%C5%BDenske--Term1-Female&amp;wlattr=speech.name&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=1&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;include_nonwords=1&amp;wlnums=docf&amp;wltype=simple">
+                                    <hi rend="bold">On the left</hi>
+                                </ref>
+                                <hi rend="bold"> we show the number of speeches they have made,
+                                    and</hi>
+                                <ref
+                                    target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat1-%C5%BDenske--Term1-Female&amp;wlattr=speech.name&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=1&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;include_nonwords=1&amp;wlnums=frq&amp;wltype=simple">
+                                    <hi rend="bold">on the right</hi>
+                                </ref>
+                                <hi rend="bold">the number of tokens in these speeches.</hi>
+                            </head>
+                        </figure>
+                        <p xml:id="p-47">As can be seen from Figure 4, there were a total of 14
+                            female MPs in Term1 who collectively uttered more than 3,500 speeches,
+                            with just under one million tokens. On average, this is almost 260
+                            speeches or 69,000 tokens per MP. However, the contribution per MP is
+                            very uneven, ranging from nearly 700 speeches, or more than 170,000
+                            tokens, to fewer than 40 speeches comprising around 9,000 tokens. </p>
+                        <p xml:id="p-48">Measured in speeches, the first-ranking speaker is Danica
+                            Simšič, a member of the Democratic Party of Slovenia, a small opposition
+                            party who was elected to the Parliament only in the first term and
+                            contributed 680 speeches, or almost 19% of all the speeches in the
+                            entire subcorpus, which is almost three times the female average. The
+                            share of the speeches by Danica Simšič was calculated by dividing the
+                            number of her speeches by the number of all the speeches by female MPs
+                            (see Figure 4, left: <hi rend="italic">Total frequency</hi> and <hi
+                                rend="italic">Simšič, Danica</hi>). The ratio with regard to the
+                            average was calculated by dividing the number of speeches by Danica
+                            Simšič with the average number of all speeches by female MPs, which we
+                            get by dividing the total number of speeches by female MPs with the
+                            number of all female MPs (see Figure 4, left: <hi rend="italic">Total
+                                frequency</hi> and <hi rend="italic">total number of
+                            items</hi>).</p>
+                        <p xml:id="p-49">Measured in tokens, the female MP with the largest
+                            contribution in this subcorpus is Metka Karner Lukač, member of the
+                            Slovenian People’s Party, the oldest party in Slovenia, who gave
+                            speeches with 173,067 tokens or 18% of the entire subcorpus, nearly
+                            three times the average. The MP with the lowest number of speeches as
+                            well as tokens is Mihaela Logar, a member of the Slovenian People’s
+                            Party, who spoke 39 times and gave speeches with just over 9,000 tokens
+                            in her four-year term as MP, which is nearly 20 times less than the
+                            first-ranking speaker. It is interesting to note that approximately half
+                            of all contributions can be attributed to only three MPs: the two
+                            mentioned above and to Breda Pečan, member of the Social Democrats,
+                            whose speeches on average were also the longest. This information can be
+                            extracted from data on the average length of speeches for individual
+                            MPs, which we get by dividing the total number of tokens for the
+                            individual MP (see Figure 4, right) with the total number of speeches by
+                            this particular MP (see Figure 4, left).</p>
+                    </div>
+                    <div type="subchapter" xml:id="ch4-sub2-sub3">
+                        <head xml:id="head-26">Comparative analysis</head>
+                        <p xml:id="p-50">For a comparative analysis of the representation of men and
+                            women in the Slovenian Parliament over time, we record the number of MPs
+                            and the number of tokens in each of the 14 subcorpora (see section 6.2.1
+                                <ref target="#Creating_subcorpora">Creating subcorpora</ref>). Since
+                            the concordancer does not provide such summary tables, we manually enter
+                            the values into a spreadsheet, as can be seen in Table 1. Visualization
+                            of the results can be seen in Figure 5 and Figure 6. </p>
+                        <figure xml:id="table1">
+                            <graphic url="media/table1.jpg"/>
+                            <head>Table 1. Overview of the sizes of the siParl 2.0 subcorpora.<note
+                                    place="foot" xml:id="ftn3" n="3">Due to an error in corpus
+                                    metadata attributed to one MP (specifically, to an MP named Geza
+                                    whose gender was erroneously marked as female, most probably due
+                                    to a combination of the ending –a, which in Slovene is typical
+                                    of nouns of female grammatical gender, and low frequency of the
+                                    name), the data for Term6, at the time of analysis, does not
+                                    reflect the official number of female MPs which is according to
+                                        <ref target="#Kustec.2017">Kustec (2017)</ref> 39 instead of
+                                    38 as found in the corpus.</note>
+                            </head>
+                        </figure>
+                        <figure xml:id="figure5">
+                            <graphic url="media/figure5.jpg"/>
+                            <head>Figure 5: Share of male and female MPs in siParl 2.0 over
+                                time.</head>
+                        </figure>
+                        <figure xml:id="figure6">
+                            <graphic url="media/figure6.jpg"/>
+                            <head>Figure 6: Contribution of male and female MPs in siParl 2.0
+                                measured in uttered tokens over time.</head>
+                        </figure>
+                        <p xml:id="p-51">The results show that the share of tokens in speeches by
+                            female MPs gradually increases along with the number of female MPs in
+                            the Parliament. A notable leap in the representation of women can be
+                            observed in the last two terms covered by siParl 2.0, which is most
+                            probably due to the adoption of gender quotas, according to which, since
+                            2011, 35% of the candidates must be women (<ref
+                                target="#AntićGaber.2017">Selišnik and Antić Gaber, 2017</ref>).
+                            Importantly, despite quotas being one of the most successful measures to
+                            increase the number of female MPs (<ref target="#AntićGaber.2017"
+                                >Selišnik and Antić Gaber, 2017</ref>), our corpus analysis shows a
+                            large discrepancy between the number of female speakers and the amount
+                            of tokens in their speeches. While election results are easily
+                            accessible and frequently used by researchers and analysts, the amount
+                            and content of the speeches has been much less readily available and
+                            studied much less comprehensively outside corpus linguistics, which is a
+                            gap we aim to help close with this tutorial. By looking into the created
+                            subcorpora, we can see that for female MPs there is a clear tendency to
+                            contribute a lower share of content than would be expected given their
+                            share of speakers. This is especially true for Term2 where they produced
+                            two times fewer tokens than would correspond to their speaker share. In
+                            fact, only in Term4 was women’s contribution marginally greater than
+                            their share of seats in the Parliament. Therefore, we can conclude that
+                            having more elected female MPs does not directly mean that their voice
+                            is more present in the National Assembly. Nonetheless, as the number of
+                            female speakers in the Parliament has been on the rise in recent years,
+                            the number of their speeches has started increasing as well. From as
+                            little as a tenth of all the speeches given in the Parliament during the
+                            first five parliamentary terms by female MPs, the contribution of female
+                            MPs has risen to almost a third in the last two parliamentary terms
+                            covered by our corpus. </p>
+                    </div>
+                </div>
+                <div type="subchapter" xml:id="ch4-sub3">
+                    <head xml:id="head-30">TASK 2: Issues addressed by women</head>
+                    <p xml:id="p-52">Studies of female political discourse have shown that women
+                        tend to debate different topics to men. More about the impact of gender on
+                        language can be found in the section 5 .</p>
+                    <p xml:id="p-53">In Task 2, we are interested in comparing the topics discussed
+                        by female MPs in siParl 2.0 with those discussed by their male counterparts.
+                        While topic classification is readily available for some parliamentary
+                        corpora, as in <ref target="#Nanni.2018">Nanni et al. (2018)</ref>, this is
+                        not the case for siParl 2.0. Topic classification could be derived
+                        automatically, as in <ref target="#Karan.2016">Karan et al. (2016)</ref>,
+                        however, the goal of this tutorial is to demonstrate the potential of
+                        parliamentary corpora research via concordancers without requiring
+                        programming skills, which is why we opt for a two-step manual approach.
+                        Moreover, manual approaches are especially appropriate for highly specific
+                        topic classification tasks such as ours, for which no pre-trained models or
+                        training data exist. It should be noted that both automatic and manual
+                        annotation approaches produce errors, but that we can avoid those due to
+                        annotator’s subjectivity by employing multiple annotators. The final quality
+                        of such manual annotations can be verified with statistical tests that
+                        report on the <ref
+                            target="https://en.wikipedia.org/wiki/Inter-rater_reliability"
+                            >inter-annotator agreement</ref>.</p>
+                    <div type="subchapter" xml:id="ch4-sub3-sub1">
+                        <head xml:id="head-31">Extracting keywords</head>
+                        <p xml:id="p-54">To enable the comparative analysis we will first use a
+                            well-known corpus analysis technique called <ref
+                                target="https://en.wikipedia.org/wiki/Keyword_(linguistics)">keyword
+                                extraction</ref>. It compares a focus corpus against a reference
+                            corpus in order to identify the most distinguishing vocabulary of the
+                            focus corpus. The focus corpus is the corpus or subcorpus under
+                            investigation. The reference corpus is typically a large representative
+                            corpus of a given language but can also be any other corpus or subcorpus
+                            we wish to use as the reference for comparison. In this task, we will
+                            contrast the female-male pairs of the siParl 2.0 subcorpora to uncover
+                            the most prominent issues discussed by the MPs in the Slovenian
+                            Parliament.</p>
+                        <note rend="bluebox" xml:id="note-7">
+                            <p>A screencast of how to generate a keyword list in NoSketchEngine is
+                                available here.</p>
+                            <p>The generated keyword lists (using lowercased lemmas) are available
+                                here:</p>
+                            <list type="unordered">
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat1-%C5%BDenske--Term1-Female&amp;wlattr=lemma_lc&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=5&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;wlnums=frq&amp;wltype=keywords&amp;ref_corpname=siparl20&amp;ref_usesubcorp=Mandat1-Mo%C5%A1ki--Term1-Male&amp;simple_n=1"
+                                        >Term1-Female</ref>
+                                </item>
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/wordlist?;corpname=siparl20;usesubcorp=Mandat1-Mo%C5%A1ki--Term1-Male;wlattr=lemma_lc;wlminfreq=5;wlmaxfreq=0;wlpat=.%2A;wlmaxitems=100;wlsort=f;ref_corpname=siparl20;ref_usesubcorp=Mandat1-%C5%BDenske--Term1-Female;wlcache=;simple_n=1.0;wltype=keywords;wlnums=frq;include_nonwords=0;blcache=;wlpage=1;usengrams=0;ngrams_n=2;ngrams_max_n=2;nest_ngrams=0;complement_subc=0"
+                                        >Term1-Male</ref>
+                                </item>
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat7-%C5%BDenske--Term7-Female&amp;wlattr=lemma_lc&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=5&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;wlnums=frq&amp;wltype=keywords&amp;ref_corpname=siparl20&amp;ref_usesubcorp=Mandat7-Mo%C5%A1ki--Term7-Male&amp;simple_n=1"
+                                        >Term7-Female</ref>
+                                </item>
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/wordlist?;corpname=siparl20;usesubcorp=Mandat7-Mo%C5%A1ki--Term7-Male;wlattr=lemma_lc;wlminfreq=5;wlmaxfreq=0;wlpat=.%2A;wlmaxitems=100;wlsort=f;ref_corpname=siparl20;ref_usesubcorp=Mandat7-%C5%BDenske--Term7-Female;wlcache=;simple_n=1.0;wltype=keywords;wlnums=frq;include_nonwords=0;blcache=;wlpage=1;usengrams=0;ngrams_n=2;ngrams_max_n=2;nest_ngrams=0;complement_subc=0"
+                                        >Term7-Male</ref>
+                                </item>
+                            </list>
+                            <p>We first export the keyword lists<hi rend="Hyperlink"/>for each of
+                                the four subcorpora into a spreadsheet and then manually annotate
+                                the data (see section 6.3.3 ).</p>
+                        </note>
+                        <p xml:id="p-58">Figures 7 and 8 show the 20 top-ranking keywords for female
+                            and for male MPs in Term7, using the <ref
+                                target="https://www.sketchengine.eu/documentation/simple-maths/"
+                                >Simple Maths statistics</ref>. Stark differences can be observed:
+                            while the majority of all the displayed keywords for female speakers are
+                            related to Healthcare, the key male vocabulary belongs to the domains of
+                                <hi rend="italic">Foreign affairs</hi>, <hi rend="italic"
+                                >Infrastructure</hi> and <hi rend="italic">Justice</hi>.</p>
+                        <figure xml:id="figure7">
+                            <graphic url="media/figure7.jpg"/>
+                            <head>Figure 7: Twenty top-ranking keywords of female MPs (with their
+                                English translations in blue) in Term1 compared to those of their
+                                male counterparts.</head>
+                        </figure>
+                        <figure xml:id="figure8">
+                            <graphic url="media/figure8.jpg"/>
+                            <head>Figure 8: Twenty top-ranking keywords of male MPs (with their
+                                English translations in blue) in Term1 compared to those of their
+                                female counterparts.</head>
+                        </figure>
+                    </div>
+                    <div type="subchapter" xml:id="ch4-sub3-sub2">
+                        <head xml:id="head-34">Analysing concordances</head>
+                        <p xml:id="p-59">For further analysis, we select the 100 top-ranking key
+                            lemmas, excluding personal names, from the four generated keyword lists.
+                            Our goal is to manually categorize each of them into topics after
+                            inspecting their <ref
+                                target="https://www.sketchengine.eu/guide/concordance-a-tool-to-search-a-corpus/"
+                                >concordances</ref>, which are lists of all instances of the search
+                            words in their contexts, as shown in Figure 9: </p>
+                        <list type="unordered" xml:id="list-6">
+                            <item>Concordances can be displayed directly by clicking on the key
+                                lemma in the keyword list. At the top of the page that appears, the
+                                selected lemma is displayed along with its hits (see <hi
+                                    rend="italic">Item 1</hi>).</item>
+                            <item>The words in red at the centre of the screen (see <hi
+                                    rend="italic">Item 2</hi>) are the hits of the search word in
+                                our subcorpus and the text in black (see <hi rend="italic">Item
+                                    3</hi>) is the context.</item>
+                            <item>The text in blue on the left (see <hi rend="italic">Item 4</hi>)
+                                is the metadata for the concordances, in our case the
+                                speaker.</item>
+                            <item>The context can be further extended by clicking on the desired
+                                concordance (see <hi rend="italic">Item 5</hi>). The same procedure
+                                can be followed for obtaining more metadata by clicking on the
+                                speaker.</item>
+                            <item>Alternatively, you can also tweak the view parameter in <hi
+                                    rend="italic">View options </hi>(see <hi rend="italic">Item
+                                    6</hi>) and display more metadata or a wider context.</item>
+                        </list>
+                        <figure xml:id="figure9">
+                            <graphic url="media/figure9.jpg"/>
+                            <head>Figure 9: Extended context for the first hit in the <ref
+                                    target="https://www.clarin.si/noske/run.cgi/view?corpname=siparl20;usesubcorp=Mandat1-Mo%C5%A1ki--Term1-Male;q=q%5Blemma_lc%3D%3D%22proporcionalen%22%5D;complement_subc=0"
+                                    >concordance list</ref> of the keyword
+                                “proporcionalen/proportional”.</head>
+                        </figure>
+                    </div>
+                    <div type="subchapter" xml:id="ch4-sub3-sub3">
+                        <head xml:id="head-36">Comparative analysis</head>
+                        <p xml:id="p-60">Because the main role of the Parliament is legislative, and
+                            because the legislative and budgetary discussions are structured
+                            according to the ministries responsible for them, we will use the list
+                            of <ref target="https://www.gov.si/en/state-authorities/ministries/">14
+                                ministries of the current Slovenian government </ref> as categories
+                            for topic analysis. The categories are listed in Table 2. While several
+                            other lists of topics could be used, this one seems the most natural in
+                            the specific setting of parliamentary discourse. In addition to these 14
+                            categories, the list is extended with another fourcategories for
+                            keywords that cannot be listed elsewhere: <hi rend="italic">Multiple
+                            </hi>(for keywords used in discussions on several topics); <hi
+                                rend="italic">style</hi> (for clearly colloquial or jargon keywords
+                            used only by specific speakers); <hi rend="italic">ideology</hi> (for
+                            keywords used for ideological labelling, e.g., “partijski/partisan
+                            (derogatory, adjective)”); and <hi rend="italic"
+                                >interactional/procedural</hi> (for keywords referring to other MPs
+                            or to procedural matters). Illustrative examples of manual annotation of
+                            the 10 top-ranking keywords by female and by male MPs are given in Table
+                            3.</p>
+                        <figure xml:id="table2">
+                            <graphic url="media/table2.jpg"/>
+                            <head>Table 2. Keyword annotation categories. We use upper case for the
+                                last four function categories in order to separate them from content
+                                categories.</head>
+                        </figure>
+                        <figure xml:id="table3">
+                            <graphic url="media/table3.jpg"/>
+                            <head>Table 3: Illustrative example of manual topic annotation of 10
+                                top-ranking keywords from speeches by female and male MPs in
+                                Term1.</head>
+                        </figure>
+                        <p xml:id="p-61">Tables 4 and 5 contain summarized results of the manual
+                            annotation of 100 top-ranking key lemmas for female and male MPs in
+                            Term1 and Term7, respectively. The results show that the range of topics
+                            is comparable through time and between the genders. Despite the similar
+                            number of identified topics, men and women differ a great deal in their
+                            most prominent one.</p>
+                        <figure xml:id="table4">
+                            <graphic url="media/table4.jpg"/>
+                            <head>Table 4: Topics of the 100 top-ranking keywords in speeches by
+                                female and male MPs in Term1.</head>
+                        </figure>
+                        <figure xml:id="table5">
+                            <graphic url="media/table5.jpg"/>
+                            <head>Table 5: Topics of the 100 top-ranking keywords in speeches by
+                                female and male MPs in Term7.</head>
+                        </figure>
+                        <p xml:id="p-62">In Term1, the majority (54%) of all the analysed female
+                            keywords belong to only two topics (<hi rend="italic">Health</hi> and
+                                <hi rend="italic">Labour, family and social affairs</hi>), whereas
+                            the two most common topics of male MPs with a similar share (55%) are
+                                <hi rend="italic">Infrastructure</hi> and <hi rend="italic">Public
+                                administration</hi>. In Term7, the two prevailing female topics not
+                            only remained the same but also slightly intensified (58%) while for
+                            male MPs the most prominent topic became <hi rend="italic">Foreign
+                                affairs.</hi> While the division of topics between genders cannot be
+                            explained through simple corpus analysis, both an intense focus on <hi
+                                rend="italic">Health</hi> and <hi rend="italic">Social affairs</hi>
+                            in the female subcorpora, as well as the shift from <hi rend="italic"
+                                >Infrastructure </hi>and <hi rend="italic">Public administration
+                            </hi>to <hi rend="italic">Foreign affairs</hi> in the male subcorpora
+                            are a good reflection of the state of affairs. At the time of
+                            independence, the new-born state of Slovenia had to create its own
+                            public administration and re-build its infrastructure, which required
+                            intensive discussions in the first parliamentary term. The last term, on
+                            the other hand, was marked by more intensive international trade as well
+                            as greater international security threats, which warranted legislative
+                            and budgetary decisions in the parliament. The intensified discussions
+                            on <hi rend="italic">Health issues</hi> as well as a continued focus on
+                                <hi rend="italic">Social issues</hi> in Term7 were largely due to
+                            heavy pressure on the budget due to the severe economic crisis in that
+                            period, which also negatively impacted the already crumbling public
+                            health system. </p>
+                        <p xml:id="p-63">We can also observe that in Term1, men and women attached
+                            similar importance (according to the share of the analysed keywords) to
+                            more topics than in Term7 (five shared topics with equal importance in
+                            Term1 vs. three topics in Term7). Thus, in Term1, men debated slightly
+                            more than women on <hi rend="italic">Public administration</hi> (M: 14%
+                            vs. F: 11%), <hi rend="italic">Economy and technology</hi> (M: 8% vs. F:
+                            6%) and <hi rend="italic">Justice</hi> (M: 2% vs. F: 1%), and women
+                            debated slightly more on <hi rend="italic">Agriculture, forestry and
+                                food</hi> (M: 3%, F: 4%), while MPs of both genders debated equally
+                            on <hi rend="italic">Defence</hi> (1%). In Term7, on the other hand,
+                            only three topics appear as equally important to male and female MPs:
+                                <hi rend="italic">Finance</hi> (4%), <hi rend="italic">Justice</hi>
+                            (3%) and <hi rend="italic">Public administration</hi> (3%). For a more
+                            in-depth analysis, it may be interesting to look into the specific ways
+                            (if any) in which female and male MPs approach and discuss the key
+                            issues of these topics.</p>
+                        <p xml:id="p-64">The data shows that female-specific topics are <hi
+                                rend="italic">Education </hi>in Term1, and <hi rend="italic"
+                                >Health</hi>, <hi rend="italic">Labour, family and social
+                                affairs</hi> and <hi rend="italic">Culture</hi> in Term7. It is
+                            surprising that these last three topics, which are the top three for
+                            women, do not appear on the list of topics for men, while we can find
+                            the top topics for men (<hi rend="italic">Infrastructure, Public
+                                administration, Foreign affairs</hi>) on the women’s list (although
+                            with a negligible share of the total). Male-specific topics, on the
+                            other hand, are <hi rend="italic">Environment </hi>and <hi rend="italic"
+                                >Interior </hi>in both parliamentary terms, <hi rend="italic"
+                                >Foreign affairs</hi> (in Term1) and <hi rend="italic">Defence</hi>
+                            (in Term7). Surprisingly, it can be observed that <hi rend="italic"
+                                >Economy and technology</hi>, which is a topic present in both terms
+                            for both genders, drastically loses its saliency in the subcorpus of
+                            female speeches in Term7. </p>
+                        <p xml:id="p-65">Apart from the different areas of interest, the results
+                            also show that male and female MPs have different debating styles. In
+                            both terms, male MPs use considerably more stylistic words (i.e.,
+                            clearly colloquial or jargon words observed only from specific speakers)
+                            than their female counterparts. In fact, the usage of such words by male
+                            MPs tripled in Term7 compared to Term1, which on the one hand indicates
+                            the greater casualness of male MPs in general, as well as highlights a
+                            change in the debating culture, which in the last two decades has become
+                            more ludic and informal. We also observe that ideological words, which
+                            tend to be polarizing, are only used by the male MPs. This is in line
+                            with findings from the literature, according to which men’s
+                            conversational strategies are more aggressive and competitive, whereas
+                            women’s debating style is more cooperative (<ref target="#Coates.1997"
+                                >Coates, 1997</ref>). It should be noted that these results would
+                            need to be confirmed by a more detailed analysis, since some recent
+                            studies have challenged the clear-cut gender difference in debating
+                            styles as being an overgeneralization (cf. <ref target="#Ilie.2013"
+                                >Ilie, 2013</ref>). </p>
+                        <p xml:id="p-66">Our findings point out notable differences in the roles and
+                            interests of male and female MPs which is in line with previous studies
+                            showing that women focus more on the so-called soft topics than men.
+                            Diachronic comparisons reveal that <hi rend="italic">Health</hi> and <hi
+                                rend="italic">Social issues</hi> remain the top priority for female
+                            MPs, while the focus of male MPs shifted from <hi rend="italic"
+                                >Infrastructure </hi>and<hi rend="italic"> Public administration
+                            </hi>towards <hi rend="italic">Foreign affairs. </hi>In Term1, the most
+                            prominent common topic was <hi rend="italic">Public administration</hi>,
+                            while in Term7, <hi rend="italic">Finance</hi> became the most often
+                            discussed topic for both male and female MPs. This, however, does not
+                            mean that female MPs now debate more on the hard topics, quite the
+                            contrary, in fact, as our analysis showed that in Term7 women focused
+                            more on soft topics than in Term1.</p>
+                    </div>
+                </div>
+                <div type="subchapter" xml:id="ch4-sub4">
+                    <head xml:id="head-41">TASK 3: Topics related to women </head>
+                    <p xml:id="p-67">This task is inspired by related work (see <ref
+                            target="#Blaxill.2016">Blaxill and Beelen, 2016</ref>) which
+                        investigated how frequently, by whom and in what way are topics related to
+                        women, such as women’s rights, equality, discrimination, etc., addressed in
+                        parliamentary history. It is interesting that the impact of gender seems to
+                        be prominent even in countries with high representation of women in
+                        parliament, such as Sweden, for which <ref target="#Bäck.2014">Bäck et al.
+                            (2014)</ref> found that female MPs discuss the so-called hard policy
+                        issues less frequently. Furthermore, <ref target="#AntićGaber.2003">Antić
+                            Gaber and Ilonszki (2003)</ref> state that society usually expects women
+                        MPs to be actively involved in different policy areas than men, in those
+                        that are particularly salient to women because of women’s historic role in
+                        society or because those areas directly affect women’s lives. </p>
+                    <p xml:id="p-68">Given that debates about gender equality are still dominated by
+                        issues pertaining to women’s unequal and special role in society, which
+                        directly impacts their rights as well as discriminatory practices, we are
+                        interested in Task 3 in comparing how male and female MPs in the Slovenian
+                        Parliament express themselves when addressing topics related to women by
+                        focusing on their use of the noun “ženska/female” as an explicit indicator
+                        of debate on such topics.</p>
+                    <div type="subchapter" xml:id="ch4-sub4-sub1">
+                        <head xml:id="head-42">Working with frequencies</head>
+                        <p xml:id="p-69">First, we are interested in how frequently the lemma of the
+                            noun “ženska/female” is mentioned by male and female MPs in different
+                            time periods (1992-2018). We query all the subcorpora and record all the
+                            frequency counts of the lemma in a spreadsheet, with the results shown
+                            in Table 6. Because we are interested in comparing subcorpora of
+                            different sizes, it is important to use <ref
+                                target="http://www.thegrammarlab.com/?p=160">normalized
+                                frequencies</ref> instead of the absolute ones, as these raw
+                            frequencies can be misleading. Looking for example at the raw
+                            frequencies for Term2 (F: 190; M: 794), we could conclude that male MPs
+                            mention the noun “ženska/female” four times more often than their female
+                            counterparts. But, because the female subcorpus in that parliamentary
+                            term is much smaller than the male subcorpus, the normalized frequency,
+                            which calculates the frequency based on the same number of words in each
+                            subcorpus (in our case a million words), shows that the noun is actually
+                            five times more frequent in the female subcorpus (249.29) compared to
+                            the male one (50.36). </p>
+                        <note rend="bluebox" xml:id="note-8">
+                            <p>If you would like to see how to query a subcorpus for the lemma,
+                                please watch the screencast on how to extract collocations in
+                                NoSketchEngine (min. 00:09–1:24) here. </p>
+                            <p>A concordance list for the lemma of the noun “ženska/female” is
+                                available here:</p>
+                            <list type="unordered">
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-%C5%BDenske--AllTerms-Female&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name="
+                                        >AllTerms-Female</ref>
+                                </item>
+                            </list>
+                            <figure xml:id="figure10">
+                                <graphic url="media/figure10.jpg"/>
+                                <head>Figure 10: The beginning of the concordance list for the lemma
+                                    of the noun “ženska/female” with raw frequency (<hi
+                                        rend="italic">Item 1</hi>) and normalized frequency (<hi
+                                        rend="italic">Item 2</hi>).</head>
+                            </figure>
+                        </note>
+                        <figure xml:id="table6">
+                            <graphic url="media/table6.jpg"/>
+                            <head>Table 6. Raw and normalized frequencies of the lemma
+                                “ženska/female” in siParl 2.0.</head>
+                        </figure>
+                        <p xml:id="p-72">Overall, the normalized frequency of the word for the
+                            entire time period is nearly five times higher in the subcorpus of
+                            female MPs compared to their male counterparts (221.21 vs. 45.99). As
+                            can be seen from Figure 10, female MPs in general tend to talk more
+                            about women than their male counterparts. However, if the period between
+                            Term2 and Term4 (1996–2008) saw a strong emphasis on topics about women
+                            among female MPs in comparison to male MPs, we can observe a steep
+                            downward turn in the female subcorpus in more recent terms. </p>
+                        <p xml:id="p-73">The most striking results for the female subcorpus are
+                            observed in Term3 and Term5. In Term3, the normalized frequency of the
+                            word reached a record high, which might be a consequence of lower
+                            numbers of female representatives in the previous two parliamentary
+                            terms and their unequal position in society overall. However, as the
+                            same trend is observed in the male subcorpus, it appears that other
+                            reasons had to contribute to this result as well. For a better insight
+                            into the phenomenon we perform qualitative analysis by inspecting 50
+                            concordance lines for the five most active male MPs. They show that
+                            legislation regulating specific issues which are particularly linked to
+                            women was extensively debated at the time (i.e. legislation related to
+                            equal opportunities, artificial insemination with biomedical assistance
+                            and quotas). Almost a decade later, in Term5, there was a sudden
+                            reduction in the number of mentions of the word in the female subcorpus,
+                            which even dropped below the frequency before the year 2000 despite a
+                            higher number of female MPs. Term5 coincides with the period of a major
+                            global economic crisis, which badly hit Slovenia and probably took
+                            centre-stage in parliamentary discussions, but this would need to be
+                            confirmed through further investigation and contextualization using
+                            qualitative methods, such as concordance analysis.</p>
+                        <p xml:id="p-74">It is also interesting to observe that in Term4 despite
+                            there being the second lowest number of female MPs, the noun
+                            “ženska/female” remains very frequent as opposed to in Term6 and Term7,
+                            when the number of female MPs was considerably higher but the
+                            frequencies of the queried word almost two times lower. As previously
+                            observed in the overall production of female MPs (see 6.2.3 ), where we
+                            found a large discrepancy between the number of female speakers and the
+                            amount of words they uttered, these results again show that a higher
+                            number of female MPs does not guarantee a strong discussion of issues
+                            related to women in the Slovenian Parliament.</p>
+                        <figure xml:id="figure10b">
+                            <graphic url="media/figure10b.jpg"/>
+                            <head>Figure 10: Normalized frequency of mentions of “ženska/female” by
+                                female and male MPs in siParl 2.0.</head>
+                        </figure>
+                    </div>
+                    <div type="subchapter" xml:id="ch4-sub4-sub2">
+                        <head xml:id="head-46">Extracting collocations</head>
+                        <p xml:id="p-75">Next, we will demonstrate another popular corpus analysis
+                            technique called <ref target="https://en.wikipedia.org/wiki/Collocation"
+                                >collocation extraction</ref>, which identifies word combinations
+                            that co-occur more often than would be expected by chance based on
+                            statistical significance tests. While collocations are most typically
+                            used in lexicography and related fields of applied linguistics, we will
+                            use them as a vehicle to explore the concepts or themes that are debated
+                            in the Slovenian Parliament. </p>
+                        <p xml:id="p-76">To be able to dive deeper into the issues addressed when
+                            talking about women, we will investigate collocations of the noun
+                            “ženska/female” from two siParl 2.0 subcorpora, one containing the
+                            female speeches from all seven parliamentary terms ( <hi rend="italic"
+                                >AllTerms-Female</hi>) and the other comprising male speeches from
+                            the same time span (<hi rend="italic">AllTerms-Male</hi>).</p>
+                        <note rend="bluebox" xml:id="note-9">
+                            <p>A screencast of how to extract collocations in NoSketchEngine is
+                                available here.</p>
+                            <p>First, we extract collocations in the range one word to the left and
+                                one word to the right of the headword (i.e., the lemma of the noun
+                                “ženska/female”) with five occurrences as the minimum frequency in
+                                the corpus and three minimum co-occurrences with the headword in the
+                                defined window size. While window size and minimum frequencies can
+                                be set manually and depend on type and frequency of the word under
+                                investigation, corpus size, and our research goal, we want to limit
+                                our analysis for this tutorial to fixed multi-word expressions,
+                                thereby using a very narrow window and strict minimum frequency
+                                criteria.</p>
+                            <p>We use the <ref
+                                    target="https://www.sketchengine.eu/my_keywords/logdice/"
+                                    >logDice</ref> statistic measure to measure the association
+                                strength between words. While several other collocation measures are
+                                also offered by the NoSketchEngine concordancer, such as Mutual
+                                Information or T-score, we opt for logDice because it is not
+                                affected by the size of the corpus and can therefore be used to
+                                compare the scores between subcorpora of different sizes.</p>
+                            <p>The two collocation lists for the headword “ženska/female” are
+                                available here:</p>
+                            <list type="unordered">
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-%C5%BDenske--AllTerms-Female&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name="
+                                        >AllTerms</ref>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-%C5%BDenske--AllTerms-Female&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name="
+                                        >-Female</ref>
+                                </item>
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-Mo%C5%A1ki--AllTerms-Male&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name="
+                                        >AllTerms</ref>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-Mo%C5%A1ki--AllTerms-Male&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name="
+                                        >-Male</ref>
+                                </item>
+                            </list>
+                            <p>We then import both collocation lists into a spreadsheet and manually
+                                analyse the data.</p>
+                        </note>
+                    </div>
+                    <div type="subchapter" xml:id="ch4-sub4-sub3">
+                        <head xml:id="head-47">Comparative analysis</head>
+                        <p xml:id="p-82">We take 100 top-ranking collocation candidates from each
+                            list and manually divide them into three categories: female-only,
+                            male-only and shared. Next, we categorize each collocation candidate
+                            into one of seven thematic clusters that are inspired from a close
+                            reading of corpus concordances, as illustrated in Table 7. Collocation
+                            candidates that are grammatical words (such as prepositions) and are not
+                            used in concordances with a prevailing theme are assigned the label <hi
+                                rend="italic">Multiple</hi>.</p>
+                        <figure xml:id="table7">
+                            <graphic url="media/table7.jpg"/>
+                            <head>Table 7: Examples of collocation clusters.</head>
+                        </figure>
+                        <p xml:id="p-83">The results presented in Table 8 show that just over half
+                            (51%) of the collocations are shared between MPs of both genders,
+                            revealing common ground in the understanding of women’s position in
+                            modern society. The great majority of the shared collocations (nearly
+                            70%) fall under the first two thematic clusters: <hi rend="italic"
+                                >Politics, representation and equality </hi>and <hi rend="italic"
+                                >Social status and employment</hi>, and refer to concepts related to
+                            representation of women (e.g., “participacija/participation”), their
+                            social status (e.g., “samski/single”) and equality (e.g.,
+                            “emancipacija/emancipation”). </p>
+                        <figure xml:id="table8">
+                            <graphic url="media/table8.jpg"/>
+                            <head>Table 8: Frequencies of thematic clusters for the 100 top-ranking
+                                collocation candidates in speeches by female and male MPs in all
+                                seven parliamentary terms.</head>
+                        </figure>
+                        <p xml:id="p-84">It can also be observed that the female subcorpus contains
+                            comparable representation of all but one thematic cluster which together
+                            cover almost 60% of the collocations. The only exception is the cluster
+                                <hi rend="italic">Women’s agency and empowerment</hi>. Collocations
+                            that belong to this thematic cluster are approximately twice less
+                            frequent than collocations belonging to any other cluster. In the male
+                            subcorpus, on the other hand, the majority of collocations (61%) fall
+                            under only three thematic clusters, namely <hi rend="italic">Problems
+                                and violence, Politics, representation and equality, </hi>and <hi
+                                rend="italic">Women’s agency and empowerment.</hi> Furthermore, a
+                            detailed look into annotations reveals that men mainly focus on women’s
+                            social status (e.g., “poročen/married”) and problems (e.g.,
+                            “zatiranje/oppression”), as well as their agency and empowerment (e.g.,
+                            “sposoben/capable”), while not focusing on issues related to women’s
+                            employment and health. On the other hand, collocations from the female
+                            subcorpus first and foremost refer to health issues (e.g.,
+                            “zdrav/healthy”) and measures related to help and protection (e.g.,
+                            “omogočati/enabling”). These are closely followed by words referring to
+                            women’s social status (e.g., “izobrazba/education”) and violence (e.g.,
+                            “posiljen/raped”), which is again contrary to the male subcorpus where
+                            more emphasis is given to problems not directly linked to violence
+                            (e.g., “poniževanje/humiliation”). In addition, similar to the male
+                            subcorpus, employment-related words do not appear in the female
+                            subcorpus among the top 100 collocation candidates.</p>
+                        <p xml:id="p-85">These results indicate that female MPs try to address the
+                            multitude of issues that women face in various areas of life, from
+                            health related issues to the aggression suffered by women and
+                            difficulties with entering into politics, while male MPs focus more
+                            intensely on the unequal place of women in society and view women as
+                            active participants in the process of change. These results also confirm
+                            the findings of <ref target="#AntićGaber.2003">Antić Gaber and Ilonszki
+                                (2003)</ref> who looked at a shorter period (1996–2004) of female
+                            MPs’ activity in the Slovenian Parliament and showed with diverse,
+                            non-corpus linguistic methods that there exists a clear difference
+                            between the legislative priorities of male and female MPs, identifying
+                            similar topics to those in our analysis. </p>
+                        <p xml:id="p-86">Our final observation pertains to the high number of
+                            grammatical words found in the female subcorpus, which are almost four
+                            times more frequent than in the male subcorpus. These collocation
+                            candidates in the female subcorpus mainly consists of adverbs, followed
+                            by prepositions, conjunctions, pronouns and numerals, while in the male
+                            subcorpus they predominantly include numerals. Similar to what we saw in
+                            the keyword analysis (see 6.3.3 ), this once more points to a different
+                            debating style of female MPs. This is in line with related work where it
+                            has been found that women tend to employ more language features such as
+                            hedges, politer forms and tag questions (<ref target="#Coates.1997"
+                                >Coates, 1997</ref>), more intensifiers and adjectives, especially
+                            evaluative ones (<ref target="#Poynton.1989">Poynton, 1989</ref>) and
+                            more personal pronouns than men, whose language includes more numbers,
+                            articles and prepositions (<ref target="#Newman.2008">Newman et al.,
+                                2008</ref>).</p>
+                    </div>
+                </div>
+            </div>
+            <div type="chapter" xml:id="ch5">
+                <head xml:id="head-50">Conclusions</head>
+                <p xml:id="p-87">The aim of this tutorial was to demonstrate the potential of
+                    linguistic corpora and corpus analysis techniques for the analysis of
+                    socio-cultural phenomena and trends observed through language use in specialized
+                    discourse. We have shown how methods of corpus linguistics enable quantitative
+                    as well as qualitative observations that go beyond the researcher’s intuition,
+                    and thus offer greater transparency, objectivity, reliability and replicability,
+                    which are also becoming increasingly important in data-driven humanities and
+                    social science research.</p>
+                <p xml:id="p-88">The contribution of this tutorial is three-fold. First, we have
+                    demonstrated the importance of understanding the content and structure of a
+                    research dataset in order to be able to maximize its potential for our research.
+                    Second, we have showcased how a set of standard corpus analysis techniques can
+                    be utilized well beyond quantification only and simple corpus queries. Instead,
+                    we have systematically used the output provided by the concordancer as a
+                    starting point for a detailed qualitative manual analysis that carefully
+                    situates the results in the relevant socio-linguistic context. Last but not
+                    least, we have situated the tutorial in a real-life research setting,
+                    demonstrating the application of common corpus analysis techniques to tackle a
+                    set of trending research questions in humanities and social science
+                    research.</p>
+                <p xml:id="p-89">While the tutorial is based on the corpus of Slovenian
+                    parliamentary debates, students and scholars are strongly encouraged to
+                    replicate the analyses using parliamentary corpora for other languages, thereby
+                    contributing to the multilingual, trans-national and trans-cultural comparative
+                    research on parliamentary discourse. </p>
+            </div>
+        </body>
+        <back>
+            <div type="appendix" xml:id="acknw">
+                <head xml:id="head-51">Acknowledgements</head>
+                <p xml:id="p-90">The work described in this paper was funded by CLARIN.SI – the
+                    Slovene national node of the European Common Language Resources and Technology
+                    Infrastructure CLARIN, the ARRS P6-0215 research program (Slovene language –
+                    basic, contrastive, and applied studies) and the H2020 project SSHOC – Social
+                    Sciences &amp; Humanities Open Cloud (GA No. 823782). We would also like to
+                    thank Prof. Dr. Milica Antić Gaber, Assist. Prof. Dr. Irena Selišnik, Prof. Dr.
+                    Cornelia Ilie, Tjaša Cankar, Mladen Zobec and Ruben Ros for their thoughtful
+                    comments. </p>
+            </div>
+            <div type="bibliogr" xml:id="bibl">
+                <head xml:id="head-52">References</head>
+                <listBibl xml:id="listBibl-1">
+                    <bibl xml:id="Alasuutari.2018">Alasuutari, P., Rautalin, M., &amp; Tyrkkö, J.
+                        (2018). The Rise of the Idea of Model in Policymaking: The case of the
+                        British parliament, 1803-2005. <hi rend="italic">European Journal of
+                            Sociology/Archives Européennes de Sociologie</hi>, <hi rend="italic"
+                            >59</hi>(3), pp. 341–363.</bibl>
+                    <bibl xml:id="AntićGaber.2003">Antić Gaber, M., &amp; Ilonszki, G. (2003). <hi
+                            rend="italic">Women in parliamentary politics: Hungarian and Slovene
+                            cases compared</hi>. Ljubljana: Peace Institute, Institute for
+                        Contemporary Social and Political Studies.</bibl>
+                    <bibl xml:id="AntićGaber.2017">Antić Gaber, M. &amp; Selišnik, I. (2017). <hi
+                            rend="italic">The Slovene version of a “fast track” to political
+                            equality</hi>. Teorija in Praksa, 54(2), pp. 337–354.</bibl>
+                    <bibl xml:id="Bäck.2014">Bäck, Hanna., Debus, Marc., &amp; Müller, Jochen.
+                        (2014). <hi rend="italic">Who Takes the Parliamentary Floor? The Role of
+                            Gender in Speech-making in the Swedish Riksdag.</hi> Political Research
+                        Quarterly, 67(3), pp. 504–518.</bibl>
+                    <bibl xml:id="Baker.2014">Baker, P. (2014). <hi rend="italic">Using corpora to
+                            analyze gender</hi>. London: Bloomsbury.</bibl>
+                    <bibl xml:id="Biber.2015">Biber, D., &amp; Reppen, R. (2015). <hi rend="italic"
+                            >The Cambridge handbook of English corpus linguistics</hi>. Cambridge:
+                        Cambridge University Press.</bibl>
+                    <bibl xml:id="Biel.2018">Biel, Ł., Biernacka, A., &amp; Jopek-Bosiacka, A.
+                        (2018). Collocations of Terms in EU Competition Law: A Corpus Analysis of EU
+                        English Collocations. In: Marino et al. (Eds.): <hi rend="italic">Language
+                            and Law: The Role of Language and Translation in EU Competition
+                            Law.</hi> pp. 249–274. Cham: Springer.</bibl>
+                    <bibl xml:id="Bing.1998">Bing, J. M., &amp; Bergvall, V. L. (1998). The question
+                        of questions: Beyond binary thinking. In J. Coates (Ed.), <hi rend="italic"
+                            >Language and Gender: A Reader</hi> (Vol. 1), pp. 496–510. Oxford:
+                        Blackwell.</bibl>
+                    <bibl xml:id="Blaxill.2016">Blaxill, L., &amp; Beelen, K. (2016). A Feminized
+                        Language of Democracy? The Representation of Women at Westminster since
+                        1945. <hi rend="italic">Twentieth Century British History</hi>, 27(3), pp.
+                        412–449 .</bibl>
+                    <bibl xml:id="Coates.1997">Coates, Jennifer. (1997). <hi rend="italic">Women,
+                            men and language: A sociolinguistic account of gender differences in
+                            language</hi>. London: Longman.</bibl>
+                    <bibl xml:id="Demmen.2018">Demmen, J., Jeffries, L., &amp; Walker, B. (2018).
+                        Charting the semantics of labour relations in House of Commons debates
+                        spanning two hundred years. In: Kranert, M. and Horan, G. (eds.): <hi
+                            rend="italic">Doing Politics: Discursivity, Performativity and Mediation
+                            in Political Discourse</hi>, <hi rend="italic">80</hi>, pp.
+                        81–104.</bibl>
+                    <bibl xml:id="Eckert.2013">Eckert, P., &amp; McConnell-Ginet, S. (2013). <hi
+                            rend="italic">Language and gender</hi>. Cambridge: Cambridge University
+                        Press.</bibl>
+                    <bibl xml:id="Goddard.2015">Goddard, A., &amp; Patterson, L. M. (2015). <hi
+                            rend="italic">Language and gender</hi>. London: Routledge.</bibl>
+                    <bibl xml:id="Hansen.2018">Hansen, D. H., Navarretta, C., &amp; Offersgaard, L.
+                        (2018). A Pilot Gender Study of the Danish Parliament Corpus. <hi
+                            rend="italic">Proceedings of the ParlaClarin Workshop at the Eleventh
+                            International Conference on Language Resources and Evaluation: (LREC
+                            2018)</hi>. Paris: European Language Resources Association.</bibl>
+                    <bibl xml:id="Ilie.2013">Ilie, C. (2013). Gendering confrontational rhetoric:
+                        Discursive disorder in the British and Swedish parliaments. Democratization,
+                        20(3), 501–521.</bibl>
+                    <bibl xml:id="Ilie.2017">Ilie, C. (2017). Parliamentary debates. In R. Wodak
+                        &amp; B. Forchtner (Eds.), The Routledge handbook of language and politics
+                        (pp. 309–325). Routledge.</bibl>
+                    <bibl xml:id="Jaworska.2018">Jaworska, S., &amp; Ryan, K. (2018). Gender and the
+                        language of pain in chronic and terminal illness: A corpus-based discourse
+                        analysis of patients’ narratives. <hi rend="italic">Social Science &amp;
+                            Medicine</hi>, <hi rend="italic">215</hi>, pp. 107–114.</bibl>
+                    <bibl xml:id="Karan.2016">Karan, M., Šnajder, J., Sirinic, D., &amp; Glavaš, G.
+                        (2016). Analysis of policy agendas: Lessons learned from automatic topic
+                        classification of Croatian political texts. <hi rend="italic">Proceedings of
+                            the 10th SIGHUM Workshop on Language Technology for Cultural Heritage,
+                            Social Sciences, and Humanities</hi>, Berlin, Germany, pp. 12–21.</bibl>
+                    <bibl xml:id="Kustec.2017">Kustec, L. S. (ur.) (2017). <hi rend="italic"
+                            >Poslanke Državnega zbora: Uradno in osebno od prvega do sedmega mandata
+                            (1992-2017)</hi>. Ljubljana: Državni zbor.</bibl>
+                    <bibl xml:id="Leijenaar.1997">Leijenaar, M. (1997). <hi rend="italic">How to
+                            create a gender balance in political decision-making: A guide to
+                            implementing policies for increasing the participation of women in
+                            political decision-making</hi>. Office for Official Publications of the
+                        European Communities.</bibl>
+                    <bibl xml:id="Litosseliti.2006">Litosseliti, L. (2006). <hi rend="italic">Gender
+                            and Language: Theory and Practice</hi>. London: Hodder Arnold. </bibl>
+                    <bibl xml:id="Marshall.2000">Marshall, C. (2000). Policy discourse analysis:
+                        Negotiating gender equity. <hi rend="italic">Journal of Education
+                            Policy</hi>, <hi rend="italic">15</hi>(2), pp. 125–156.</bibl>
+                    <bibl xml:id="McEnery.2011">McEnery, T., &amp; Hardie, A. (2011). <hi
+                            rend="italic">Corpus linguistics: Method, theory and practice</hi>.
+                        Cambridge: Cambridge University Press.</bibl>
+                    <bibl xml:id="Mensah.2018">Mensah, E. O., &amp; Wood, S. F. (2018).
+                        Articulations of feminine voices in Ghana’s parliament: A study of the
+                        Hansard from 2010-2011. <hi rend="italic">AFRREV LALIGENS: An International
+                            Journal of Language, Literature and Gender Studies</hi>, <hi
+                            rend="italic">7</hi>(2), pp. 61–77.</bibl>
+                    <bibl xml:id="Mollin.2007">Mollin, S. (2007). The Hansard hazard: Gauging the
+                        accuracy of British parliamentary transcripts. <hi rend="italic"
+                            >Corpora</hi>, 2(2), pp. 187–210.</bibl>
+                    <bibl xml:id="Nanni.2018">Nanni, F., Osman, M., Cheng, Y.-R., Ponzetto, S. P.,
+                        &amp; Dietz, L. (2018). UKParl: A Semantified and Topically Organized Corpus
+                        of Political Speeches. In D. Fišer &amp; F. de Jong (eds.), <hi
+                            rend="italic">Proceedings of the Eleventh International Conference on
+                            Language Resources and Evaluation (LREC 2018), </hi>Miyazaki, Japan, pp.
+                        29–32.</bibl>
+                    <bibl xml:id="Newman.2008">Newman, M. L., Groom, C. J., Handelman, L. D., &amp;
+                        Pennebaker, J. W. (2008). Gender differences in language use: An analysis of
+                        14,000 text samples. <hi rend="italic">Discourse Processes</hi>, <hi
+                            rend="italic">45</hi>(3), pp. 211–236.</bibl>
+                    <bibl xml:id="Osborn.2012">Osborn, T. L. (2012). <hi rend="italic">How women
+                            represent women: Political parties, gender and representation in the
+                            state legislatures</hi>. Oxford: Oxford University Press.</bibl>
+                    <bibl xml:id="Pančur.2020">Pančur, A., Erjavec, T., Ojsteršek, M., Šorn, M.,
+                        &amp; Blaj Hribar, N. (2020). <hi rend="italic">Slovenian parliamentary
+                            corpus (1990-2018) siParl 2.0</hi>. Slovenian language resource
+                        repository CLARIN.SI.</bibl>
+                    <bibl xml:id="Poynton.1989">Poynton, C. (1989). <hi rend="italic">Language and
+                            gender: Making the difference</hi>. Oxford: Oxford University
+                        Press.</bibl>
+                    <bibl xml:id="Rix.2014">Rix, K. (2014). ‘Whatever Passed in Parliament Ought to
+                        be Communicated to the Public’: Reporting the Proceedings of the Reformed C
+                        ommons, 1833–50. <hi rend="italic">Parliamentary History</hi>, <hi
+                            rend="italic">33</hi>(3), pp. 453–474.</bibl>
+                    <bibl xml:id="Wängnerud.1996">Wängnerud, L. (1996). Intressen kontra
+                        stereotyper. Varför finns det kvinnliga och manliga politikområden i
+                        riksdagen? <hi rend="italic">Statsvetenskaplig Tidskrift</hi>, <hi
+                            rend="italic">99</hi>(2), pp. 129–149.</bibl>
+                    <bibl xml:id="Wodak.2007">Wodak, R. (2007). Pragmatics and Critical Discourse
+                        Analysis: A cross-disciplinary inquiry. <hi rend="italic">Pragmatics &amp;
+                            Cognition</hi>, <hi rend="italic">15</hi>, pp. 203–225.</bibl>
+                    <bibl xml:id="Wolbrecht.2002">Wolbrecht, C. (2002). <hi rend="italic">Female
+                            legislators and the women’s rights agenda: From feminine mystique to
+                            feminist era</hi>. In Rosenthal, C. S. (ed.): Women transforming
+                        Congress. Norman: University of Oklahoma Press. 170–197.</bibl>
+                </listBibl>
+            </div>
+            <div type="summary" xml:id="summary">
+                <head xml:id="head-53">Abstract</head>
+                <p xml:id="p-91">This tutorial shows how corpora can be used to investigate language
+                    use and communication practices in a specialized socio-cultural context of
+                    political discourse in order to explore socio-cultural phenomena. We will
+                    demonstrate the potential of a richly annotated diachronic corpus of Slovenian
+                    parliamentary debates for investigating the characteristics and dynamics of the
+                    representation of women and their language use in the Slovenian Parliament.</p>
+            </div>
+        </back>
+    </text>
+</TEI>
