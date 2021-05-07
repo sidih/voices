@@ -19,4 +19,8 @@
         <xsl:apply-templates/>
     </xsl:template>
     
+    <xsl:template match="tei:anchor">
+        
+    </xsl:template>
+    
 </xsl:stylesheet>

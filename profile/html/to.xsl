@@ -69,6 +69,9 @@
    
    <xsl:param name="documentationLanguage">en</xsl:param>
    
+   <xsl:param name="languages-locale">true</xsl:param>
+   <xsl:param name="languages-locale-primary">en</xsl:param>
+   
    <!-- odstranim pri spodnjih param true -->
    <xsl:param name="numberFigures"></xsl:param>
    <xsl:param name="numberFrontTables"></xsl:param>
@@ -184,6 +187,16 @@
             </span>
          </xsl:otherwise>
       </xsl:choose>
+   </xsl:template>
+   
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc>video prikaz</desc>
+   </doc>
+   <xsl:template match="tei:graphic[@mimeType='video/mp4']">
+      <video width="420" height="345" controls="">
+         <source src="{@url}" type="video/mp4"/>
+         Your browser does not support the video tag.
+      </video>
    </xsl:template>
    
 </xsl:stylesheet>

@@ -3,9 +3,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Voices of the Parliament</title>
+                <title xml:lang="en">Voices of the Parliament</title>
+                <title xml:lang="sl">Korpusni pristop k raziskovanju parlamentarnega
+                    diskurza</title>
                 <author>Fišer, Darja</author>
                 <author>Pahor de Maiti, Kristina</author>
+                <respStmt>
+                    <resp>Kodiranje TEI in postavitev na splet</resp>
+                    <name>Andrej Pančur</name>
+                </respStmt>
             </titleStmt>
             <editionStmt>
                 <edition>0.9</edition>
@@ -25,7 +31,7 @@
                 <idno type="ISBN"/>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <p>No source, born digital.</p>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -34,6 +40,7 @@
             <titlePage>
                 <docTitle>
                     <titlePart>Voices of the Parliament</titlePart>
+                    <titlePart>Korpusni pristop k raziskovanju parlamentarnega diskurza</titlePart>
                 </docTitle>
                 <docAuthor>Darja Fišer</docAuthor>
                 <docAuthor>Kristina Pahor de Maiti</docAuthor>
@@ -43,22 +50,31 @@
                     <docDate>2021</docDate>
                 </docImprint>
             </titlePage>
-            <divGen type="cip" xml:id="cip">
+            <divGen type="cip" xml:id="cip" xml:lang="en" corresp="#cip-sl">
                 <head>Colophon</head>
             </divGen>
-            <divGen type="teiHeader" xml:id="teiHeader">
-                <head>TEI header</head>
+            <divGen type="cip" xml:id="cip-sl" xml:lang="sl" corresp="#cip">
+                <head>Kolofon</head>
             </divGen>
-            <divGen type="toc" xml:id="toc">
+            <divGen type="toc" xml:id="toc" xml:lang="en" corresp="#sl-toc">
                 <head>Table of Contents</head>
             </divGen>
-            <divGen type="toc" xml:id="images">
+            <divGen type="toc" xml:id="sl-toc" xml:lang="sl" corresp="#toc">
+                <head>Kazalo vsebine</head>
+            </divGen>
+            <divGen type="toc" xml:id="images" xml:lang="en" corresp="#sl-images">
                 <head>List of Images</head>
             </divGen>
-            <divGen type="search" xml:id="search">
+            <divGen type="toc" xml:id="sl-images" xml:lang="sl" corresp="#images">
+                <head>Seznam slik</head>
+            </divGen>
+            <divGen type="search" xml:id="search" xml:lang="en" corresp="#sl-search">
                 <head>Search</head>
             </divGen>
-            <div type="preface" xml:id="preface1">
+            <divGen type="search" xml:id="sl-search" xml:lang="sl" corresp="#search">
+                <head>Iskanje</head>
+            </divGen>
+            <div type="preface" xml:id="preface1" xml:lang="en" corresp="#preface1-sl">
                 <head xml:id="head-6">Introduction</head>
                 <p xml:id="p-4">Parliaments represent the main fora for political debate that shapes
                     legislation which directly impacts our everyday lives. Parliamentary discourse
@@ -102,7 +118,49 @@
                     languages, we invite you to explore a parliamentary corpus of your choice from
                     those <ref target="introduction">available through CLARIN</ref>.</p>
             </div>
-            <div type="preface" xml:id="preface2">
+            <div type="preface" xml:id="preface1-sl" xml:lang="sl" corresp="#preface1">
+                <head xml:id="sl-head-10">Uvod<note place="foot" xml:id="ftn1-sl" n="1">Avtorica
+                            <ref
+                            target="https://www.clarin.si/noske/run.cgi/first?iquery=Prvi%C4%8D+%2C%09sem+politi%C4%8Darka%09in+ne+politik&amp;corpname=siparl20&amp;corpus-search-form=true"
+                            >naslovne izjave</ref> z redne seje 4. 6. 2003 je Cvetka Zalokar Oražem
+                        (LDS).</note>
+                </head>
+                <p xml:id="sl-p-8">V parlamentu se odvija glavnina političnih razprav, na podlagi
+                    katerih se oblikuje zakonodaja, ki nato neposredno vpliva na vsakdanje življenje
+                    vseh prebivalcev in prebivalk določene države. V parlamentarnem diskurzu se tudi
+                    odsevajo politični programi, ideološka stališča in institucionalne vloge poslank
+                    in poslancev, ki zastopajo interese državljanov in državljank (<ref
+                        target="#Ilie.2017.sl">Ilie, 2017</ref>). Zato je parlamentarni govor vedno
+                    aktualen predmet družboslovnih in humanističnih raziskav.</p>
+                <p xml:id="sl-p-9">Zapisi parlamentarnih sej so vse pogosteje dostopni v digitalni
+                    obliki, kar poenostavlja njihovo združevanje v strukturirane jezikovne vire
+                    oziroma korpuse. Ti so pogosto na voljo prek namenskih spletnih orodij, ki jih
+                    imenujemo konkordančniki. Raziskovalci jih uporabljajo pri različnih jezikovnih,
+                    slogovnih, kulturnih, družbenih in političnih raziskavah (<ref
+                        target="#Biel.2018.sl">Biel idr., 2018</ref>; <ref
+                        target="#Jaworska.2018.sl">Jaworska in Ryan, 2018</ref>).</p>
+                <p xml:id="sl-p-10">Medtem ko so v jezikoslovju metode korpusne analize že dodobra
+                    uveljavljene (<ref target="#Biber.2015.sl">Biber in Reppen, 2015</ref>; <ref
+                        target="#McEnery.2011.sl">McEnery in Hardie, 2011</ref>) in se med drugim
+                    pogosto uporabljajo tudi za sociolingvistično proučevanje spolno zaznamovanega
+                    jezika (<ref target="#Baker.2014.sl">Baker, 2014</ref>), so v drugih
+                    humanističnih in družboslovnih vedah, kjer prav tako številne raziskave
+                    temeljijo na jezikovnem gradivu, še razmeroma redke. V tem učnem gradivu zato
+                    prikazujemo potencial bogato označenih jezikovnih korpusov in konkordančnikov za
+                    raziskave družbenokulturnih pojavov, ki se odražajo v rabi jezika. Za
+                    oblikovanje natančnih kvantitativnih poizvedb o jezikovnih podatkih uporabimo
+                    dragocene metapodatke o poslankah in poslancih in njihovih govorih, rezultate pa
+                    nato še nadgradimo z ročno kvalitativno analizo, s katero pridobimo podroben
+                    vpogled v kontekst in zagotovimo ustrezno interpretacijo.</p>
+                <p xml:id="sl-p-11">S tem učnim gradivom želimo prikazati možnosti, ki jih
+                    raziskovalcem brez programerskih znanj ponujajo obsežne zbirke parlamentarnih
+                    razprav in konkordančniki. To učno gradivo je primerno tudi za uporabnike brez
+                    predhodnih izkušenj z uporabo jezikovnih korpusov in orodij za iskanje po njih.
+                    Gradivo temelji na <ref target="http://hdl.handle.net/11356/1300">korpusu siParl
+                        2.0</ref>, ki vsebuje parlamentarne razprave Državnega zbora Republike
+                    Slovenije od leta 1990 do 2018.</p>
+            </div>
+            <div type="preface" xml:id="preface2" xml:lang="en" corresp="#preface2-sl">
                 <head xml:id="head-7">Instructions for use</head>
                 <p xml:id="p-8">This tutorial starts with a brief introduction to corpora and corpus
                     analysis, followed by an introduction of the characteristics of specialized
@@ -160,11 +218,76 @@
                     ensure a comprehensive understanding and independent use of the demonstrated
                     analytical procedures and adequate interpretation of the results.</p>
             </div>
+            <div type="preface" xml:id="preface2-sl" xml:lang="sl" corresp="#preface2">
+                <head xml:id="sl-head-12">Kako uporabljati učno gradivo</head>
+                <p xml:id="sl-p-18">V tem gradivu najprej predstavimo osnove korpusnega jezikoslovja
+                    in korpusne analize, čemur sledi uvod v značilnosti specializiranih korpusov
+                    parlamentarnih razprav in jedrnat pregled raziskav s področja jezika in spola.
+                    Drugi del učnega gradiva je namenjen praktičnemu prikazu najbolj razširjenih
+                    tehnik korpusne analize, kot so konkordančni nizi, frekvenčni seznami, ključne
+                    besede in kolokacije. Predstavljene tehnike uporabimo za raziskovanje
+                    zastopanosti žensk v slovenskem parlamentu, njihovih interesnih področij in
+                    govora o ženskah, pri čemer v analizo vključimo primerjavo z značilnostmi, ki
+                    veljajo za poslance in skozi čas.</p>
+                <p xml:id="sl-p-19">Vsi viri in orodja, uporabljeni v tem gradivu, so brezplačno na
+                    voljo v spletu. Za iskanje po korpusu uporabljamo <ref
+                        target="https://nlp.fi.muni.cz/trac/noske">NoSketch Engine</ref>, za dodatne
+                    ročne analize in predstavitve rezultatov pa enega od urejevalnikov preglednic
+                    (npr. <ref target="https://www.google.com/sheets/about/">Google
+                        Spreadsheet</ref> ali <ref target="https://products.office.com/en/excel">MS
+                        Excel</ref>).</p>
+                <note rend="bluebox" xml:id="sl-note-3">
+                    <p>Besedila v modrih okvirčkih vsebujejo razlago uporabljenih funkcij in
+                        povezavo do videoposnetka, ki prikazuje, kako relevantno funkcijo poženemo v
+                        konkordančniku. Poleg tega so v okvirčkih tudi povezave do rezultatov v
+                        konkordančniku, kar bralkam in bralcem omogoča, da ponovijo analizo na
+                        svojem računalniku.</p>
+                </note>
+                <p xml:id="sl-p-21">Iskanje po korpusu siParl 2.0 je mogoče prek konkordančnikov
+                        <ref target="https://www.clarin.si/noske/">NoSketch Engine</ref> in <ref
+                        target="https://www.clarin.si/kontext/first_form?corpname=siparl20"
+                        >KonText</ref> na spletnem mestu <ref
+                        target="http://www.clarin.si/info/o-projektu/">CLARIN.SI</ref> – slovenski
+                    center v okviru Evropske raziskovalne infrastrukture za jezikovne vire in
+                    tehnologije <ref target="https://www.clarin.eu/">CLARIN ERIC</ref>
+                    <hi rend="Hyperlink">
+                        <seg>.</seg>
+                    </hi> Prek repozitorija CLARIN.SI je korpus siParl 2.0 mogoče tudi <ref
+                        target="https://www.clarin.si/repository/xmlui/handle/11356/1300?locale-attribute=sl"
+                        >prenesti</ref> v računalnik in ga nato analizirati z drugimi korpusnimi
+                    orodji ali orodji za rudarjenje besedil<hi rend="annotation_reference">
+                        <seg>, </seg>
+                    </hi>npr. z orodjem <ref
+                        target="https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc"
+                        >za korpusno analizo Antconc</ref> ali s postopki za <ref
+                        target="https://programminghistorian.org/en/lessons/basic-text-processing-in-r"
+                        >osnovno obdelavo besedil v jeziku R</ref>.</p>
+                <p xml:id="sl-p-22">To gradivo je posodobljena različica <ref
+                        target="https://www.modernlanguagesopen.org/articles/10.3828/mlo.v0i0.295/"
+                        >izvirnega učnega gradiva</ref>, v katerem je bila uporabljena prva
+                    različica korpusa siParl. Korpus siParl 2.0 v primerjavi s korpusom <ref
+                        target="http://hdl.handle.net/11356/1236">siParl 1.0</ref> vsebuje bogatejše
+                    metapodatke o govorkah in govorcih ter sejah, kar omogoča razlikovanje med
+                    poslankami in poslanci ter drugimi govorkami in govorci v parlamentu. Poleg tega
+                    govori vsebujejo oznake parlamentarnih mandatov, kar omogoča lažjo primerjalno
+                    analizo elementov med posameznimi parlamentarnimi sklici. Druga različica
+                    korpusa vsebuje tudi dodatne ravni jezikoslovnih oznak, kot so skladenjske
+                    oznake in imenske identitete, ki pa jih v naši analizi ne bomo uporabljali, zato
+                    jih v gradivu ne obravnavamo.</p>
+                <p xml:id="sl-p-23">Če želite tehnike korpusne analize takoj preizkusiti na
+                    praktičnih primerih, nadaljujte z nalogami v razdelku . Naslednji trije razdelki
+                    (, in ) so namreč namenjeni poljudnemu pregledu teoretičnih osnov in
+                    najpomembnejše terminologije. Čeprav nalogam v 6. razdelku lahko sledite brez
+                    predhodnega branja omenjenih treh razdelkov, vas spodbujamo, da se z njihovo
+                    vsebino na neki točki seznanite, saj predstavljene osnove zagotavljajo celovito
+                    razumevanje in samostojno rabo analitičnih postopkov ter ustrezno interpretacijo
+                    rezultatov.</p>
+            </div>
         </front>
         <body>
-            <div type="chapter" xml:id="ch1">
+            <div type="chapter" xml:id="ch3" xml:lang="en" corresp="#ch3-sl">
                 <head xml:id="head-8">Corpora and concordancers</head>
-                <div type="subchapter" xml:id="ch1-sub1">
+                <div type="subchapter" xml:id="ch3.1">
                     <head xml:id="head-9">Corpora</head>
                     <p xml:id="p-14">
                         <ref target="https://en.wikipedia.org/wiki/Text_corpus">Language
@@ -205,7 +328,7 @@
                             corpus.</head>
                     </figure>
                 </div>
-                <div type="subchapter" xml:id="ch1-sub2">
+                <div type="subchapter" xml:id="ch3.2">
                     <head xml:id="head-11">Concordancers</head>
                     <p xml:id="p-16">Corpora are queried with specialized corpus analysis tools,
                         also called <ref target="http://corpora.lancs.ac.uk/clmtp/2-conc.php"
@@ -270,7 +393,114 @@
                     </p>
                 </div>
             </div>
-            <div type="chapter" xml:id="ch2">
+            <div type="chapter" xml:id="ch3-sl" xml:lang="sl" corresp="#ch3">
+                <head xml:id="sl-head-17">Korpusi in konkordančniki</head>
+                <div type="subchapter" xml:id="ch3.1-sl">
+                    <head xml:id="sl-head-18">Korpusi</head>
+                    <p xml:id="sl-p-29">
+                        <ref target="https://sl.wikipedia.org/wiki/Besedilni_korpus">Besedilni
+                            korpusi</ref> so obsežne zbirke skrbno izbranih strojno berljivih
+                        jezikovnih podatkov, ki jih lahko uporabimo za pripravo jezikovnih opisov
+                        ali za preverjanje hipotez o jeziku. Vendar pa so korpusi veliko več kot le
+                        zbirke besedil v elektronski obliki. Oblikovani so v enem od standardnih
+                        formatov, kot je razširljivi označevalni jezik oziroma <ref
+                            target="https://www.w3schools.com/xml/">XML</ref>, in kodirani v skladu
+                        z vnaprej določeno, a prilagodljivo shemo za predstavitev besedil v
+                        digitalni obliki, med katerimi je v jezikoslovju in digitalni humanistiki
+                        najbolj uveljavljen standard <ref target="https://tei-c.org/">TEI</ref>.</p>
+                    <p xml:id="sl-p-30">Osnovna enota korpusa je <ref
+                            target="https://www.sketchengine.eu/my_keywords/token/">pojavnica</ref>,
+                        ki jo dobimo z avtomatskim postopkom tokenizacije, pri katerem je izbrano
+                        besedilo razdeljeno na manjše enote, v našem primeru na besede. Običajno se
+                        pojavnice določajo glede na presledke med besedami. Za bolj poglobljeno
+                        analizo so besedila v korpusu jezikoslovno označena. Najosnovnejši obliki
+                        jezikoslovnega označevanja sta oblikoskladenjsko označevanje, s katerim
+                        besedam v besedilih pripišemo besedno vrsto (npr. glagol), in <ref
+                            target="https://en.wikipedia.org/wiki/Lemmatisation">lematizacija</ref>,
+                        pri katerem pojavnicam (besednim oblikam v različnih sklonih) pripišemo
+                        osnovno slovarsko obliko oz. lemo. Lematizacija je pomembna zlasti za
+                        korpuse morfološko bogatih jezikov, kot je slovenščina. Poleg jezikoslovnih
+                        oznak so v korpus dodani tudi metapodatki o besedilu (npr. datum, vrsta) in
+                        govorcu (npr. ime, spol), ki so pomembni za kontekstualizacijo rezultatov,
+                        vendar se lahko uporabljajo tudi za izvajanje natančnejših korpusnih
+                        poizvedb.</p>
+                    <figure xml:id="figure1-sl">
+                        <graphic url="media/figure1-sl.jpg"/>
+                        <head>Slika 1. Izvleček iz jezikoslovno označenega korpusa v zapisu
+                            TEI.</head>
+                    </figure>
+                </div>
+                <div type="subchapter" xml:id="ch3.2-sl">
+                    <head xml:id="sl-head-20">Konkordančniki</head>
+                    <p xml:id="sl-p-31">Po korpusih iščemo s specializiranimi orodji, ki se
+                        imenujejo <ref target="http://corpora.lancs.ac.uk/clmtp/2-conc.php"
+                            >konkordančniki</ref>. Nekatere konkordančnike moramo pred uporabo
+                        namestiti na osebni računalnik, drugi pa so dostopni neposredno prek spleta.
+                        Uporabljamo jih za iskanje vseh pojavitev pojavnic v korpusu, ki ustrezajo
+                        našemu iskalnemu pogoju. Na voljo je veliko konkordančnikov, ki omogočajo
+                        podobne funkcije (glej npr. <ref
+                            target="http://martinweisser.org/corpora_site/concordancers.html">ta
+                            podrobni seznam</ref>), med najbolj priljubljenimi pa so <ref
+                            target="http://www.laurenceanthony.net/software/antconc/">AntConc</ref>
+                        (brezplačen) in <ref target="http://www.lexically.net/wordsmith/index.html"
+                            >WordSmith Tools</ref> (potreben je nakup licence), ki ju je mogoče
+                        uporabljati brez internetne povezave in ne vsebujeta predhodno naloženih
+                        korpusov, ter spletna konkordančnika <ref
+                            target="https://www.english-corpora.org/">BYU</ref> (za polno delovanje
+                        je potrebna brezplačna registracija) in <ref
+                            target="https://www.sketchengine.eu/documentation/corpus-querying/"
+                            >SketchEngine</ref> (brezplačna akademska licenca), ki vsebujeta
+                        številne predhodno naložene korpuse za različne jezike. SketchEngine omogoča
+                        tudi ustvarjanje in označevanje lastnih korpusov.</p>
+                    <p xml:id="sl-p-32">Večina sodobnih konkordančnikov omogoča naslednje funkcije,
+                        ki jih bomo uporabili tudi v tem gradivu:</p>
+                    <list type="unordered" xml:id="sl-list-2">
+                        <item>
+                            <ref
+                                target="https://www.sketchengine.eu/guide/concordance-a-tool-to-search-a-corpus/">
+                                <hi rend="bold">Konkordančni niz</hi>
+                            </ref> prikazuje vse zadetke iskane besede ali niza besed v korpusu ter
+                            njihovo sobesedilo. Konkordance, posamezne enote konkordančnega niza, so
+                            lahko razvrščene naključno ali glede na iskano besedo oziroma niz besed.
+                            Razvrstiti jih je mogoče tudi glede na levi ali desni kontekst, kar
+                            izpostavi značilne vzorce, v katerih se iskana beseda oziroma niz besed
+                            pojavlja. </item>
+                        <item>
+                            <ref target="https://www.sketchengine.eu/user-guide/word-list/">
+                                <hi rend="bold">Frekvenčni seznami</hi>
+                            </ref> prikazujejo vse zadetke za izbrano korpusno poizvedbo, ki je
+                            lahko v obliki besede/besedne zveze ali določenega nabora metapodatkov.
+                            Zadetki so lahko razvrščeni po abecedi ali pogostosti, pripisan pa jim
+                            je tudi podatek o njihovi frekvenci. V nasprotju s konkordančnim nizom
+                            besedni seznami ne vsebujejo sobesedila zadetkov.</item>
+                        <item>
+                            <ref
+                                target="https://www.sketchengine.eu/guide/keywords-and-term-extraction/">
+                                <hi rend="bold">Seznami ključnih besed</hi>
+                            </ref> izpostavljajo besede, ki v izbranem korpusu izstopajo v
+                            primerjavi z izbranim referenčnim korpusom.</item>
+                        <item>
+                            <ref target="https://www.sketchengine.eu/my_keywords/collocation/">
+                                <hi rend="bold">Seznami kolokacij</hi>
+                            </ref> vsebujejo nize besed, ki se v kombinaciji z iskano besedo
+                            pojavljajo pogosteje od naključnega.</item>
+                    </list>
+                    <p xml:id="sl-p-33">Na voljo so že številna navodila za uporabo konkordančnikov
+                        (npr. <ref target="https://www.sketchengine.eu/quick-start-guide/"
+                            >SketchEngine Quick Start Guide</ref>) in tečaji korpusnega jezikoslovja
+                        (npr. <ref target="https://www.futurelearn.com/courses/corpus-linguistics"
+                            >Corpus Linguistics: Method, Analysis, Interpretation</ref>
+                        <hi rend="Hyperlink">
+                            <seg>)</seg>
+                        </hi>. V tem gradivu se osredotočamo na prikaz uporabe konkordančnika
+                        NoSketchEngine in specializiranega korpusa za iskanje odgovorov na konkretna
+                        raziskovalna vprašanja na metodološko ustrezen način. Gradivo je namenjeno
+                        študentkam in študentom ter raziskovalkam in raziskovalcem s področja
+                        (digitalne) humanistike in družboslovja, ki jih zanima raziskovanje
+                        sociokulturnih pojavov prek jezikovne rabe.</p>
+                </div>
+            </div>
+            <div type="chapter" xml:id="ch4" xml:lang="en" corresp="#ch4-sl">
                 <head xml:id="head-12">Parliamentary records</head>
                 <p xml:id="p-19">Parliamentary corpora are of different sizes and contain data of
                     different modalities (written, spoken, gestural) and time periods in one or
@@ -291,7 +521,7 @@
                     the context on the studied phenomenon (see <ref target="#Alasuutari.2018"
                         >Alasuutari et al., 2018</ref>; <ref target="#Demmen.2018">Demmen et al.,
                         2018</ref>). </p>
-                <div type="subchapter" xml:id="ch2-sub1">
+                <div type="subchapter" xml:id="ch4.1">
                     <head xml:id="head-13">Parliamentary discourse</head>
                     <p xml:id="p-20">Parliaments are institutions governed by specific rules and
                         conventions (see for example <ref target="https://erskinemay.parliament.uk/"
@@ -309,7 +539,7 @@
                         investigated, it is particularly important to understand the circumstances
                         it was produced in.</p>
                 </div>
-                <div type="subchapter" xml:id="ch2-sub2">
+                <div type="subchapter" xml:id="ch4.2">
                     <head xml:id="head-14">Faithfulness of the records</head>
                     <p xml:id="p-21">It should be noted that officially released records of
                         parliamentary debates are not 100% verbatim <ref
@@ -350,7 +580,7 @@
                             from the EU Parliament.</head>
                     </figure>
                 </div>
-                <div type="subchapter" xml:id="ch2-sub3">
+                <div type="subchapter" xml:id="ch4.3">
                     <head xml:id="head-16">Know your research dataset</head>
                     <p xml:id="p-23">In order to make the best use of any given corpus, to formulate
                         search queries correctly and interpret the results appropriately, it is
@@ -374,7 +604,112 @@
                             records</ref>.</p>
                 </div>
             </div>
-            <div type="chapter" xml:id="ch3">
+            <div type="chapter" xml:id="ch4-sl" xml:lang="sl" corresp="#ch4">
+                <head xml:id="sl-head-26">Zapisi parlamentarnih sej</head>
+                <p xml:id="sl-p-39">Parlamentarni korpusi so različnih velikosti in vsebujejo
+                    podatke v različnih modalitetah (pisni, govorjeni, gestikulacija), iz različnih
+                    časovnih obdobij in v enem ali več jezikih. Čeprav so parlamentarne razprave
+                    večinoma dostopne v besedilni obliki (npr. <ref
+                        target="https://repository.clarin.dk/repository/xmlui/handle/20.500.12115/8"
+                        >korpus razprav iz danskega parlamenta</ref>), so včasih dostopne tudi kot
+                    zvočni posnetki ali videoposnetki skupaj s transkripcijami (npr. <ref
+                        target="https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0005-CF9C-4"
+                        >korpus razprav iz češkega parlamenta</ref>). Parlamentarni korpusi kot <ref
+                        target="https://en.wikipedia.org/wiki/Synchrony_and_diachrony"
+                        >diahroni</ref> viri nam omogočajo poglobljeno raziskovanje jezikovnih in
+                    družbenih sprememb skozi čas. Večina parlamentarnih korpusov vsebuje bogate <ref
+                        target="https://sl.wikipedia.org/wiki/Metapodatek">metapodatke</ref> o
+                    govorih (npr. datum govora, trajanje govora, točka dnevnega reda, v kateri je
+                    bil govor podan) ali govorkah in govorcih (npr. spol, starost, izobrazba,
+                    politična pripadnost, institucionalna vloga), kar omogoča poglobljen vpogled v
+                    kontekst preučevanega pojava (glej <ref target="#Alasuutari.2018.sl">Alasuutari
+                        idr., 2018</ref>; <ref target="#Demmen.2018.sl">Demmen idr.,
+                    2018</ref>).</p>
+                <div type="subchapter" xml:id="ch4.1-sl">
+                    <head xml:id="sl-head-27">Parlamentarni diskurz</head>
+                    <p xml:id="sl-p-40">Parlament je institucija, za katero veljajo specifična
+                        pravila in konvencije, kar vpliva tudi na jezikovno rabo, začenši s pravili
+                        glede podeljevanja besede, naslavljanja itd. (glej npr. <ref
+                            target="http://www.pisrs.si/Pis.web/pregledPredpisa?id=POSL34">poslovnik
+                            državnega zbora RS</ref>). Ta pravila in konvencije so se izoblikovale v
+                        določenem družbenozgodovinskem okolju, zato niso v vseh parlamentih enake; v
+                        grškem parlamentu je na primer skakanje v besedo strogo prepovedano, medtem
+                        ko je v britanskem parlamentu prekinjanje govorcev pogosto in običajno ni
+                        sankcionirano (<ref target="#Ilie.2017.sl">Ilie, 2017</ref>). To je seveda
+                        treba upoštevati pri oblikovanju raziskovalnih vprašanj, izvedbi raziskave
+                        in interpretaciji rezultatov. Zato je pri raziskovanju te vrste <ref
+                            target="https://en.wikipedia.org/wiki/Discourse">diskurza </ref>še
+                        posebej pomembno, da dobro razumemo okoliščine, v katerih je nastal.</p>
+                </div>
+                <div type="subchapter" xml:id="ch4.2-sl">
+                    <head xml:id="sl-head-28">Zanesljivost sejnih zapisov</head>
+                    <p xml:id="sl-p-41">Uradno objavljeni sejni zapisi niso dobesedne <ref
+                            target="https://en.wikipedia.org/wiki/Transcription_(linguistics)"
+                            >transkripcije</ref>
+                        <hi rend="Hyperlink"/>parlamentarnih razprav, ampak zapisi v skladu z
+                        uveljavljenimi zapisovalnimi praksami institucije. Te prakse se razlikujejo
+                        med posameznimi državami in časovnimi obdobji. Med urejanjem zapisov
+                        običajno pride do izločanja značilnih prvin govorjenega jezika, lahko pa
+                        tudi do nekaterih drugih posegov, kot so izločanje očitnih jezikovnih ali
+                        vsebinskih napak, narečnih ali pogovornih izrazov ter žaljivega in
+                        vulgarnega jezika. Smernice za urejanje sejnih zapisov običajno žal niso
+                        javno objavljene, kar lahko bistveno oteži raziskovalno delo. Kritiko virov
+                        v parlamentarnem kontekstu podrobneje obravnavata <ref
+                            target="#Mollin.2007.sl">Molli (2007)</ref> in <ref
+                            target="#Rix.2014.sl">Rix (2014)</ref>. Drug pomemben vidik pri
+                        proučevanju parlamentarnega govora je, da so govori poslank in poslancev
+                        pogosto pripravljeni vnaprej, in sicer v pisni obliki, kar vpliva na njihove
+                        skladenjske in slogovne značilnosti. To sicer ne velja za vsa parlamentarna
+                        okolja, niti za vse vrste parlamentarnih nastopov (npr. interpelacije,
+                        obrazložitve glasu, poslanska vprašanja). Tudi te posebnosti je poleg
+                        družbenozgodovinskega konteksta treba vedno upoštevati pri oblikovanju
+                        raziskovalnih vprašanj, izvedbi raziskave in interpretaciji rezultatov.</p>
+                    <p xml:id="sl-p-42">Slika 2 prikazuje primerjavo uradnega zapisa govora <ref
+                            target="https://sl.wikipedia.org/wiki/Anja_Bah_%C5%BDibert">Anje Bah
+                            Žibert</ref>, poslanke Državnega zbora RS 2014–2018, <ref
+                            target="https://fotogalerija.dz-rs.si/datoteke/Publikacije/Sejni_zapisi_Drzavnega_zbora/2014-2018/2017_09_18_S_33.pdf"
+                            >s 33. seje Državnega zbora na temo predloga zakona o Prešernovi nagradi
+                            (18. točka dnevnega reda, str. 128)</ref> z dobesedno transkripcijo
+                        njenega govora, ki smo jo pripravili na podlagi <ref
+                            target="https://4d.rtvslo.si/arhiv/redne-seje-drzavnega-zbora/174491899"
+                            >videoposnetka seje (min. 5:00–7:33)</ref>. Že na prvi pogled se vidi,
+                        da uradni sejni zapisi DZ RS niso najboljši vir za preučevanje značilnosti
+                        spontanega govora, kot so napačni začetki, premori, raba mašil ali
+                        ponovitev.</p>
+                    <figure xml:id="figure2-sl">
+                        <graphic url="media/figure2-sl.jpg"/>
+                        <head>Slika 2. Primerjava uradnega sejnega zapisa in dobesedne transkripcije
+                            iz Državnega zbora RS.</head>
+                    </figure>
+                </div>
+                <div type="subchapter" xml:id="ch4.3-sl">
+                    <head xml:id="sl-head-30">Poznavanje raziskovalnih podatkov</head>
+                    <p xml:id="sl-p-43">Predpogoj za ustrezno oblikovanje raziskovalnih vprašanj,
+                        izvedbo raziskave in interpretacijo rezultatov, pa tudi za optimalno
+                        izkoriščanje vsega, kar raziskovalni podatki omogočajo, je, da se najprej
+                        podrobno seznanimo s tem, kaj izbrani korpus vsebuje, kako je bil zgrajen in
+                        označen ter kakšne so njegove omejitve. Ker niso vsi korpusi enako označeni
+                        , moramo vedno preveriti podrobnosti o izbranem korpusu. Te informacije so
+                        običajno na voljo na domači strani korpusa (npr. <ref
+                            target="http://www.chlg.ac.uk/helipad/">korpus historične nizke
+                            nemščine</ref>), v konkordančniku, prek katerega je korpus na voljo
+                        (npr. britanski parlamentarni korpus <ref
+                            target="https://www.english-corpora.org/hansard/">Hansard v
+                            konkordančniku Univerze Brigham Young</ref>), ali v repozitoriju, kjer
+                        je korpus arhiviran, (npr. hrvaški parlamentarni korpus <ref
+                            target="https://www.clarin.si/repository/xmlui/handle/11356/1209"
+                            >ParlaMeter-hr v repozitoriju CLARIN.SI</ref>). Več o kodiranju in
+                        označevanju parlamentarnih podatkov lahko preberete v izobraževalnem modulu
+                        o zbirkah parlamentarnih podatkov <ref
+                            target="https://training.parthenos-project.eu/sample-page/digital-humanities-research-questions-and-methods/researching-parliamentary-records-in-the-digital-humanities/working-with-parliamentary-corpora/"
+                            > Parthenos</ref>
+                        <hi rend="Hyperlink">
+                            <seg>.</seg>
+                        </hi>
+                    </p>
+                </div>
+            </div>
+            <div type="chapter" xml:id="ch5" xml:lang="en" corresp="#ch5-sl">
                 <head xml:id="head-17"> Language and gender</head>
                 <p xml:id="p-24">Differences between the language of men and women have been the
                     focus of much research in sociolinguistics, stylistics, rhetoric, gender
@@ -424,7 +759,53 @@
                     expect to see because we know the gender of the speaker (<ref
                         target="#Goddard.2015">Goddard and Patterson, 2015</ref>).</p>
             </div>
-            <div type="chapter" xml:id="ch4">
+            <div type="chapter" xml:id="ch5-sl" xml:lang="sl" corresp="#ch5">
+                <head xml:id="sl-head-32">Jezik in spol</head>
+                <p xml:id="sl-p-47">Razlike med jezikom moških in žensk so predmet številnih
+                    raziskav na področju sociolingvistike, stilistike, retorike, študij spola,
+                    medijskih študij in analize diskurza (glej <ref target="#Eckert.2013.sl">Eckert
+                        in McConnell-Ginet, 2013</ref>; <ref target="#Wodak.2007.sl">Wodak,
+                        2007</ref>). Rezultati kažejo, da so razlike majhne, a sistematične (<ref
+                        target="#Newman.2008.sl">Newman idr., 2008</ref>). Pri raziskavah politične
+                    komunikacije pa lahko opazimo, da se tradicionalno posvečajo predvsem diskurzu
+                    politikov, medtem ko je diskurz političark šele pred kratkim postal predmet
+                    raziskav (glej <ref target="#Marshall.2000.sl">Marshall, 2000</ref>).</p>
+                <p xml:id="sl-p-48">To je pomembno, ker so številni avtorji (<ref
+                        target="#AntićGaber.2003.sl">Antić Gaber in Ilonszki, 2003</ref>; <ref
+                        target="#Leijenaar.1997.sl">Leijenaar, 1997</ref>; <ref
+                        target="#Wolbrecht.2002.sl">Wolbrecht, 2002</ref>) pokazali, da se
+                    zakonodajalke razlikujejo od svojih sodelavcev pri vprašanjih, ki jih
+                    naslavljajo, stališčih, ki jih zavzemajo, in pristopih, ki jih uporabljajo pri
+                    pripravi zakonodaje. <ref target="#Blaxill.2016.sl">Blaxill in Beelen
+                        (2016)</ref> sta v analizi zastopanosti žensk v britanskem parlamentu po
+                    letu 1945 odkrila, da je v govorih poslank večji poudarek na vprašanjih, ki
+                    zadevajo ženske (npr. izobraževanje, zdravstvo itd.) in ki se neposredno
+                    dotikajo njihove dobrobiti v družbi (npr. varstvo otrok, nasilje v družini,
+                    enakost itd.) (glej <ref target="#Osborn.2012.sl">Osborn, 2012</ref>). Tudi
+                    raziskovalci <ref target="#Bäck.2014.sl">Bäck idr. (2014)</ref>, <ref
+                        target="#Hansen.2018.sl">Hansen idr. (2018)</ref> ter <ref
+                        target="#Mensah.2018.sl">Mensah in Wood (2018)</ref>, ki so raziskovali
+                    korpuse razprav iz švedskega, danskega oz. ganskega parlamenta, so odkrili, da
+                    so ženske pogosteje kot moški govorile o temah, ki se tičejo t. i. <hi
+                        rend="italic">mehkih zakonodajnih področij</hi> (po Wängnerud, 1996, npr.
+                    makroekonomija, energetika, promet, bančništvo, finance, vesolje, znanost in
+                    tehnologija ter komunikacija), medtem ko moški pogosteje razpravljajo o temah s
+                    t. i. <hi rend="italic">trdih zakonodajnih področij</hi> (npr. zdravstvo, delo,
+                    zaposlitev in priseljevanje, izobraževanje ter socialno varstvo).</p>
+                <p xml:id="sl-p-49">Upoštevati je treba, da na uporabo jezika vplivajo različni
+                    dejavniki (npr. družbeni razred, kontekst, starost, hierarhija), pri čemer je
+                    spol le eden od mnogih (<ref target="#Coates.1997.sl">Coates, 1997</ref>; <ref
+                        target="#Litosseliti.2006.sl">Litosseliti, 2006</ref>). <ref
+                        target="#Bing.1998.sl">Bing in Bergvall (1998)</ref> poudarjata, da so
+                    podobnosti v uporabi jezika pri različnih spolih običajno spregledane, čeprav so
+                    bolj izrazite kot razlike. Tudi <ref target="#Blaxill.2016.sl">Blaxill in Beelen
+                        (2016)</ref> sta odkrila podobno težnjo v okviru raziskav parlamentarnega
+                    diskurza. Če torej spol govorca poznamo vnaprej, kot to velja v našem primeru,
+                    je treba to dejstvo nujno upoštevati, da se izognemo napačni interpretaciji
+                    rezultatov in pretiranemu poudarjanju razlik (<ref target="#Goddard.2015.sl"
+                        >Goddard in Patterson, 2015</ref>).</p>
+            </div>
+            <div type="chapter" xml:id="ch6" xml:lang="en" corresp="#ch6-sl">
                 <head xml:id="head-18">Corpus analysis</head>
                 <p xml:id="p-27">In this section, we will explore a large corpus of Slovenian
                     parliamentary debates. We will demonstrate how basic corpus analysis techniques
@@ -448,7 +829,7 @@
                         will learn <hi rend="bold">how to extract collocations</hi> of selected
                         nouns in the subcorpora.</item>
                 </list>
-                <div type="subchapter" xml:id="ch4-sub1">
+                <div type="subchapter" xml:id="ch6.1">
                     <head xml:id="head-19">The siParl 2.0 corpus </head>
                     <p xml:id="p-28">The <ref target="http://hdl.handle.net/11356/1300">siParl
                             corpus</ref> 2.0 (<ref target="#Pančur.2020">Pančur et al., 2020</ref>)
@@ -509,7 +890,7 @@
                             “Structures and attributes”.</head>
                     </figure>
                 </div>
-                <div type="subchapter" xml:id="ch4-sub2">
+                <div type="subchapter" xml:id="ch6.2">
                     <head xml:id="head-22">TASK 1: Representation of women in the Slovenian
                         Parliament </head>
                     <p xml:id="p-31">The Slovenian National Assembly has 90 MPs, including one
@@ -530,18 +911,15 @@
                         parliamentary term (1/8/2014-21/6/2018), which is the last one included in
                         the siParl 2.0 corpus, female MPs held just over 40% of the seats, largely
                         due to legislative measures enforcing gender quotas. <note place="foot"
-                            xml:id="ftn1" n="1">
-                            <p rend="footnote text"> The share is based on the official number of
-                                all female MPs listed in <ref target="#Kustec.2017">Kustec
-                                    (2017)</ref> and then divided by the number of all MPs (i.e.,
-                                90). This share is slightly higher than reported in our analysis for
-                                which we strictly took only the corpus data throughout the tutorial.
-                                Since all of the elected MPs rarely serve the whole term, they are
-                                then replaced by other MPs. This is reflected in the corpus which
-                                includes all MPs, not just the ones listed at the time of the
-                                elections. According to corpus data, the total number of MPs per
-                                term is thus greater than 90.</p>
-                        </note> According to the <ref
+                            xml:id="ftn1" n="1">The share is based on the official number of all
+                            female MPs listed in <ref target="#Kustec.2017">Kustec (2017)</ref> and
+                            then divided by the number of all MPs (i.e., 90). This share is slightly
+                            higher than reported in our analysis for which we strictly took only the
+                            corpus data throughout the tutorial. Since all of the elected MPs rarely
+                            serve the whole term, they are then replaced by other MPs. This is
+                            reflected in the corpus which includes all MPs, not just the ones listed
+                            at the time of the elections. According to corpus data, the total number
+                            of MPs per term is thus greater than 90. </note> According to the <ref
                             target="https://eige.europa.eu/gender-equality-index/2017/compare-countries/index/bar"
                             >EU gender equality value and political power index for 2017</ref>,
                         Slovenia ranked among the top 10 EU countries in the proportion of women
@@ -549,7 +927,7 @@
                     <p xml:id="p-33">In Task 1, we are interested in comparing the contents of the
                         siParl 2.0 corpus with the trends observed in parliamentary elections and
                         the Slovenian society. </p>
-                    <div type="subchapter" xml:id="ch4-sub2-sub1">
+                    <div type="subchapter" xml:id="ch6.2.1">
                         <head xml:id="head-23">Creating subcorpora</head>
                         <p xml:id="p-34">By taking advantage of the metadata available in the corpus
                             (see Figure 3b), we split the corpus into parts, called <ref
@@ -612,7 +990,8 @@
                             separately, and for all of the seven terms together. </p>
                         <note rend="bluebox" xml:id="note-3">
                             <p>A screencast of how to create a subcorpus in NoSketchEngine is
-                                available here.</p>
+                                available <ref target="https://sidih.si/20.500.12325/file2544">here</ref>.</p>
+                            <graphic url="https://sidih.si/cdn/120/1_EN_subcorpus.mp4" mimeType="video/mp4"/>
                             <p>The created subcorpora and information on their size are available
                                     <ref
                                     target="https://www.clarin.si/noske/run.cgi/subcorp?corpname=siparl20"
@@ -621,13 +1000,11 @@
                                 CQL commands that are used to generate the following subcorpus: </p>
                             <p>
                                 <hi rend="bold">Term1-Female</hi>
-                                <note place="foot" xml:id="ftn2" n="2">
-                                    <p rend="footnote text"> Since this tutorial is offered both in
-                                        English and Slovene, we gave the subcorpora in the
-                                        concordancer bilingual names. However, for clarity and
-                                        conciseness, we are only using the English part of the
-                                        subcorpora names in this version of the tutorial.</p>
-                                </note>
+                                <note place="foot" xml:id="ftn2" n="2">Since this tutorial is
+                                    offered both in English and Slovene, we gave the subcorpora in
+                                    the concordancer bilingual names. However, for clarity and
+                                    conciseness, we are only using the English part of the
+                                    subcorpora names in this version of the tutorial.</note>
                                 <hi rend="bold">:</hi>
                             </p>
                             <p>&lt;speech gender="F" &amp; role_en="MP" &amp; type_en="Regular
@@ -655,7 +1032,7 @@
                                     mandate_en="Term .*"</hi>).</p>
                         </note>
                     </div>
-                    <div type="subchapter" xml:id="ch4-sub2-sub2">
+                    <div type="subchapter" xml:id="ch6.2.2">
                         <head xml:id="head-24">Using frequency lists</head>
                         <p xml:id="p-44">Using the subcorpora created in the previous step, we will
                             analyse the contribution of the female and male MPs across time with the
@@ -669,7 +1046,8 @@
                             they uttered. </p>
                         <note rend="bluebox" xml:id="note-5">
                             <p>A screencast of how to create a frequency list in NoSketchEngine is
-                                available here.</p>
+                                available <ref target="https://sidih.si/20.500.12325/file2545">here</ref>.</p>
+                            <graphic url="https://sidih.si/cdn/120/2_EN_frequency-list.mp4" mimeType="video/mp4"/>
                             <p>An example of two frequency lists can be seen in Figure 4.</p>
                         </note>
                         <figure xml:id="figure4">
@@ -728,7 +1106,7 @@
                             individual MP (see Figure 4, right) with the total number of speeches by
                             this particular MP (see Figure 4, left).</p>
                     </div>
-                    <div type="subchapter" xml:id="ch4-sub2-sub3">
+                    <div type="subchapter" xml:id="ch6.2.3">
                         <head xml:id="head-26">Comparative analysis</head>
                         <p xml:id="p-50">For a comparative analysis of the representation of men and
                             women in the Slovenian Parliament over time, we record the number of MPs
@@ -793,7 +1171,7 @@
                             covered by our corpus. </p>
                     </div>
                 </div>
-                <div type="subchapter" xml:id="ch4-sub3">
+                <div type="subchapter" xml:id="ch6.3">
                     <head xml:id="head-30">TASK 2: Issues addressed by women</head>
                     <p xml:id="p-52">Studies of female political discourse have shown that women
                         tend to debate different topics to men. More about the impact of gender on
@@ -816,7 +1194,7 @@
                         report on the <ref
                             target="https://en.wikipedia.org/wiki/Inter-rater_reliability"
                             >inter-annotator agreement</ref>.</p>
-                    <div type="subchapter" xml:id="ch4-sub3-sub1">
+                    <div type="subchapter" xml:id="ch6.3.1">
                         <head xml:id="head-31">Extracting keywords</head>
                         <p xml:id="p-54">To enable the comparative analysis we will first use a
                             well-known corpus analysis technique called <ref
@@ -832,7 +1210,8 @@
                             Parliament.</p>
                         <note rend="bluebox" xml:id="note-7">
                             <p>A screencast of how to generate a keyword list in NoSketchEngine is
-                                available here.</p>
+                                available <ref target="https://sidih.si/20.500.12325/file2546">here</ref>.</p>
+                            <graphic url="https://sidih.si/cdn/120/3_EN_keyword-list.mp4" mimeType="video/mp4"/>
                             <p>The generated keyword lists (using lowercased lemmas) are available
                                 here:</p>
                             <list type="unordered">
@@ -882,7 +1261,7 @@
                                 female counterparts.</head>
                         </figure>
                     </div>
-                    <div type="subchapter" xml:id="ch4-sub3-sub2">
+                    <div type="subchapter" xml:id="ch6.3.2">
                         <head xml:id="head-34">Analysing concordances</head>
                         <p xml:id="p-59">For further analysis, we select the 100 top-ranking key
                             lemmas, excluding personal names, from the four generated keyword lists.
@@ -919,7 +1298,7 @@
                                 “proporcionalen/proportional”.</head>
                         </figure>
                     </div>
-                    <div type="subchapter" xml:id="ch4-sub3-sub3">
+                    <div type="subchapter" xml:id="ch6.3.3">
                         <head xml:id="head-36">Comparative analysis</head>
                         <p xml:id="p-60">Because the main role of the Parliament is legislative, and
                             because the legislative and budgetary discussions are structured
@@ -1060,7 +1439,7 @@
                             more on soft topics than in Term1.</p>
                     </div>
                 </div>
-                <div type="subchapter" xml:id="ch4-sub4">
+                <div type="subchapter" xml:id="ch6.4">
                     <head xml:id="head-41">TASK 3: Topics related to women </head>
                     <p xml:id="p-67">This task is inspired by related work (see <ref
                             target="#Blaxill.2016">Blaxill and Beelen, 2016</ref>) which
@@ -1082,7 +1461,7 @@
                         Parliament express themselves when addressing topics related to women by
                         focusing on their use of the noun “ženska/female” as an explicit indicator
                         of debate on such topics.</p>
-                    <div type="subchapter" xml:id="ch4-sub4-sub1">
+                    <div type="subchapter" xml:id="ch6.4.1">
                         <head xml:id="head-42">Working with frequencies</head>
                         <p xml:id="p-69">First, we are interested in how frequently the lemma of the
                             noun “ženska/female” is mentioned by male and female MPs in different
@@ -1104,7 +1483,8 @@
                         <note rend="bluebox" xml:id="note-8">
                             <p>If you would like to see how to query a subcorpus for the lemma,
                                 please watch the screencast on how to extract collocations in
-                                NoSketchEngine (min. 00:09–1:24) here. </p>
+                                NoSketchEngine (min. 00:09–1:24) <ref target="https://sidih.si/20.500.12325/file2547">here</ref>.</p>
+                            <graphic url="https://sidih.si/cdn/120/4_EN_collocations.mp4" mimeType="video/mp4"/>
                             <p>A concordance list for the lemma of the noun “ženska/female” is
                                 available here:</p>
                             <list type="unordered">
@@ -1171,7 +1551,7 @@
                                 female and male MPs in siParl 2.0.</head>
                         </figure>
                     </div>
-                    <div type="subchapter" xml:id="ch4-sub4-sub2">
+                    <div type="subchapter" xml:id="ch6.4.2">
                         <head xml:id="head-46">Extracting collocations</head>
                         <p xml:id="p-75">Next, we will demonstrate another popular corpus analysis
                             technique called <ref target="https://en.wikipedia.org/wiki/Collocation"
@@ -1189,7 +1569,8 @@
                             the same time span (<hi rend="italic">AllTerms-Male</hi>).</p>
                         <note rend="bluebox" xml:id="note-9">
                             <p>A screencast of how to extract collocations in NoSketchEngine is
-                                available here.</p>
+                                available <ref target="https://sidih.si/20.500.12325/file2547">here</ref>.</p>
+                            <graphic url="https://sidih.si/cdn/120/4_EN_collocations.mp4" mimeType="video/mp4"/>
                             <p>First, we extract collocations in the range one word to the left and
                                 one word to the right of the headword (i.e., the lemma of the noun
                                 “ženska/female”) with five occurrences as the minimum frequency in
@@ -1232,7 +1613,7 @@
                                 analyse the data.</p>
                         </note>
                     </div>
-                    <div type="subchapter" xml:id="ch4-sub4-sub3">
+                    <div type="subchapter" xml:id="ch6.4.3">
                         <head xml:id="head-47">Comparative analysis</head>
                         <p xml:id="p-82">We take 100 top-ranking collocation candidates from each
                             list and manually divide them into three categories: female-only,
@@ -1316,7 +1697,908 @@
                     </div>
                 </div>
             </div>
-            <div type="chapter" xml:id="ch5">
+            <div type="chapter" xml:id="ch6-sl" xml:lang="sl" corresp="#ch6">
+                <head xml:id="sl-head-65">Korpusna analiza</head>
+                <p xml:id="sl-p-108">V tem razdelku bomo na obsežnem korpusu slovenskih
+                    parlamentarnih razprav pokazali, kako lahko osnovne tehnike korpusne analize (za
+                    več o tem glej razdelek 3) uporabimo za iskanje odgovorov na naslednja
+                    raziskovalna vprašanja:</p>
+                <list type="unordered" xml:id="sl-list-10">
+                    <item>V Nalogi 1 bomo <hi rend="italic">analizirali zastopanost žensk v
+                            slovenskem parlamentu</hi>. Najprej si bomo ogledali, <hi rend="bold"
+                            >kako ustvarimo podkorpuse</hi>. Nato se bomo naučili, <hi rend="bold"
+                            >kako sestaviti frekvenčne sezname</hi>, ki prikazujejo število govorcev
+                        oziroma govork in njihovih govorov v podkorpusih.</item>
+                    <item>V Nalogi 2 bomo <hi rend="italic">identificirali tematike, o katerih so
+                            skozi čas razpravljale poslanke v primerjavi s poslanci</hi>. Pri tem se
+                        bomo naučili, <hi rend="bold">kako izluščimo ključne besede</hi> iz
+                        podkorpusov, in si nato ogledali, <hi rend="bold">kako s pomočjo analize
+                            konkordanc</hi> preverimo njihov kontekst in rabo.</item>
+                    <item>V Nalogi 3 bomo <hi rend="italic">raziskali, kako so poslanke in poslanci
+                            v minulih 25 letih razpravljali o tematikah, povezanih z ženskami.</hi>
+                        Ogledali si bomo, <hi rend="bold">kako uporabljamo podatke o relativni
+                            frekvenci</hi> v različno velikih podkorpusih in <hi rend="bold">kako
+                            izluščimo kolokacije</hi> izbranih samostalnikov v podkorpusih.</item>
+                </list>
+                <div type="subchapter" xml:id="ch6.1-sl">
+                    <head xml:id="sl-head-66">Korpus siParl 2.0 </head>
+                    <p xml:id="sl-p-109">
+                        <ref target="http://hdl.handle.net/11356/1300">Korpus siParl 2.0</ref> (<ref
+                            target="#Pančur.2020.sl">Pančur idr., 2020</ref>) vsebuje sejne zapise
+                        11. mandata Skupščine socialistične republike Slovenije za obdobje
+                        1990-1992, sejne zapise <ref
+                            target="https://sl.wikipedia.org/wiki/Dr%C5%BEavni_zbor_Republike_Slovenije"
+                            >Državnega zbora</ref> Republike Slovenije za obdobje 1992-2018 (1.–7.
+                        mandat), sejne zapise delovnih teles Državnega zbora Republike Slovenije za
+                        obdobje 1996-2018 (2.–7. mandat) in sejne zapise Sveta predsednika Državnega
+                        zbora za obdobje 1996–2018 (2.–7. mandat).</p>
+                    <p xml:id="sl-p-110">Korpus vsebuje metapodatke o govorkah in govorcih (npr.
+                        ime, spol, vloga, politična stranka), tipologijo parlamentarnih zasedanj
+                        (npr. redna seja, izredna seja itd.) ter strukturne in uredniške oznake
+                        (npr. zakonodajno obdobje, leto/naslov seje, <ref
+                            target="https://en.wikipedia.org/wiki/Named_entity">imenske entitete
+                        </ref>). Korpus je tudi oblikoskladenjsko označen in lematiziran. Poleg tega
+                        vsebuje nekatere druge jezikoslovne oznake (npr. oznake univerzalne
+                        odvisnostne drevesnice (Universal Dependencies) in skladenjsko
+                        razčlenjevanje), ki pa jih v tem gradivu ne uporabljamo. Korpus obsega več
+                        kot milijon govorov oziroma 200 milijonov besed, ki jih je prispevalo skoraj
+                        8.500 različnih govork in govorcev (npr. poslanke in poslanci, članice in
+                        člani vlade, predstavnice in predstavniki ministrstev, strokovnih
+                        organizacij, nevladnih organizacij in interesnih skupin). Splošne
+                        informacije o korpusih in o zapisih parlamentarnih sej najdete v razdelku 3
+                        in v razdelku 4 .</p>
+                    <p xml:id="sl-p-111">Te informacije o korpusu so na voljo tudi <ref
+                            target="https://www.clarin.si/noske/run.cgi/corp_info?corpname=siparl20&amp;struct_attr_stats=1"
+                            >v konkordančniku</ref>
+                        <hi rend="Hyperlink">
+                            <seg> na </seg>
+                            <seg>strani </seg>
+                        </hi>
+                        <ref target="http://www.clarin.si/info/o-projektu/">CLARIN.SI</ref> (glej
+                        Sliki 3a in 3b) <note place="foot" xml:id="ftn2-sl" n="2">Slovensko
+                            različico konkordančnika izberete v zgornjem desnem kotu s klikom
+                            simbola zobnika in izbiro ustreznega jezika s spustnega
+                        seznama.</note>:</p>
+                    <list type="unordered" xml:id="sl-list-11">
+                        <item>Kvantitativne informacije o velikosti korpusa so na voljo v razdelku
+                                <hi rend="italic">Zadetki</hi> (glej številko 1). </item>
+                        <item>Osnovne oznake za besedne vrste so navedene v <hi rend="italic"
+                                >Legendi oznak</hi> (glej številko 2), opis celotnega nabora oznak
+                            pa je na voljo prek povezave <hi rend="italic">Tagset/Opis</hi>
+                            <note place="foot" xml:id="ftn3-sl" n="3">Zaradi izida nove različice
+                                konkordančnika je ta trenutno zgolj delno preveden v
+                                slovenščino.</note> (glej številko 3). </item>
+                        <item>Korpus je organiziran prek strukturnih atributov. Atribut <hi
+                                rend="italic">session/seja</hi> zamejuje posamezne seje (glej
+                            številko 4) in vsebuje informacije, kot so datum, vrsta in naslov seje
+                            (glej Sliko 3b, številko 4). </item>
+                        <item>Atribut <hi rend="italic">speech/govor</hi> zamejuje posamezne govore
+                            (glej številko 5) in vsebuje informacije o imenu, spolu, vlogi in
+                            strankarski pripadnosti govorke oz. govorca (glej Sliko 3b, številko 5).
+                        </item>
+                    </list>
+                    <figure xml:id="figure3a-sl">
+                        <graphic url="media/figure3a-sl.jpg"/>
+                        <head>Slika 3a: Osnovne informacije o korpusu siParl 2.0.</head>
+                    </figure>
+                    <figure xml:id="figure3b-sl">
+                        <graphic url="media/figure3b-sl.jpg"/>
+                        <head>Slika 3b: Razširjene informacije o strukturnih atributih v korpusu
+                            siParl 2.0.</head>
+                    </figure>
+                </div>
+                <div type="subchapter" xml:id="ch6.2-sl">
+                    <head xml:id="sl-head-69">NALOGA 1: Zastopanost žensk v slovenskem
+                        parlamentu</head>
+                    <p xml:id="sl-p-112">Državni zbor Republike Slovenije ima 90 poslank in
+                        poslancev, vključno s predstavnico oz. predstavnikom italijanske in
+                        madžarske manjšine, ki so trenutno del <ref
+                            target="https://www.dz-rs.si/wps/portal/Home/ODrzavnemZboru/KdoJeKdo/PoslanskeSkupine"
+                            >devetih političnih strank</ref>. Slovenija je ena od najmlajših držav
+                        Evropske unije, ki je v preteklih 30 letih doživela dramatične spremembe na
+                        področju enakosti spolov. Leta 1986, ko je bila Slovenija še vedno del
+                        Socialistične federativne republike Jugoslavije, so poslanke zasedale skoraj
+                        četrtino vseh poslanskih sedežev, leta 1992, ko je bil prvič sklican Državni
+                        zbor Republike Slovenija, pa se je ta delež občutno zmanjšal, saj so
+                        poslanke zasedale le še vsaki deseti poslanski sedež (<ref
+                            target="#AntićGaber.2017.sl">Selišnik in Antić Gaber, 2017</ref>). Med
+                        postopkom tranzicije, ko so se družbeni, politični, gospodarski in
+                        vrednostni sistem bistveno spremenili, so ženske v Sloveniji izgubile več
+                        gospodarskih in družbenih prednosti, pridobljenih v času socializma, in so
+                        bile skoraj popolnoma izrinjene iz političnih institucij. V sedmem mandatu
+                        (1. 8. 2014–21. 6. 2018), ki je zadnji mandat, vključen v korpus siParl 2.0,
+                        so poslanke zasedle malo več kot 40 % sedežev, večinoma zaradi zakonodajnih
+                        ukrepov, ki predpisujejo spolne kvote. <note place="foot" xml:id="ftn4-sl"
+                            n="4">Delež temelji na uradnem številu vseh poslank, kot ga navaja <ref
+                                target="#Kustec.2017.sl">Kustec (2017)</ref>, nato pa je deljen s
+                            številom vseh poslank in poslancev (tj. 90). Ta delež je rahlo višji od
+                            deleža, navedenega v naši analizi, v kateri smo dosledno uporabljali le
+                            podatke iz korpusa. Ker le redko vsi izvoljeni poslanci in poslanke
+                            ostanejo na istem položaju celoten mandat, jih nato zamenjajo drugi
+                            poslanci oziroma poslanke. To se odraža v korpusu, ki vključuje vse
+                            poslanke in poslance, in ne le tistih, ki so bili izvoljeni na volitvah.
+                            Glede na podatke iz korpusa je skupno število poslancev in poslank na
+                            mandat tako večje od 90.</note> Glede na <ref
+                            target="https://eige.europa.eu/gender-equality-index/2017/compare-countries/index/bar"
+                            >EU indeks vrednosti enakosti spolov in politične moči v Evropski uniji
+                            za leto 2017</ref> je bila Slovenija uvrščena med prvih 10 držav
+                        Evropske unije po deležu poslank.</p>
+                    <p xml:id="sl-p-113">V Nalogi 1 bomo primerjali govore v korpusu siParl 2.0 s
+                        trendi na parlamentarnih volitvah in v slovenski družbi.</p>
+                    <div type="subchapter" xml:id="ch6.2.1-sl">
+                        <head xml:id="sl-head-70">Izdelava podkorpusov</head>
+                        <p xml:id="sl-p-114">Na podlagi metapodatkov, ki so na voljo v korpusu (glej
+                            Sliko 3b), korpus razdelimo na več delov, t. i. podkorpuse, in sicer
+                            glede na naslednja merila:</p>
+                        <list type="unordered" xml:id="sl-list-12">
+                            <item>
+                                <hi rend="bold">Spol.</hi> Govorke in govorci so v korpusu označeni
+                                z eno od naslednjih kategorij v skladu s podatki iz uradnih sejnih
+                                zapisov državnega zbora<hi rend="italic">: </hi>moški, ženska ali ni
+                                podatka (v primerih, ko so zapisi metapodatkov nepopolni). V tem
+                                gradivu uporabljamo le prvi dve kategoriji (moški, ženska), medtem
+                                ko tistih, za katere ni podatka o spolu, v analizo ne vključujemo. </item>
+                            <item>
+                                <hi rend="bold">Vloga. </hi>Govorkam in govorcem je v korpusu
+                                pripisana ena od dveh vlog, in sicer <hi rend="italic">član
+                                    parlamenta</hi> oziroma <hi rend="italic">zunanji govornik</hi>
+                                <note place="foot" xml:id="ftn5-sl" n="5">Pri oznakah v korpusu je
+                                    uporabljen generični moški spol.</note>(ta vloga označuje
+                                povabljene govorke in govorce, ki niso del parlamenta (npr. članice
+                                in člani vlade, predstavnice in predstavniki ministrstev ali
+                                nevladnih organizacij). V tem gradivu upoštevamo le govorce in
+                                govorke z oznako <hi rend="italic">član parlamenta</hi>, ker se
+                                želimo osredotočiti na prispevke izvoljenih predstavnic in
+                                predstavnikov državljanov Slovenije.</item>
+                            <item>
+                                <hi rend="bold">Tip.</hi> Poleg vloge je govorkam in govorcem v
+                                korpusu pripisan tudi njihov tip, ki ima eno od naslednjih dveh
+                                vrednosti: <hi rend="italic">redni govornik</hi> ali<hi
+                                    rend="italic"> predsedujoči. </hi>Prva kategorija označuje
+                                govorke in govorce v parlamentu, ki so v skladu s poslovnikom
+                                izrecno dobili besedo. V naši analizi upoštevamo le te. Tiste z
+                                oznako <hi rend="italic">predsedujoči</hi> smo namerno izključili,
+                                saj je večina njihovih izjav namreč pogojena s postopkovnimi
+                                predpisi in dogovori in torej nanje ne vplivajo strankarska
+                                pripadnost, spol ali drugi dejavniki. </item>
+                            <item>
+                                <hi rend="bold">Mandat.</hi> Vsak govor v korpusu je kategoriziran
+                                glede na parlamentarno obdobje, v katerem je bil izrečen (1.–7.
+                                mandat). Ker to presega meje naše raziskave, smo iz analize
+                                izključili <ref
+                                    target="https://en.wikipedia.org/wiki/Socialist_Republic_of_Slovenia"
+                                    >obdobje odcepitve od Jugoslavije </ref>, ki je v korpusu
+                                označeno kot 11. sklic.</item>
+                            <item>
+                                <hi rend="bold">Delovni organ. </hi>Korpus siParl 2.0 vsebuje govore
+                                s plenarnih zasedanj, z zasedanj delovnih organov državnega zbora
+                                (npr. Komisija za peticije, človekove pravice in enake možnosti) in
+                                z zasedanj Sveta predsednika Državnega zbora. V tem gradivu
+                                analiziramo le govore s plenarnih zasedanj. </item>
+                        </list>
+                        <p xml:id="sl-p-115">Na podlagi teh meril izdelamo 14 podkorpusov, po dva za
+                            vsakega od sedmih mandatov, pri čemer eden vsebuje govore poslank, drugi
+                            pa govore poslancev s pripisano vlogo <hi rend="italic">redni
+                                govornik</hi>. Poleg teh 14 podkorpusov izdelamo tudi podkorpuse, ki
+                            vsebujejo vse govore poslank in poslancev za vsak posamezni mandat in za
+                            vseh sedem mandatov skupaj.</p>
+                        <note rend="bluebox" xml:id="sl-note-16">
+                            <p>Videoposnetek, ki prikazuje izdelavo podkorpusa v konkordančniku
+                                NoSketch Engine, je na voljo na tej <ref target="https://sidih.si/20.500.12325/file2548">povezavi</ref>.</p>
+                            <graphic url="https://sidih.si/cdn/120/1_SL_izdelava-podkorpusa.mp4" mimeType="video/mp4"/>
+                            <p>Ustvarjeni podkorpusi in informacije o njihovi velikosti so na voljo
+                                    <ref
+                                    target="https://www.clarin.si/noske/run.cgi/subcorp?corpname=siparl20"
+                                    >tukaj</ref>.</p>
+                            <p>Spodaj je naveden tudi primer zahtevnejšega iskalnega izraza v jeziku
+                                CQL, ki ga je treba uporabiti pri izdelavi spodnjega podkorpusa:</p>
+                            <p>
+                                <hi rend="bold">Mandat1-Ženske</hi>
+                                <note place="foot" xml:id="ftn6-sl" n="6">Ker je to gradivo na voljo
+                                    v slovenščini in angleščini, so poimenovanja podkorpusov v
+                                    konkordančniku dvojezična. Vendar pa v tem gradivu zaradi
+                                    jasnosti in jedrnatosti uporabljamo zgolj slovenski del imena
+                                    podkorpusov.</note>
+                                <hi rend="bold">:</hi>
+                            </p>
+                            <p>&lt;speech gender="F" &amp; role_en="MP" &amp; type_en="Regular
+                                speaker"/&gt; within &lt;session mandate_en="Term 1 .*" &amp;
+                                organ="Državni zbor Republike Slovenije"/&gt;</p>
+                            <p>S tem ukazom poiščemo vse izjave (atribut <hi rend="italic"
+                                    >speech</hi>/<hi rend="italic">govor</hi>)) govork (atribut<hi
+                                    rend="italic"> F</hi>/Ž), ki so članice parlamenta (atribut <hi
+                                    rend="italic">MP</hi>/Član parlamenta) in redne govorke <hi
+                                    rend="italic">(</hi>atribut <hi rend="italic">Regular
+                                    speaker</hi>/Redni govornik), in sicer v govorih iz prvega
+                                mandata (atribut <hi rend="italic">Term 1 .*</hi>/1. Mandat .*), ki
+                                so bili izrečeni v Državnem zboru Republike Slovenije (atribut <hi
+                                    rend="italic">Državni zbor Republike Slovenije</hi>).</p>
+                            <p>Če želimo ustvariti podkorpus govorov poslancev, moramo spremeniti le
+                                spol prek atributa <hi rend="italic">speech gender/spol </hi>(<hi
+                                    rend="italic">speech gender="M"</hi>). Za podkorpus, ki vsebuje
+                                govore poslank in poslancev iz vseh mandatov, pa moramo najprej
+                                vključiti moški in ženski spol prek atributa <hi rend="italic"
+                                    >speech gender/spol </hi>(<hi rend="italic">speech
+                                    gender="F|M"</hi>), nato pa še vse mandate prek atributa <hi
+                                    rend="italic">session mandate/mandat seje</hi> (<hi
+                                    rend="italic">session mandate_en="Term .*"</hi>).</p>
+                        </note>
+                    </div>
+                    <div type="subchapter" xml:id="ch6.2.2-sl">
+                        <head xml:id="sl-head-71">Uporaba frekvenčnih seznamov</head>
+                        <p xml:id="sl-p-123">V podkorpusih, ustvarjenih v prejšnjem koraku, bomo
+                            analizirali govore poslank in poslancev skozi čas, in sicer na podlagi
+                            podatkov s <ref target="toggle-id-2-closed">frekvenčnih seznamov</ref>,
+                            ki so ena od najosnovnejših korpusnih tehnik. Frekvenčni seznami
+                            prikazujejo rezultate od najbolj do najmanj pogostega. To tehniko lahko
+                            na primer uporabimo za sestavljanje frekvenčnega seznama vseh besed, ki
+                            so bile izrečene v parlamentu oziroma v govorih izbrane poslanke ali
+                            izbranega poslanca. V tej nalogi bomo s to tehniko pridobili podatke o
+                            številu vseh poslank in poslancev v posameznem mandatu ter številu
+                            njihovih govorov, vključno s skupnim številom pojavnic v teh
+                            govorih.</p>
+                        <note rend="bluebox" xml:id="sl-note-18">
+                            <p>Videoposnetek, ki prikazuje izdelavo frekvenčnega seznama v
+                                konkordančniku NoSketch Engine, je na voljo na tej <ref target="https://sidih.si/20.500.12325/file2549">povezavi</ref>.</p>
+                            <graphic url="https://sidih.si/cdn/120/2_SL_izdelava-frekvencnega-seznama.mp4" mimeType="video/mp4"/>
+                            <p>Slika 4 prikazuje primer dveh frekvenčnih seznamov.</p>
+                        </note>
+                        <figure xml:id="figure4-sl">
+                            <graphic url="media/figure4-sl.jpg"/>
+                            <head>Slika 4. Frekvenčna seznama za poslanke iz prvega mandata. <ref
+                                    target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat1-%C5%BDenske--Term1-Female&amp;wlattr=speech.name&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=1&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;include_nonwords=1&amp;wlnums=docf&amp;wltype=simple"
+                                    >Na levi</ref> je prikazano število govorov, ki jih je posamezna
+                                poslanka prispevala, <ref
+                                    target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat1-%C5%BDenske--Term1-Female&amp;wlattr=speech.name&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=1&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;include_nonwords=1&amp;wlnums=frq&amp;wltype=simple"
+                                    >na desni</ref> pa je število pojavnic v teh govorih.</head>
+                        </figure>
+                        <p xml:id="sl-p-126">Kot prikazuje Slika 4, je bilo v prvem mandatu
+                            prisotnih 14 poslank, ki so skupno izrekle več kot 3.500 govorov, kar je
+                            le malo manj kot milijon pojavnic. Povprečno je to skoraj 260 govorov
+                            oziroma 69.000 pojavnic na poslanko. Vendar pa je porazdelitev med
+                            poslankami zelo neenakomerna, pri čemer sega od skoraj 700 govorov
+                            oziroma več kot 170.000 pojavnic do manj kot 40 govorov oziroma 9.000
+                            pojavnic.</p>
+                        <p xml:id="sl-p-127">Po številu govorov je na prvem mestu Danica Simšič,
+                            članica Demokratske stranke Slovenije, manjše opozicijske stranke iz
+                            prvega mandata. Ta poslanka je prispevala 680 govorov ali skoraj 19 %
+                            vseh govorov v celotnem podkorpusu, kar je skoraj 3-kratno povprečje pri
+                            ženskah. Podatek o deležu govorov smo pridobili tako, da smo število
+                            njenih govorov delili s številom vseh govorov poslank (glej Slika 4,
+                            levo: <hi rend="italic">Total frequency</hi> in <hi rend="italic"
+                                >Simšič, Danica</hi>), podatek o razmerju glede na povprečje pa smo
+                            pridobili tako, da smo število poslankinih govorov delili s povprečjem
+                            števila vseh govorov, ki ga dobimo tako, da skupno število govorov
+                            poslank delimo s številom vseh poslank (glej Slika 4, levo: <hi
+                                rend="italic">Total frequency</hi> in <hi rend="italic">Total number
+                                of items)</hi>.</p>
+                        <p xml:id="sl-p-128">Po številu pojavnic je poslanka z največjim prispevkom
+                            v tem podkorpusu Metka Karner Lukač, članica Slovenske ljudske stranke,
+                            najstarejše stranke v Sloveniji. Njeni govori vsebujejo 173.067 pojavnic
+                            ali 18 % celotnega podkorpusa, kar je skoraj 3-kratnik povprečja.
+                            Poslanka z najnižjim številom govorov in pojavnic je Mihaela Logar, prav
+                            tako članica Slovenske ljudske stranke, ki je v svojem 4-letnem mandatu
+                            spregovorila le 39-krat, v njenih govorih pa je nekaj več kot 9.000
+                            pojavnic, kar je skoraj 20-krat manj od prvouvrščene govorke. Poleg tega
+                            je še zanimivo, da približno polovica vseh prispevkov pripada le trem
+                            poslankam, in sicer že omenjenima poslankama ter Bredi Pečan, članici
+                            Socialnih demokratov, katere govori so bili v povprečju tudi najdaljši.
+                            Ta podatek razberemo iz podatkov o povprečni dolžini govorov za
+                            posamezno poslanko, pri čemer povprečno dolžino govora izračunamo tako,
+                            da število vseh pojavnic za posamezno poslanko (glej Slika 4, desno)
+                            delimo s številom vseh govorov te iste poslanke (glej Slika 4,
+                            levo).</p>
+                    </div>
+                    <div type="subchapter" xml:id="ch6.2.3-sl">
+                        <head xml:id="sl-head-73">Primerjalna analiza</head>
+                        <p xml:id="sl-p-129">Za potrebe primerjalne analize zastopanosti moških in
+                            žensk v slovenskem parlamentu skozi čas zabeležimo število poslancev in
+                            poslank ter število pojavnic v vsakem od 14 podkorpusov (glej razdelek
+                            ). Ker zbirnih tabel s podatki ne dobimo neposredno v konkordančniku, si
+                            pomagamo tako, da podatke ročno vnesemo v preglednico, kot prikazuje
+                            Tabela 1. Grafični prikaz rezultatov si lahko ogledate na Sliki 5 in
+                            Sliki 6.</p>
+                        <figure xml:id="table1-sl">
+                            <graphic url="media/table1-sl.jpg"/>
+                            <head>Tabela 1. Pregled velikosti podkorpusov siParl 2.0.<note
+                                    place="foot" xml:id="ftn7-sl" n="7">Zaradi napake v metapodatkih
+                                    korpusa, ki so bili pripisani enemu od poslancev (in sicer
+                                    poslancu z imenom Geza, ki mu je bil napačno samodejno pripisan
+                                    ženski spol najverjetneje zaradi kombinacije končnice –a, ki je
+                                    sicer tipična za samostalnike ženskega spola, in redkosti
+                                    imena), podatki za šesti mandat v času analize ne odražajo
+                                    uradnega števila poslank, ki je po navedbah <ref
+                                        target="#Kustec.2017.sl">Kustec (2017)</ref> 39, in ne 38,
+                                    kot prikazuje korpus.</note>
+                            </head>
+                        </figure>
+                        <figure xml:id="figure5-sl">
+                            <graphic url="media/figure5-sl.jpg"/>
+                            <head>Slika 5: Delež poslank in poslancev v korpusu siParl 2.0 skozi
+                                čas.</head>
+                        </figure>
+                        <figure xml:id="figure6-sl">
+                            <graphic url="media/figure6-sl.jpg"/>
+                            <head>Slika 6: Prispevek poslank in poslancev v korpusu siParl 2.0,
+                                izmerjen v izrečenih pojavnicah skozi čas.</head>
+                        </figure>
+                        <p xml:id="sl-p-130">Rezultati kažejo, da delež pojavnic, ki sestavljajo
+                            govore poslank, postopoma narašča skupaj z zastopanostjo žensk v
+                            parlamentu. Precejšen skok v zastopanosti žensk je mogoče opaziti
+                            predvsem v zadnjih dveh mandatih, vključenih v korpus siParl 2.0, kar je
+                            najverjetneje posledica sprejema spolnih kvot, v skladu s katerimi mora
+                            biti od leta 2011 35 % kandidatov na volitvah žensk (<ref
+                                target="#AntićGaber.2017.sl">Selišnik in Antić Gaber, 2017</ref>).
+                            Pomembna pa je ugotovitev, da kljub temu, da so kvote eden
+                            najuspešnejših ukrepov za povečanje števila poslank (<ref
+                                target="#AntićGaber.2017.sl">Selišnik in Antić Gaber, 2017</ref>),
+                            naša korpusna analiza prikazuje velika odstopanja med številom govork in
+                            številom pojavnic v njihovih govorih. Rezultati volitev so enostavno
+                            dostopni in raziskovalci in analitiki jih pogosto uporabljajo, število
+                            in vsebina govorov pa sta veliko težje dostopna, zato ju raziskovalci
+                            izven korpusnega jezikoslovja precej manj izčrpno preučujejo, kar
+                            predstavlja vrzel, ki jo želimo s to analizo premostiti. Podatki kažejo
+                            jasen trend, da poslanke prispevajo manjši delež vsebine, kot bi
+                            pričakovali glede na njihov delež v izbranem mandatu. To velja zlasti za
+                            drugi mandat, kjer govori poslank vsebujejo dvakrat manj pojavnic glede
+                            na njihovo število. Pravzaprav je le v četrtem mandatu prispevek žensk
+                            nekoliko večji od njihovega deleža v parlamentu. Zato lahko sklepamo, da
+                            več izvoljenih poslank ne pomeni nujno, da bo njihov glas tudi bolj
+                            prisoten v Državnem zboru. Vseeno pa se je v preteklih letih z večanjem
+                            števila poslank v parlamentu začelo povečevati tudi število njihovih
+                            govorov. Prispevek poslank se je s pičle desetine vseh govorov v
+                            parlamentu v prvih petih mandatih povečal na skoraj tretjino v zadnjih
+                            dveh mandatih, ki jih pokriva naš korpus.</p>
+                    </div>
+                </div>
+                <div type="subchapter" xml:id="ch6.3-sl">
+                    <head xml:id="sl-head-77">NALOGA 2: Ključne teme poslank in poslancev</head>
+                    <p xml:id="sl-p-131">Raziskave političnega diskurza žensk so pokazale, da ženske
+                        običajno razpravljajo o drugačnih temah kot moški. Več o vplivu spola na
+                        jezik si lahko preberete v razdelku 5 .</p>
+                    <p xml:id="sl-p-132">V Nalogi 2 želimo na podlagi govorov iz korpusa siParl 2.0
+                        primerjati teme, o katerih razpravljajo poslanke in poslanci. Za nekatere
+                        parlamentarne korpuse je klasifikacija tem že na voljo (glej <ref
+                            target="#Nanni.2018.sl">Nanni idr. 2018</ref>), za korpus siParl 2.0 pa
+                        to ne velja. Klasifikacijo tem je mogoče izvesti samodejno, kot v <ref
+                            target="#Karan.2016.sl">Karan idr. (2016)</ref>, vendar pa je cilj tega
+                        gradiva pokazati učinkovitost raziskav parlamentarnih korpusov zgolj prek
+                        uporabe konkordančnikov, torej brez kakršnegakoli znanja programiranja,
+                        zaradi česar smo izbrali ročni pristop v dveh korakih. Ročni pristopi so še
+                        posebej primerni za zelo specifično razvrščanje tem, kot to velja za našo
+                        analizo, za katero še ne obstajajo računalniški modeli ali učne množice za
+                        razvoj takih modelov. Pri tem je treba opozoriti, da lahko tako pri
+                        samodejnem kot pri ročnem razvrščanju pride do napak, vendar lahko pri
+                        ročnem označevanju število napak, ki so posledica nenatančnosti ali pa tudi
+                        pristranskosti označevalca oziroma označevalke, zmanjšamo z večjim številom
+                        označevalk oz. označevalcev, s čimer pridobimo vpogled v stopnjo ujemanja
+                        med njimi, za nadaljnje delo pa lahko upoštevamo temo, ki jo je izbrala
+                        večina, oz. vse pripisane teme.</p>
+                    <div type="subchapter" xml:id="ch6.3.1-sl">
+                        <head xml:id="sl-head-78">Luščenje ključnih besed</head>
+                        <p xml:id="sl-p-133">V tej nalogi bomo uporabili uveljavljeno tehniko
+                            korpusne analize, ki ji rečemo <ref
+                                target="https://en.wikipedia.org/wiki/Keyword_(linguistics)"
+                                >luščenje ključnih besed</ref>.<hi rend="Hyperlink">
+                                <seg>S to tehniko</seg>
+                                <seg> i</seg>
+                                <seg>zbrani </seg>
+                                <seg>korpus primerja</seg>
+                                <seg>mo</seg>
+                                <seg> z referenčnim korpusom</seg>
+                                <seg> in tako pridobimo</seg>
+                            </hi>najbolj značilno besedišče izbranega korpusa, torej (pod)korpusa,
+                            ki ga analiziramo. Referenčni korpus pa je običajno velik
+                            reprezentativni korpus ustreznega jezika, lahko pa je tudi kateri koli
+                            drug (pod)korpus, ki ga želimo uporabiti kot referenčno točko za
+                            primerjavo. V tej nalogi bomo primerjali podkorpusa govorov poslank in
+                            poslancev za posamezni mandat. Tako bomo pridobili podatke, na podlagi
+                            katerih bomo lahko opredelili najbolj izstopajoče teme v slovenskem
+                            parlamentu.</p>
+                        <note rend="bluebox" xml:id="sl-note-20">
+                            <p>Videoposnetek, ki prikazuje izdelavo seznama ključnih besed v
+                                konkordančniku NoSketchEngine, je na voljo na tej <ref target="https://sidih.si/20.500.12325/file2550">povezavi</ref>.</p>
+                            <graphic url="https://sidih.si/cdn/120/3_SL_izdelava-seznama-kljucnih-besed.mp4" mimeType="video/mp4"/>
+                            <p>Ustvarjeni seznami ključnih besed<hi rend="Hyperlink">
+                                    <seg>, </seg>
+                                    <seg>prikazanih</seg>
+                                    <seg> kot leme s poenoteno malo začetnico,</seg>
+                                </hi>so na voljo tukaj:</p>
+                            <list type="unordered">
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat1-%C5%BDenske--Term1-Female&amp;wlattr=lemma_lc&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=5&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;wlnums=frq&amp;wltype=keywords&amp;ref_corpname=siparl20&amp;ref_usesubcorp=Mandat1-Mo%C5%A1ki--Term1-Male&amp;simple_n=1"
+                                        >Mandat1-Ženske</ref>
+                                </item>
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/wordlist?;corpname=siparl20;usesubcorp=Mandat1-Mo%C5%A1ki--Term1-Male;wlattr=lemma_lc;wlminfreq=5;wlmaxfreq=0;wlpat=.%2A;wlmaxitems=100;wlsort=f;ref_corpname=siparl20;ref_usesubcorp=Mandat1-%C5%BDenske--Term1-Female;wlcache=;simple_n=1.0;wltype=keywords;wlnums=frq;include_nonwords=0;blcache=;wlpage=1;usengrams=0;ngrams_n=2;ngrams_max_n=2;nest_ngrams=0;complement_subc=0"
+                                        >Mandat1-Moški</ref>
+                                </item>
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat7-%C5%BDenske--Term7-Female&amp;wlattr=lemma_lc&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=5&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;wlnums=frq&amp;wltype=keywords&amp;ref_corpname=siparl20&amp;ref_usesubcorp=Mandat7-Mo%C5%A1ki--Term7-Male&amp;simple_n=1"
+                                        >Mandat7-Ženske</ref>
+                                </item>
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/wordlist?;corpname=siparl20;usesubcorp=Mandat7-Mo%C5%A1ki--Term7-Male;wlattr=lemma_lc;wlminfreq=5;wlmaxfreq=0;wlpat=.%2A;wlmaxitems=100;wlsort=f;ref_corpname=siparl20;ref_usesubcorp=Mandat7-%C5%BDenske--Term7-Female;wlcache=;simple_n=1.0;wltype=keywords;wlnums=frq;include_nonwords=0;blcache=;wlpage=1;usengrams=0;ngrams_n=2;ngrams_max_n=2;nest_ngrams=0;complement_subc=0"
+                                        >Mandat7-Moški</ref>
+                                </item>
+                            </list>
+                            <p>Sezname ključnih besed za vse štiri podkorpuse izvozimo v preglednico
+                                in jih ročno označimo (glej razdelek).</p>
+                        </note>
+                        <p xml:id="sl-p-137">Sliki 7 in 8 prikazujeta prvih 20 ključnih besed
+                            poslank in poslancev v sedmem mandatu. <note place="foot"
+                                xml:id="ftn8-sl" n="8">Konkordančnik NoSketchEngine za računanje
+                                ključnih besed uporablja formulo <ref
+                                    target="https://www.sketchengine.eu/documentation/simple-maths/"
+                                    >Simple Maths</ref>
+                                <hi rend="Hyperlink">.</hi>
+                            </note> Opazimo lahko velike razlike. Večina vseh prikazanih ključnih
+                            besed poslank je povezana s področjem zdravstvenega varstva, medtem ko
+                            ključne besede govorov poslancev pripadajo področjem zunanjih zadev,
+                            infrastrukture in pravosodja.</p>
+                        <figure xml:id="figure7-sl">
+                            <graphic url="media/figure7-sl.jpg"/>
+                            <head>Slika 7: Prvih 20 ključnih besed poslank v primerjavi s poslanci v
+                                prvem mandatu.</head>
+                        </figure>
+                        <figure xml:id="figure8-sl">
+                            <graphic url="media/figure8-sl.jpg"/>
+                            <head>Figure 8: Prvih 20 ključnih besed poslancev v primerjavi s
+                                poslankami v prvem mandatu.</head>
+                        </figure>
+                    </div>
+                    <div type="subchapter" xml:id="ch6.3.2-sl">
+                        <head xml:id="sl-head-81">Analiza konkordanc</head>
+                        <p xml:id="sl-p-138">Za nadaljnjo analizo izberemo prvih 100 ključnih lem z
+                            vsakega od štirih seznamov ključnih besed, pri čemer ne upoštevamo
+                            osebnih lastnih imen. Naš cilj je ročno kategorizirati leme, in sicer
+                            glede na prevladujočo temo, ki jo prepoznamo pri pregledu <ref
+                                target="https://www.sketchengine.eu/guide/concordance-a-tool-to-search-a-corpus/"
+                                >konkordanc</ref> za izbrano lemo. Konkordančni niz vsebuje seznam
+                            vseh pojavitev iskane pojavnice v kontekstu, kot prikazuje Slika 9:</p>
+                        <list type="unordered" xml:id="sl-list-14">
+                            <item>Konkordance je mogoče neposredno prikazati s klikom leme na
+                                seznamu ključnih besed. Prikaže se stran, kjer je na vrhu zaslona
+                                prikazana izbrana lema z vsemi zadetki (glej številko 1). </item>
+                            <item>Besede v rdeči barvi na sredini zaslona (glej številko 2) so
+                                zadetki iskane besede v našem podkorpusu, besedilo v črni barvi
+                                (glej številko 3) pa je kontekst. </item>
+                            <item>Besedilo v modri barvi na levi (glej številko 4) so metapodatki. V
+                                našem primeru je prikazan podatek o govorcu. </item>
+                            <item>S klikom želene konkordance lahko še dodatno razširimo kontekst
+                                (glej številko 5). Na podoben način lahko s klikom govorca pridobimo
+                                več metapodatkov. </item>
+                            <item>Prikaz lahko tudi prilagodimo, in sicer prek <hi rend="italic"
+                                    >Možnosti prikaza</hi> (glej številko 6), ter prikažemo več
+                                metapodatkov ali širši kontekst. </item>
+                        </list>
+                        <figure xml:id="figure9-sl">
+                            <graphic url="media/figure9.jpg"/>
+                            <head>Slika 9: Razširjeni kontekst za prvi zadetek v <ref
+                                    target="https://www.clarin.si/noske/run.cgi/view?corpname=siparl20;usesubcorp=Mandat1-Mo%C5%A1ki--Term1-Male;q=q%5Blemma_lc%3D%3D%22proporcionalen%22%5D;complement_subc=0"
+                                    >konkordančnem nizu</ref> za ključno besedo
+                                »proporcionalen«.</head>
+                        </figure>
+                    </div>
+                    <div type="subchapter" xml:id="ch6.3.3-sl">
+                        <head xml:id="sl-head-83">Primerjalna analiza</head>
+                        <p xml:id="sl-p-139">Parlament je v prvi vrsti zakonodajno telo, v katerem
+                            potekajo zakonodajne in proračunske razprave, ki so strukturirane po
+                            ministrstvih. Zato nam bo seznam <ref
+                                target="https://www.gov.si/drzavni-organi/ministrstva/">14
+                                ministrstev trenutne slovenske vlade</ref> služil kot seznam
+                            kategorij za ročno označevanje tem. Kategorije so navedene v Tabeli 2.
+                            Lahko bi uporabili tudi številne druge sezname tem, vendar je takšen
+                            nabor tem po našem mnenju najbolj naravna izbira v specifičnem okolju
+                            parlamentarnega diskurza. Tem 14 vsebinskim kategorijam bomo dodali še 4
+                            tehnične kategorije za ključne besede, ki jih ni mogoče uvrstiti drugam:
+                                <hi rend="italic">razno</hi> – za ključne besede, uporabljene v
+                            razpravah o več različnih temah; <hi rend="italic">slog</hi> – za očitne
+                            pogovorne ali žargonske ključne besede, ki so izrazito značilne za
+                            posamezne govorce, <hi rend="italic">ideologija</hi> – za ključne
+                            besede, uporabljene za ideološko označevanje (npr. <hi rend="italic"
+                                >partijski, socialist</hi>), in <hi rend="italic"
+                                >interakcija/postopkovnik</hi> – za ključne besede, ki naslavljajo
+                            druge poslance ali pa so del postopkovnika. V Tabeli 3 so navedeni
+                            ponazoritveni primeri ročno pripisanih tem za prvih 10 ključnih besed
+                            poslank in poslancev.</p>
+                        <figure xml:id="table2-sl">
+                            <graphic url="media/table2-sl.jpg"/>
+                            <head>Table 2. Kategorije za označevanje ključnih besed. Zadnje štiri
+                                kategorije zapisujemo z velikimi tiskanimi črkami, da jih tako
+                                ločimo od vsebinskih kategorij.</head>
+                        </figure>
+                        <figure xml:id="table3-sl">
+                            <graphic url="media/table3-sl.jpg"/>
+                            <head>Table 3: Ponazoritveni primeri ročno pripisanih oznak glede na
+                                temo za prvih 10 ključnih besed poslank in poslancev v prvem
+                                mandatu.</head>
+                        </figure>
+                        <p xml:id="sl-p-140">Tabeli 4 in 5 vsebujeta povzetek rezultatov ročnega
+                            označevanja prvih 100 ključnih lem poslank in poslancev v prvem in
+                            sedmem mandatu. Rezultati kažejo, da je nabor tem skozi čas in med
+                            spoloma primerljiv. Kljub podobnemu številu opredeljenih vsebinskih tem
+                            se poslanci in poslanke pri najbolj izpostavljenih tematikah zelo
+                            razlikujejo.</p>
+                        <figure xml:id="table4-sl">
+                            <graphic url="media/table4-sl.jpg"/>
+                            <head>Tabela 4: Teme prvih 100 ključnih besed poslank in poslancev v
+                                prvem mandatu.</head>
+                        </figure>
+                        <figure xml:id="table5-sl">
+                            <graphic url="media/table5-sl.jpg"/>
+                            <head>Tabela 5: Teme prvih 100 ključnih besed poslank in poslancev v
+                                sedmem mandatu.</head>
+                        </figure>
+                        <p xml:id="sl-p-141">V prvem mandatu večina (54 %) vseh analiziranih
+                            ključnih besed poslank spada v dve tematski kategoriji: <hi
+                                rend="italic">Zdravje</hi> in <hi rend="italic">Delo, družina in
+                                socialne zadeve</hi>, pri poslancih pa sta najpogostejši temi s
+                            podobnim deležem (55 %) <hi rend="italic">Infrastruktura</hi> in <hi
+                                rend="italic">Javna uprava</hi>. V sedmem mandatu sta najpogostejši
+                            temi poslank enaki kot v prvem mandatu, vendar predstavljata večji delež
+                            ključnih besed (58 %), pri poslancih pa je najpogostejša tema postala
+                                <hi rend="italic">Zunanje zadeve.</hi> Razdelitve tem med spoloma ni
+                            mogoče v celoti razložiti s korpusno analizo, vendar pa dobljeni
+                            rezultati, ki pri poslankah kažejo izrazito zanimanje za zdravstvene in
+                            socialnovarstvene teme, pri poslancih pa premik z infrastrukturnih
+                            tematik na zunanjepolitične, zelo nazorno odražajo stanje v družbi. V
+                            času neodvisnosti je morala novonastala država oblikovati javno upravo
+                            in izgraditi infrastrukturo, za kar so bile v prvem mandatu potrebne
+                            intenzivne razprave. Zadnji mandat pa zaznamujejo živahna mednarodna
+                            trgovina in večje mednarodne varnostne grožnje, kar vpliva na
+                            zakonodajne in proračunske odločitve. V sedmem mandatu lahko še vedno
+                            zasledimo poudarjeno zanimanje za socialnovarstvene tematike, poleg tega
+                            pa tudi intenzivnejše razprave s področja zdravstva, kar je v veliki
+                            meri posledica močnega pritiska na proračun zaradi hude gospodarske
+                            krize v tistem obdobju, ki je negativno vplivala tudi na že propadajoči
+                            sistem javnega zdravstva.</p>
+                        <p xml:id="sl-p-142">Opazimo lahko tudi, da v prvem mandatu poslanci in
+                            poslanke namenjajo skoraj enako pozornost (glede na delež analiziranih
+                            ključnih besed) večjemu številu tem kot v sedmem mandatu (5 skupnih tem
+                            z enako pomembnostjo v prvem mandatu oz. 3 skupne teme v sedmem
+                            mandatu). V prvem mandatu tako poslanci le rahlo pogosteje kot poslanke
+                            razpravljajo o <hi rend="italic">Javni upravi</hi> (M: 14 %, Ž: 11 %),
+                                <hi rend="italic">Gospodarstvu in tehnologiji </hi>(M: 8 %, Ž: 6 %)
+                            ter <hi rend="italic">Pravosodju </hi>(M: 2 %, Ž: 1%), poslanke pa nekaj
+                            pogosteje o <hi rend="italic">Kmetijstvu, gozdarstvu in prehrani
+                            </hi>(M: 3 %, Ž: 4 %), medtem ko vsi razpravljajo enako pogosto o <hi
+                                rend="italic">Obrambi </hi>(1 %). V sedmem mandatu so glede na delež
+                            analiziranih ključnih besed poslankam in poslancem enako pomembne zgolj
+                            tri teme, in sicer <hi rend="italic">Finance</hi> (4 %), <hi
+                                rend="italic">Pravosodje</hi> (3 %) in <hi rend="italic">Javna
+                                uprava </hi>(3 %). Za poglobitev rezultatov bi bilo zanimivo
+                            raziskati, na kakšne načine poslanke in poslanci pristopajo k tem
+                            skupnim temam in o njih razpravljajo.</p>
+                        <p xml:id="sl-p-143">Med temami, ki se pojavijo zgolj v podkorpusu govorov
+                            poslank, najdemo <hi rend="italic">Izobraževanje, znanost in šport</hi>
+                            v prvem mandatu ter <hi rend="italic">Zdravje</hi>, <hi rend="italic"
+                                >Delo, družino in socialne zadeve</hi> ter <hi rend="italic"
+                                >Kulturo</hi> v sedmem mandatu. Teme, ki se pojavijo zgolj pri
+                            poslancih, pa so <hi rend="italic">Okolje in prostor</hi> ter <hi
+                                rend="italic">Notranje zadeve</hi> v obeh parlamentarnih mandatih,
+                                <hi rend="italic">Zunanje zadeve</hi> (v prvem mandatu) in <hi
+                                rend="italic">Obramba</hi> (v sedmem mandatu). Presenetljivo je, da
+                            se najpogostejše tri teme poslank sploh ne pojavijo na seznamu tem
+                            poslancev, medtem ko se najpogostejše teme poslancev (<hi rend="italic"
+                                >Infrastruktura, Javna uprava, Zunanje zadeve</hi>) pojavijo na
+                            seznamu tem poslank, čeprav je delež teh tem majhen. Poleg tega je
+                            zanimivo, da tema <hi rend="italic">Gospodarstvo in tehnologija</hi> pri
+                            poslankah izgubi na pomembnosti med prvim in sedmim mandatom, medtem ko
+                            to ne velja za poslance.</p>
+                        <p xml:id="sl-p-144">Rezultati poleg različnih področij zanimanja kažejo
+                            tudi na slogovne razlike v razpravah poslank in poslancev. V obeh
+                            mandatih so poslanci uporabili precej več slogovno zaznamovanih besed
+                            (tj. Očitnih pogovornih ali žargonskih besed, ki so izrazito značilne za
+                            posamezne govorce) kot poslanke. Uporaba takšnih besed pri poslancih se
+                            je v sedmem mandatu v primerjavi s prvim mandatom potrojila, kar po eni
+                            strani kaže na večjo sproščenost poslancev na splošno, po drugi pa
+                            označuje spremembo v kulturi razpravljanja, ki je v zadnjih dveh
+                            desetletjih postala živahnejša in bolj neformalna. Opazimo lahko tudi,
+                            da so ideološke besede, ki običajno delujejo razdvajajoče, značilne le
+                            za poslance. To je v skladu z literaturo, kjer avtorji ugotavljajo, da
+                            so moške sporazumevalne strategije bolj agresivne in tekmovalne, medtem
+                            ko je ženski slog sporazumevanja bolj sodelovalen (<ref
+                                target="#Coates.1997.sl">Coates, 1997</ref>). Vendar naj opozorimo,
+                            da bi bilo treba te zaključke preveriti s podrobnejšo analizo, saj
+                            nekatere sodobne raziskave kažejo, da na sporazumevanje vplivajo
+                            številni dejavniki in je zato razlikovanje med moškim in ženskim načinom
+                            sporazumevanja pogosto preveč simplistično (prim. <ref
+                                target="#Ilie.2013.sl">Ilie, 2013</ref>).</p>
+                        <p xml:id="sl-p-145">Naša analiza kaže tudi na opazne razlike v vlogah in
+                            zanimanjih poslank in poslancev, kar je v skladu s prejšnjimi
+                            raziskavami, iz katerih je razvidno, da se ženske v primerjavi z moškimi
+                            bolj osredotočajo na t. i. Mehka zakonodajna področja. Diahrone
+                            primerjave razkrivajo, da temi <hi rend="italic">Zdravje</hi> in <hi
+                                rend="italic">Socialne zadeve</hi> ostajata med prednostnimi
+                            zanimanji poslank, osredotočenost poslancev pa se je premaknila s tem
+                                <hi rend="italic">Infrastruktura</hi> in <hi rend="italic">Javna
+                                uprava</hi> na <hi rend="italic">Zunanje zadeve. </hi>V prvem
+                            mandatu je bila najpogostejša skupna tema <hi rend="italic">Javna
+                                uprava</hi>, v zadnjem mandatu pa so poslanke in poslanci
+                            najpogosteje razpravljali o temi <hi rend="italic">Finance</hi>. To pa
+                            ne pomeni, da poslanke zdaj več razpravljajo o t. i. Trdih zakonodajnih
+                            področjih. Pravzaprav je ravno nasprotno, saj analiza kaže, da so se
+                            poslanke v sedmem mandatu celo bolj osredotočale na t. i. Mehka
+                            zakonodajna področja kot v prvem mandatu.</p>
+                    </div>
+                </div>
+                <div type="subchapter" xml:id="ch6.4-sl">
+                    <head xml:id="sl-head-88">NALOGA 3: Obravnava tematik, povezanih z ženskami </head>
+                    <p xml:id="sl-p-146">Ta naloga se naslanja na sorodne raziskave (prim. <ref
+                            target="#Blaxill.2016.sl">Blaxill in Beelen, 2016</ref>), v katerih so
+                        raziskovalci ugotavljali, kako pogosto so bile v parlamentarni zgodovini
+                        naslovljena vprašanja enakosti spolov (npr. pravice žensk, diskriminacija
+                        itd.) ter kdo in na kakšen način je takšna vprašanja odpiral. Zanimivo je,
+                        da je vpliv spola očitno opazen tudi v državah z visokim deležem žensk v
+                        parlamentu. Ena takšnih je Švedska, za katero so <ref target="#Bäck.2014.sl"
+                            >Bäck idr. (2014)</ref> ugotovili, da poslanke redkeje razpravljajo o
+                        vprašanjih s t. i. trdih zakonodajnih področij. <ref
+                            target="#AntićGaber.2003.sl">Antić Gaber in Ilonszki (2003)</ref>
+                        pravita, da družba običajno pričakuje, da bodo poslanke dejavne na drugih
+                        področjih politike kot moški. Pri tem gre, kot to ugotavljajo politologi
+                        (glej <ref target="#Osborn.2012.sl">Osborn, 2012</ref>), za področja
+                        politike, ki so še posebej povezana z ženskami zaradi njihove zgodovinske
+                        vloge v družbi ali neposrednega vpliva na življenje žensk.</p>
+                    <p xml:id="sl-p-147">Ker se pri vprašanjih enakosti spolov še vedno največkrat
+                        govori o neenaki vlogi žensk v družbi in njihovem posebnem položaju, iz
+                        katerega izhajajo tako določene pravice in teme, ki se tičejo njihovega
+                        življenja, kot tudi diskriminatorne prakse, bomo v Nalogi 3 raziskali,
+                        katere tematike, povezane z ženskami, prevladujejo v parlamentarnih
+                        razpravah in kako pogosto se o njih razpravlja, pri čemer se bomo
+                        osredotočili na uporabo samostalnika »ženska« kot eksplicitnega pokazatelja
+                        razprav o teh tematikah.</p>
+                    <div type="subchapter" xml:id="ch6.4.1-sl">
+                        <head xml:id="sl-head-89">Delo s frekvencami</head>
+                        <p xml:id="sl-p-148">Najprej nas zanima, kako pogosto poslanci in poslanke
+                            uporabljajo lemo samostalnika »ženska« v različnih časovnih obdobjih
+                            (1992–2018). Izvedemo poizvedbe v vseh podkorpusih in v preglednico
+                            zabeležimo podatke o frekvenci, kot prikazuje Tabela 6. Ker želimo
+                            primerjati podkorpusa različnih velikosti, moramo namesto absolutne
+                            frekvence uporabiti <ref target="http://www.thegrammarlab.com/?p=160"
+                                >normalizirano frekvenco</ref>, pri kateri je uporabljeno enako
+                            skupno število vseh besed v (pod)korpusu. Absolutna frekvenca je v
+                            primeru primerjave korpusov različnih velikosti namreč lahko zavajajoča.
+                            Če na primer pogledamo podatka o absolutni frekvenci izbrane besede za
+                            drugi mandat (Ž: 190; M: 794), bi lahko sklepali, da poslanci uporabijo
+                            samostalnik »ženska« štirikrat pogosteje kot poslanke. Ker pa je
+                            podkorpus govorov poslank v tem parlamentarnem mandatu veliko manjši od
+                            podkorpusa govorov poslancev, nam šele normalizirana frekvenca (v našem
+                            primeru na milijon besed), pove, da so ta samostalnik poslanke izrekle
+                            pravzaprav petkrat pogosteje (249,29) kot poslanci (50,36).</p>
+                        <note rend="bluebox" xml:id="sl-note-22">
+                            <p>Prikaz poizvedbe v konkordančniku NoSketchEngine za lemo samostalnika
+                                »ženska« si lahko ogledate v <ref mimeType="https://sidih.si/20.500.12325/file2551">videoposnetku o luščenju kolokacij</ref>
+                                (min. 00:10–1:13).</p>
+                            <graphic url="https://sidih.si/cdn/120/4_SL_luscenje-kolokacij.mp4" mimeType="video/mp4"/>
+                            <p>Konkordančni niz za lemo samostalnika »ženska« je na voljo tukaj:</p>
+                            <list type="unordered">
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-%C5%BDenske--AllTerms-Female&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name="
+                                        >VsiMandati-Ženske</ref>
+                                </item>
+                            </list>
+                            <figure xml:id="figure10-sl">
+                                <graphic url="media/figure10.jpg"/>
+                                <head>Slika 10: Začetek konkordančnega niza za lemo samostalnika
+                                    »ženska« z absolutno frekvenco (številka 1) in normalizirano
+                                    frekvenco (številka 2).</head>
+                            </figure>
+                        </note>
+                        <figure xml:id="table6-sl">
+                            <graphic url="media/table6-sl.jpg"/>
+                            <head>Tabela 6. Podatki o absolutni in normalizirani frekvenci za lemo
+                                samostalnika »ženska« v korpusu siParl 2.0.</head>
+                        </figure>
+                        <p xml:id="sl-p-151">Na splošno je normalizirana frekvenca iskane besede za
+                            celotno časovno obdobje, ki ga zajema korpus siParl 2.0, skoraj petkrat
+                            višja v podkorpusu govorov poslank kot v podkorpusu govorov poslancev
+                            (221,21 proti 45,99). Kot je razvidno iz Slike 10, poslanke v svojih
+                            govorih pogosteje omenjajo ženske kot poslanci. Čeprav je v obdobju med
+                            drugim in četrtim mandatom (1996–2008) mogoče opaziti intenzivnejšo
+                            obravnavo teh področij pri poslankah, je v zadnjih mandatih njihovo
+                            zanimanje za ta področja izrazito usahnilo.</p>
+                        <p xml:id="sl-p-152">Najbolj presenetljive rezultate pri poslankah smo
+                            odkrili v tretjem in petem mandatu. V tretjem mandatu je normalizirana
+                            frekvenca iskane besede dosegla rekordno visoko stopnjo, kar je lahko
+                            posledica manjšega števila poslank v prejšnjih dveh parlamentarnih
+                            mandatih in neenakopravnega položaja žensk v družbi nasploh. Ker pa je
+                            enak trend mogoče opaziti tudi v podkorpusu govorov poslancev, se zdi,
+                            da so k temu prispevali tudi drugi razlogi. Za boljši vpogled v ta pojav
+                            smo izvedli kvalitativno analizo, pri kateri smo pregledali 50
+                            konkordanc petih najdejavnejših poslancev. Iz konkordanc je razvidno, da
+                            se je v tistem času veliko razpravljalo o zakonodaji prav v zvezi z
+                            vprašanji enakosti spolov (npr. zakonodaja o enakih možnostih in spolnih
+                            kvotah). Skoraj desetletje pozneje, v petem mandatu, se je število omemb
+                            iskane besede v podkorpusu govorov poslank nenadoma zmanjšalo in padlo
+                            celo pod vrednost frekvence pred letom 2000, kljub precej večjemu
+                            številu poslank v parlamentu. Peti mandat je potekal v obdobju velike
+                            svetovne gospodarske krize, ki je Slovenijo močno prizadela in je bila
+                            verjetno osrednji predmet parlamentarnih razprav, vendar bi bilo to
+                            treba potrditi z nadaljnjo raziskavo in kontekstualizacijo ob uporabi
+                            kvalitativnih metod, kot je analiza konkordanc.</p>
+                        <p xml:id="sl-p-153">Zanimivo je tudi, da se v četrtem mandatu kljub drugemu
+                            najnižjemu številu poslank samostalnik »ženska« še vedno zelo pogosto
+                            pojavlja v primerjavi s šestim in sedmim mandatom, kjer je bilo število
+                            poslank precej večje, frekvenca iskane besede pa skoraj dvakrat nižja.
+                            Kot smo opazili že pri splošnem doprinosu poslank k razpravam (glej
+                            razdelek ), kjer smo odkrili veliko razhajanje med številom poslank in
+                            številom besed, ki so jih izrekle, ti rezultati znova kažejo, da zgolj
+                            večje število poslank ne zagotavlja intenzivnejše razprave o tematikah,
+                            ki zadevajo ženske.</p>
+                        <figure xml:id="figure10b-sl">
+                            <graphic url="media/figure10b-sl.jpg"/>
+                            <head>Slika 10: Normalizirana frekvenca za lemo samostalnika »ženska« v
+                                govorih poslank in poslancev v korpusu siParl 2.0.</head>
+                        </figure>
+                    </div>
+                    <div type="subchapter" xml:id="ch6.4.2-sl">
+                        <head xml:id="sl-head-93">Luščenje kolokacij</head>
+                        <p xml:id="sl-p-154">Predstavili bomo še eno priljubljeno tehniko korpusne
+                            analize, in sicer <ref
+                                target="https://en.wikipedia.org/wiki/Collocation">luščenje
+                                kolokacij</ref>. S to tehniko, ki temelji na statističnih testih,
+                            pridobimo seznam besed, ki se ob jedrni besedi pojavljajo pogosteje, kot
+                            bi bilo to naključno verjetno. Kolokacije se najpogosteje uporabljajo v
+                            leksikografiji in na sorodnih področjih uporabnega jezikoslovja, mi pa
+                            jih bomo uporabili kot sredstvo za raziskovanje konceptov ali tem, o
+                            katerih se razpravlja v parlamentu.</p>
+                        <p xml:id="sl-p-155">Da bi lahko ugotovili, o katerih tematikah, ki zadevajo
+                            ženske, se v parlamentu največ razpravlja, bomo analizirali kolokacije
+                            samostalnika »ženska« v dveh podkorpusih, ki vsebujeta govore poslank
+                            oziroma poslancev iz vseh sedmih mandatov, torej podkorpusa <hi
+                                rend="italic">VsiMandati-Ženske</hi> in <hi rend="italic"
+                                >VsiMandati-Moški</hi>.</p>
+                        <note rend="bluebox" xml:id="sl-note-23">
+                            <p>Videoposnetek, ki prikazuje postopek luščenja kolokacij v
+                                konkordančniku NoSketchEngine, je na voljo na tej <ref target="https://sidih.si/20.500.12325/file2551">povezavi</ref>.</p>
+                            <graphic url="https://sidih.si/cdn/120/4_SL_luscenje-kolokacij.mp4" mimeType="video/mp4"/>
+                            <p>Izluščimo kolokacije v razponu ene besede levo in ene besede desno od
+                                jedrne besede (tj. leme samostalnika »ženska«), pri čemer se mora
+                                kolokacijski kandidat (tj. beseda, ki se tipično pojavlja ob jedrni
+                                besedi) v korpusu pojaviti vsaj petkrat, skupaj z jedrno besedo v
+                                določenem razponu pa vsaj trikrat. Razpon in najnižjo frekvenco je
+                                mogoče nastaviti ročno in sta odvisna od jedrne besede, velikosti
+                                korpusa ter cilja naše raziskave. Ker želimo analizo v tem gradivu
+                                omejiti na ustaljene besedne zveze, uporabljamo ozek razpon in
+                                stroga merila glede frekvence.</p>
+                            <p>Za določanje trdnosti kolokacij uporabimo statistično mero <ref
+                                    target="https://www.sketchengine.eu/my_keywords/logdice/"
+                                    >logDice</ref>. Čeprav konkordančnik NoSketch Engine ponuja tudi
+                                druge mere, po katerih se izračuna trdnost kolokacij, kot sta Mutual
+                                Information ali T-score, izberemo mero logDice, ker nanjo ne vpliva
+                                velikost korpusa in so zato rezultati uporabni za primerjalno
+                                analizo tudi v primeru uporabe podkorpusov različnih velikosti, kot
+                                to velja za našo analizo.</p>
+                            <p>Seznama kolokacij za lemo samostalnika »ženska« sta na voljo
+                                tukaj:</p>
+                            <list type="unordered">
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-%C5%BDenske--AllTerms-Female&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name=">
+                                        <seg>VsiMandati</seg>
+                                    </ref>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-%C5%BDenske--AllTerms-Female&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name=">
+                                        <seg>-</seg>
+                                    </ref>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-%C5%BDenske--AllTerms-Female&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name=">
+                                        <seg>Ženske</seg>
+                                    </ref>
+                                </item>
+                                <item>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-Mo%C5%A1ki--AllTerms-Male&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name=">
+                                        <seg>VsiMandati</seg>
+                                    </ref>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-Mo%C5%A1ki--AllTerms-Male&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name=">
+                                        <seg>-M</seg>
+                                    </ref>
+                                    <ref
+                                        target="https://www.clarin.si/noske/run.cgi/first?corpname=siparl20&amp;reload=&amp;iquery=&amp;queryselector=lemmarow&amp;lemma=%C5%BEenska&amp;lpos=-s&amp;phrase=&amp;word=&amp;wpos=&amp;char=&amp;cql=&amp;default_attr=word&amp;fc_lemword_window_type=both&amp;fc_lemword_wsize=5&amp;fc_lemword=&amp;fc_lemword_type=all&amp;fc_pos_window_type=both&amp;fc_pos_wsize=5&amp;fc_pos_type=all&amp;usesubcorp=VsiMandati-Mo%C5%A1ki--AllTerms-Male&amp;fsca_session.organ=&amp;fsca_session.id=&amp;fsca_session.title=&amp;fsca_session.month=&amp;fsca_session.date=&amp;fsca_speech.who=&amp;fsca_speech.name=">
+                                        <seg>oški</seg>
+                                    </ref>
+                                </item>
+                            </list>
+                            <p>Oba seznama kolokacij uvozimo v preglednico in ju ročno analiziramo
+                                (glej razdelek ).</p>
+                        </note>
+                    </div>
+                    <div type="subchapter" xml:id="ch6.4.3-sl">
+                        <head xml:id="sl-head-94">Primerjalna analiza</head>
+                        <p xml:id="sl-p-161">Z vsakega seznama vzamemo prvih 100 kolokacijskih
+                            kandidatov (tj. besed, ki se tipično pojavljajo ob jedrni besedi in
+                            torej skupaj z njo tvorijo kolokacijo) in jih ročno razdelimo v tri
+                            kategorije: ženske, moški in skupno<note place="foot" xml:id="ftn9-sl"
+                                n="9">Kategorija skupno, kot nakazuje njeno ime, združuje
+                                kolokacijske kandidate, ki se pojavijo tako na seznamu za podkorpus
+                                govorov poslank kot za podkorpus govorov poslancev.</note>. Nato
+                            vsako besedo razvrstimo v enega od sedmih tematskih sklopov, ki smo jih
+                            oblikovali na podlagi predhodnega pregleda konkordanc, kot prikazuje
+                            Tabela 7. Kolokacijskim kandidatom, ki so slovnične besede (na primer
+                            predlogi) in niso uporabljeni v konkordancah na eno prevladujočo temo,
+                            pripišemo oznako <hi rend="italic">Razno</hi>.</p>
+                        <figure xml:id="table7-sl">
+                            <graphic url="media/table7-sl.jpg"/>
+                            <head>Tabela 7: Primeri sklopov kolokacij.</head>
+                        </figure>
+                        <p xml:id="sl-p-162">Rezultati, predstavljeni v Tabeli 8, kažejo, da se
+                            nekaj več kot polovica kolokacij (51 %) pojavlja tako pri poslankah kot
+                            pri poslancih, kar kaže na skupne točke v razumevanju položaja žensk v
+                            sodobni družbi. Velika večina skupnih kolokacij (skoraj 70 %) spada v
+                            prva dva tematska sklopa: <hi rend="italic">Politika, zastopanost in
+                                enakopravnost</hi> in <hi rend="italic">Družbeni status in
+                                zaposlitev</hi>, in se nanaša na koncepte, povezane z zastopanostjo
+                            žensk (npr. »participacija«), njihovim družbenim položajem (npr.
+                            »samski«) in enakostjo (npr. »emancipacija«).</p>
+                        <figure xml:id="table8-sl">
+                            <graphic url="media/table8-sl.jpg"/>
+                            <head>Tabela 8: Frekvenca tematskih sklopov za prvih 100 kolokacijskih
+                                kandidatov v govorih poslank in poslancev v vseh sedmih
+                                mandatih.</head>
+                        </figure>
+                        <p xml:id="sl-p-163">Opazimo lahko tudi, da so v podkorpusu govorov poslank
+                            primerljivo zastopani vsi tematski sklopi razen enega, skupaj pa
+                            pokrivajo skoraj 60 % kolokacij. Tako je edina izjema tematski sklop <hi
+                                rend="italic">Proaktivnost žensk in opolnomočenje</hi>. Kolokacije,
+                            ki spadajo v ta tematski sklop, so približno dvakrat redkejše kot
+                            kolokacije iz katerega koli drugega sklopa. V podkorpusu govorov
+                            poslancev večina kolokacij (61 %) spada v tri tematske sklope, in sicer
+                                <hi rend="italic">Problemi in nasilje, Politika, zastopanost in
+                                enakopravnost</hi> in <hi rend="italic">Proaktivnost žensk in
+                                opolnomočenje.</hi> Poleg tega podroben pregled oznak razkriva, da
+                            se poslanci osredotočajo predvsem na družbeni status žensk (npr.
+                            »poročen«) in njihove težave (npr. »zatiranje«) ter na njihovo
+                            proaktivnost in opolnomočenje (npr. »sposoben«), medtem ko težavam,
+                            povezanim z zaposlitvijo in zdravjem žensk, ne posvečajo posebne
+                            pozornosti. Kolokacije iz podkorpusa govorov poslank se v prvi vrsti
+                            nanašajo na področje zdravstva (npr. »zdrav«) in ukrepe, vezane na pomoč
+                            in zaščito (npr. »omogočati«). Tem sledijo kolokacije, ki se nanašajo na
+                            družbeni status žensk (npr. »izobrazba«) in nasilje (npr. »posiljen«),
+                            kar je spet v nasprotju s podkorpusom govorov poslancev, kjer je večji
+                            poudarek na težavah, ki ne vključujejo nasilja (npr. »poniževanje«).
+                            Podobno kot v podkorpusu govorov poslancev pa tudi v podkorpusu govorov
+                            poslank med prvimi 100 kolokacijskimi kandidati ni besed, povezanih z
+                            zaposlitvijo.</p>
+                        <p xml:id="sl-p-164">Ti rezultati kažejo, da poslanke poskušajo obravnavati
+                            številna vprašanja, s katerimi se ženske srečujejo na različnih
+                            področjih življenja, in sicer od zdravstvenih vprašanj do nasilja nad
+                            ženskami in težav pri političnem delovanju. Poslanci pa se bolj
+                            osredotočajo na neenakopravnost žensk v sodobni družbi in ženske vidijo
+                            kot dejavne udeleženke v procesu sprememb. Ti rezultati potrjujejo tudi
+                            ugotovitve avtoric <ref target="#AntićGaber.2003.sl">Antić Gaber in
+                                Ilonszki (2003)</ref>, ki sta opazovali dejavnost žensk v slovenskem
+                            parlamentu v krajšem obdobju (1996–2004) in z raznolikimi nekorpusnimi
+                            metodami analize pokazali, da med poslankami in poslanci obstaja jasna
+                            razlika med zakonodajnimi prioritetami, pri čemer sta opredelili podobne
+                            teme kot naša analiza.</p>
+                        <p xml:id="sl-p-165">Naša zadnja ugotovitev zadeva veliko število slovničnih
+                            besed v podkorpusu govorov poslank, ki so skoraj štirikrat pogostejše
+                            kot v podkorpusu govorov poslancev. Slovnične besede kot kolokacijski
+                            kandidati v podkorpusu govorov poslank večinoma vključujejo prislove,
+                            predloge, veznike, zaimke in števnike, v podkorpusu govorov poslancev pa
+                            prevladujejo le števniki. Podobno kot smo ugotovili pri analizi ključnih
+                            besed (glej razdelek ), to znova kaže na drugačen slog razpravljanja pri
+                            poslankah. Ta ugotovitev je skladna s sorodnimi raziskavami, v katerih
+                            raziskovalci poročajo, da ženske običajno uporabljajo več jezikovnih
+                            sredstev, kot so diskurzni omejevalci, vljudnostne oblike in vprašalni
+                            pristavki (<ref target="#Coates.1997.sl">Coates, 1997</ref>), več
+                            intenzifikatorjev in (predvsem ocenjevalnih) pridevnikov (<ref
+                                target="#Poynton.1989.sl">Poynton, 1989</ref>) ter več osebnih
+                            zaimkov kot moški, ki pri sporazumevanju uporabljajo več števnikov,
+                            členov in predlogov (<ref target="#Newman.2008.sl">Newman idr.,
+                                2008</ref>).</p>
+                    </div>
+                </div>
+            </div>
+            <div type="chapter" xml:id="ch7" xml:lang="en" corresp="#ch7-sl">
                 <head xml:id="head-50">Conclusions</head>
                 <p xml:id="p-87">The aim of this tutorial was to demonstrate the potential of
                     linguistic corpora and corpus analysis techniques for the analysis of
@@ -1344,9 +2626,34 @@
                     contributing to the multilingual, trans-national and trans-cultural comparative
                     research on parliamentary discourse. </p>
             </div>
+            <div type="chapter" xml:id="ch7-sl" xml:lang="sl" corresp="#ch7">
+                <head xml:id="sl-head-98">Zaključki</head>
+                <p xml:id="sl-p-169">Cilj učnega gradiva je bil prikazati uporabnost jezikovnih
+                    korpusov za analizo družbenokulturnih pojavov, ki jih lahko raziskujemo na
+                    podlagi jezikovne rabe v specializiranem diskurzu. Pokazali smo, kako
+                    korpusnoanalitične tehnike omogočajo ugotovitve, ki presegajo intuicijo
+                    raziskovalke oz. raziskovalca in tako ponujajo večjo preglednost, objektivnost,
+                    zanesljivost in ponovljivost raziskav, kar postajajo vse pomembnejša načela tudi
+                    na področju humanistike in družboslovja.</p>
+                <p xml:id="sl-p-170">Glavni doprinos tega učnega gradiva lahko razdelimo na tri
+                    dele. Najprej smo pokazali, kako pomembno je razumeti vsebino in strukturo
+                    podatkov, ki jih uporabljamo v raziskavi, da lahko čim bolje izkoristimo njihov
+                    potencial. Nato smo predstavili, kako lahko nabor standardnih metod korpusne
+                    analize uporabimo za veliko več kot le kvantifikacijo in preproste poizvedbe v
+                    korpusu. Namesto tega smo rezultate, pridobljene s konkordančnikom, sistematično
+                    uporabili kot odskočno desko za podrobno ročno kvalitativno analizo, ki
+                    rezultate previdno umešča v ustrezni družbenojezikovni kontekst. Čeprav smo
+                    preučevali razprave iz slovenskega parlamenta, so predstavljeni analitični
+                    postopki splošni in jih je mogoče uporabiti tudi na (parlamentarnih) <ref
+                        target="https://www.clarin.eu/resource-families">korpusih v drugih
+                        jezikih</ref>. Nenazadnje smo analizo umestili tudi v resnično raziskovalno
+                    okolje, s čimer smo skušali prikazati uporabnost splošnih metod korpusne analize
+                    za obravnavo številnih raziskovalnih vprašanj na področju humanistike in
+                    družboslovja.</p>
+            </div>
         </body>
         <back>
-            <div type="appendix" xml:id="acknw">
+            <div type="appendix" xml:id="acknw" xml:lang="en" corresp="#acknw-sl">
                 <head xml:id="head-51">Acknowledgements</head>
                 <p xml:id="p-90">The work described in this paper was funded by CLARIN.SI – the
                     Slovene national node of the European Common Language Resources and Technology
@@ -1355,9 +2662,20 @@
                     Sciences &amp; Humanities Open Cloud (GA No. 823782). We would also like to
                     thank Prof. Dr. Milica Antić Gaber, Assist. Prof. Dr. Irena Selišnik, Prof. Dr.
                     Cornelia Ilie, Tjaša Cankar, Mladen Zobec and Ruben Ros for their thoughtful
-                    comments. </p>
+                    comments.</p>
             </div>
-            <div type="bibliogr" xml:id="bibl">
+            <div type="appendix" xml:id="acknw-sl" xml:lang="sl" corresp="#acknw">
+                <head xml:id="sl-head-100">Zahvale</head>
+                <p xml:id="sl-p-172">Izdelavo tega učnega gradiva so podprli CLARIN.SI, slovenski
+                    del Evropske infrastrukture za jezikovne vire in tehnologije CLARIN,
+                    raziskovalni program ARRS P6-0215 (Slovenski jezik – osnovne, kontrastivne in
+                    uporabne študije) in projekt H2020 SSHOC – Social Sciences and Humanities Open
+                    Cloud (GA 823782). Posebna zahvala gre tudi red. prof. dr. Milici Antić Gaber,
+                    doc. dr. Ireni Selišnik, prof. dr. Cornelii Ilie, Tjaši Cankar, Mladenu Zobcu in
+                    Rubenu Rosu za strokovno recenzijo in testiranje učnega gradiva ter vse njihove
+                    dragocene komentarje.</p>
+            </div>
+            <div type="bibliogr" xml:id="bibl" xml:lang="en" corresp="#bibl-sl">
                 <head xml:id="head-52">References</head>
                 <listBibl xml:id="listBibl-1">
                     <bibl xml:id="Alasuutari.2018">Alasuutari, P., Rautalin, M., &amp; Tyrkkö, J.
@@ -1489,7 +2807,134 @@
                         Congress. Norman: University of Oklahoma Press. 170–197.</bibl>
                 </listBibl>
             </div>
-            <div type="summary" xml:id="summary">
+            <div type="bibliogr" xml:id="bibl-sl" xml:lang="sl" corresp="#bibl">
+                <head xml:id="sl-head-102">Reference</head>
+                <listBibl xml:id="sl-listBibl-2">
+                    <bibl xml:id="Alasuutari.2018.sl">Alasuutari, P., Rautalin, M., in Tyrkkö, J.
+                        (2018). The Rise of the Idea of Model in Policymaking: The case of the
+                        British parliament, 1803-2005. <hi rend="italic">European Journal of
+                            Sociology/Archives Européennes de Sociologie</hi>, <hi rend="italic"
+                            >59</hi>(3), 341–363.</bibl>
+                    <bibl xml:id="AntićGaber.2003.sl">Antić Gaber, M., in Ilonszki, G. (2003). <hi
+                            rend="italic">Women in parliamentary politics: Hungarian and Slovene
+                            cases comparur.</hi> Peace Institute, Institute for Contemporary Social
+                        and Political Studies. </bibl>
+                    <bibl xml:id="AntićGaber.2017.sl">Antić Gaber, M. in Selišnik, I. (2017). <hi
+                            rend="italic">The Slovene version of a “fast track” to political
+                            equality</hi>. Teorija in Praksa, 54(2), 337.</bibl>
+                    <bibl xml:id="Bäck.2014.sl">Bäck, Hanna., Debus, Marc., in Müller, Jochen.
+                        (2014). <hi rend="italic">Who Takes the Parliamentary Floor? The Role of
+                            Gender in Speech-making in the Swedish Riksdag.</hi>
+                    </bibl>
+                    <bibl xml:id="Baker.2014.sl">Baker, P. (2014). <hi rend="italic">Using corpora
+                            to analyze gender</hi>. London: Bloomsbury.</bibl>
+                    <bibl xml:id="Biber.2015.sl">Biber, D., in Reppen, R. (2015). <hi rend="italic"
+                            >The Cambridge handbook of English corpus linguistics</hi>. Cambridge:
+                        Cambridge University Press. </bibl>
+                    <bibl xml:id="Biel.2018.sl">Biel, Ł., Biernacka, A., in Jopek-Bosiacka, A.
+                        (2018). Collocations of Terms in EU Competition Law: A Corpus Analysis of EU
+                        English Collocations. V: <hi rend="italic">Language and Law</hi> (str.
+                        249–274). Cham: Springer.</bibl>
+                    <bibl xml:id="Bing.1998.sl">Bing, J. M., in Bergvall, V. L. (1998). The question
+                        of questions: Beyond binary thinking. In J. Coates (ur.), <hi rend="italic"
+                            >Language and Gender: A Reader</hi> (Vol. 1, str. 496–510). Oxford:
+                        Blackwell.</bibl>
+                    <bibl xml:id="Blaxill.2016.sl">Blaxill, L., in Beelen, K. (2016). <hi
+                            rend="italic">Women in Parliament Since 1945: Have they changed the
+                            debate?</hi> History in Policy. </bibl>
+                    <bibl xml:id="Coates.1997.sl">Coates, Jennifer. (1997). <hi rend="italic">Women,
+                            men and language: A sociolinguistic account of gender differences in
+                            language</hi>. London: Longman.</bibl>
+                    <bibl xml:id="Demmen.2018.sl">Demmen, J., Jeffries, L., in Walker, B. (2018).
+                        Charting the semantics of labour relations in House of Commons debates
+                        spanning two hundred years. <hi rend="italic">Doing Politics: Discursivity,
+                            Performativity and Mediation in Political Discourse</hi>, <hi
+                            rend="italic">80</hi>, 81.</bibl>
+                    <bibl xml:id="Eckert.2013.sl">Eckert, P., in McConnell-Ginet, S. (2013). <hi
+                            rend="italic">Language and gender</hi>. Cambridge: Cambridge University
+                        Press. </bibl>
+                    <bibl xml:id="Goddard.2015.sl">Goddard, A., in Patterson, L. M. (2015). <hi
+                            rend="italic">Language and gender</hi>. London: Routledge.</bibl>
+                    <bibl xml:id="Hansen.2018.sl">Hansen, D. H., Navarretta, C., in Offersgaard, L.
+                        (2018). A Pilot Gender Study of the Danish Parliament Corpus. <hi
+                            rend="italic">Proceedings of the ParlaClarin Workshop at the Eleventh
+                            International Conference on Language Resources and Evaluation: (LREC
+                            2018)</hi>.</bibl>
+                    <bibl xml:id="Ilie.2013.sl">Ilie, C. (2013). Gendering confrontational rhetoric:
+                        Discursive disorder in the British and Swedish parliaments. Democratization,
+                        20(3), 501–521. </bibl>
+                    <bibl xml:id="Ilie.2017.sl">Ilie, C. (2017). Parliamentary debates. In R. Wodak
+                        &amp; B. Forchtner (Eds.), The Routledge handbook of language and politics
+                        (pp. 309–325). Routledge. </bibl>
+                    <bibl xml:id="Jaworska.2018.sl">Jaworska, S., in Ryan, K. (2018). Gender and the
+                        language of pain in chronic and terminal illness: A corpus-based discourse
+                        analysis of patients’ narratives. <hi rend="italic">Social Science &amp;
+                            Medicine</hi>, <hi rend="italic">215</hi>, 107–114.</bibl>
+                    <bibl xml:id="Karan.2016.sl">Karan, M., Šnajder, J., Sirinic, D., in Glavaš, G.
+                        (2016). Analysis of policy agendas: Lessons learned from automatic topic
+                        classification of croatian political texts. <hi rend="italic">Proceedings of
+                            the 10th SIGHUM Workshop on Language Technology for Cultural Heritage,
+                            Social Sciences, and Humanities</hi>, 12–21.</bibl>
+                    <bibl xml:id="Kustec.2017.sl">Kustec, L. S. (ur.) (2017). <hi rend="italic"
+                            >Poslanke Državnega zbora: Uradno in osebno od prvega do sedmega mandata
+                            (1992-2017)</hi>. Ljubljana: Državni zbor.</bibl>
+                    <bibl xml:id="Leijenaar.1997.sl">Leijenaar, M. (1997). <hi rend="italic">How to
+                            create a gender balance in political decision-making: A guide to
+                            implementing policies for increasing the participation of women in
+                            political decision-making</hi>. Office for Official Publications of the
+                        European Communities. </bibl>
+                    <bibl xml:id="Litosseliti.2006.sl">Litosseliti, L. (2006). <hi rend="italic"
+                            >Gender and Language: Theory and Practice</hi>. Hodder Arnold. </bibl>
+                    <bibl xml:id="Marshall.2000.sl">Marshall, C. (2000). Policy discourse analysis:
+                        Negotiating gender equity. <hi rend="italic">Journal of Education
+                            Policy</hi>, <hi rend="italic">15</hi>(2), 125–156.</bibl>
+                    <bibl xml:id="McEnery.2011.sl">McEnery, T., in Hardie, A. (2011). <hi
+                            rend="italic">Corpus linguistics: Method, theory and practice</hi>.
+                        Cambridge: Cambridge University Press. </bibl>
+                    <bibl xml:id="Mensah.2018.sl">Mensah, E. O., in Wood, S. F. (2018).
+                        Articulations of feminine voices in Ghana’s parliament: A study of the
+                        Hansard from 2010-2011. <hi rend="italic">AFRREV LALIGENS: An International
+                            Journal of Language, Literature and Gender Studies</hi>, <hi
+                            rend="italic">7</hi>(2), 61–77.</bibl>
+                    <bibl xml:id="Mollin.2007.sl">Mollin, S. (2007). The Hansard hazard: Gauging the
+                        accuracy of British parliamentary transcripts. <hi rend="italic"
+                            >Corpora</hi>, <hi rend="italic">2</hi>(2), 187–210.</bibl>
+                    <bibl xml:id="Nanni.2018.sl">Nanni, F., Osman, M., Cheng, Y.-R., Ponzetto, S.
+                        P., in Dietz, L. (2018). UKParl: A Semantified and Topically Organized
+                        Corpus of Political Speeches. V: D. Fišer in F. de Jong (ur.), <hi
+                            rend="italic">Proceedings of the Eleventh International Conference on
+                            Language Resources and Evaluation (LREC 2018)</hi> (str. 29–32).
+                        European Language Resources Association (ELRA). </bibl>
+                    <bibl xml:id="Newman.2008.sl">Newman, M. L., Groom, C. J., Handelman, L. D., in
+                        Pennebaker, J. W. (2008). Gender differences in language use: An analysis of
+                        14,000 text samples. <hi rend="italic">Discourse Processes</hi>, <hi
+                            rend="italic">45</hi>(3), 211–236.</bibl>
+                    <bibl xml:id="Osborn.2012.sl">Osborn, T. L. (2012). <hi rend="italic">How women
+                            represent women: Political parties, gender and representation in the
+                            state legislatures</hi>. Oxford: Oxford University Press. </bibl>
+                    <bibl xml:id="Pančur.2020.sl">Pančur, A., Erjavec, T., Ojsteršek, M., Šorn, M.,
+                        in Blaj Hribar, N. (2020). <hi rend="italic">Slovenian parliamentary corpus
+                            (1990-2018) siParl 2.0</hi>. Slovenian language resource repository
+                        CLARIN.SI. </bibl>
+                    <bibl xml:id="Poynton.1989.sl">Poynton, C. (1989). <hi rend="italic">Language
+                            and gender: Making the difference</hi>. Oxford University Press. </bibl>
+                    <bibl xml:id="Rix.2014.sl">Rix, K. (2014). ‘Whatever Passed in Parliament Ought
+                        to be Communicated to the Public’: Reporting the Proceedings of the Reformed
+                        C ommons, 1833–50. <hi rend="italic">Parliamentary History</hi>, <hi
+                            rend="italic">33</hi>(3), 453–474.</bibl>
+                    <bibl xml:id="Wängnerud.1996.sl">Wängnerud, L. (1996). Intressen kontra
+                        stereotyper. Varför finns det kvinnliga och manliga politikområden i
+                        riksdagen? <hi rend="italic">Statsvetenskaplig Tidskrift</hi>, <hi
+                            rend="italic">99</hi>(2).</bibl>
+                    <bibl xml:id="Wodak.2007.sl">Wodak, R. (2007). Pragmatics and Critical Discourse
+                        Analysis: A cross-disciplinary inquiry. <hi rend="italic">Pragmatics &amp;
+                            Cognition</hi>, <hi rend="italic">15</hi>, 203–225.</bibl>
+                    <bibl xml:id="Wolbrecht.2002.sl">Wolbrecht, C. (2002). <hi rend="italic">Female
+                            legislators and the women’s rights agenda: From feminine mystique to
+                            feminist era</hi>. 170–197.</bibl>
+                </listBibl>
+            </div>
+            <div type="summary" xml:id="summary" xml:lang="en" corresp="#summary-sl">
                 <head xml:id="head-53">Abstract</head>
                 <p xml:id="p-91">This tutorial shows how corpora can be used to investigate language
                     use and communication practices in a specialized socio-cultural context of
@@ -1497,6 +2942,16 @@
                     demonstrate the potential of a richly annotated diachronic corpus of Slovenian
                     parliamentary debates for investigating the characteristics and dynamics of the
                     representation of women and their language use in the Slovenian Parliament.</p>
+            </div>
+            <div type="summary" xml:id="summary-sl" xml:lang="sl" corresp="#summary">
+                <head xml:id="sl-head-104">Povzetek</head>
+                <p xml:id="sl-p-174">V tem učnem gradivu predstavljamo uporabnost jezikovnih
+                    korpusov za analizo družbenokulturnih pojavov, ki jih lahko raziskujemo na
+                    podlagi jezikovne rabe v specializiranem, političnem diskurzu. Na primeru
+                    korpusne analize govorov poslank in poslancev, kjer nas bo zanimala dinamika
+                    zastopanosti žensk v parlamentu in značilnosti njihove rabe jezika, bomo
+                    pokazali vrednost bogato označenega diahronega korpusa slovenskih parlamentarnih
+                    razprav za digitalno humanistiko in družboslovje.</p>
             </div>
         </back>
     </text>
