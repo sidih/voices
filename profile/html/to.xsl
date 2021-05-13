@@ -59,8 +59,8 @@
    <!-- Iz datoteke ../../../../publikacije-XSLT/sistory/html5-foundation6-chs/to.xsl -->
    <xsl:param name="outputDir">docs/</xsl:param>
    
-   <xsl:param name="homeLabel">siParl</xsl:param>
-   <xsl:param name="homeURL">https://sidih.github.io/voices/</xsl:param>
+   <xsl:param name="homeLabel">SI-DIH</xsl:param>
+   <xsl:param name="homeURL">https://sidih.si/20.500.12325/120</xsl:param>
    
    <!-- Iz datoteke ../../../../publikacije-XSLT/sistory/html5-foundation6-chs/my-html_param.xsl -->
    <xsl:param name="title-bar-sticky">false</xsl:param>
