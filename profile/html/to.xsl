@@ -128,7 +128,7 @@
       <figure id="{@xml:id}">
          <img class="imageviewer" src="{concat(substring-before(tei:graphic/@url,'.jpg'),'-norm.jpg')}" data-high-res-src="{tei:graphic[1]/@url}" alt="{normalize-space(tei:head)}"/>
          <figcaption>
-            <xsl:value-of select="normalize-space(tei:head)"/>
+            <xsl:apply-templates select="tei:head"/>
          </figcaption>
       </figure>
       <br/>
@@ -198,5 +198,129 @@
          Your browser does not support the video tag.
       </video>
    </xsl:template>
+   
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc></desc>
+   </doc>
+   <xsl:template match="tei:quote">
+      <xsl:choose>
+         <!-- Če ni znotraj odstavka -->
+         <xsl:when test="not(ancestor::tei:p)">
+            <blockquote>
+               <xsl:choose>
+                  <xsl:when test="@xml:id and not(parent::tei:cit[@xml:id])">
+                     <xsl:attribute name="id">
+                        <xsl:value-of select="@xml:id"/>
+                     </xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="parent::tei:cit[@xml:id]">
+                     <xsl:attribute name="id">
+                        <xsl:value-of select="parent::tei:cit/@xml:id"/>
+                     </xsl:attribute>
+                  </xsl:when>
+               </xsl:choose>
+               <xsl:apply-templates/>
+               <!-- glej spodaj obrazložitev pri procesiranju elementov cit -->
+               <!-- sem preuredil originalno pretvorbo in odstranil pogoj parent::tei:cit/tei:bibl/tei:author -->
+               <xsl:if test="parent::tei:cit/tei:bibl">
+                  <!-- odstranil na koncu parent::tei:cit/tei:bibl/tei:author -->
+                  <xsl:for-each select="parent::tei:cit/tei:bibl">
+                     <cite>
+                        <xsl:apply-templates/>
+                     </cite>
+                  </xsl:for-each>
+               </xsl:if>
+            </blockquote>
+         </xsl:when>
+         <!-- Če pa je znotraj odstavka, ga damo samo v element q, se pravi v narekovaje. -->
+         <xsl:otherwise>
+            <q>
+               <xsl:apply-templates/>
+            </q>
+         </xsl:otherwise>
+      </xsl:choose>
+   </xsl:template>
+   <!-- Če je naveden tudi avtor citata, damo predhodno element quote v parent element cit
+         in mu dodamo še sibling element bibl
+    -->
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc>Preuredim template iz tei:bibl[tei:author] v tei:cit/tei:bibl</desc>
+   </doc>
+   <xsl:template match="tei:cit/tei:bibl">
+      <!-- ta element pustimo prazen,ker ga procesiroma zgoraj v okviru elementa quote -->
+   </xsl:template>
+   
+   <!-- KAZALO SLIK -->
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc>Odstranil procesiranje tei:figure[@type='table']</desc>
+      <param name="thisLanguage"></param>
+   </doc>
+   <xsl:template name="images">
+      <xsl:param name="thisLanguage"/>
+      <!-- izpiše vse slike -->
+      <ul class="circel">
+         <xsl:for-each select="//tei:figure[if ($languages-locale='true') then ancestor::tei:div[@xml:id][@xml:lang=$thisLanguage] else @xml:id][tei:graphic][not(@type='chart')][not(@type='table')]">
+            <xsl:variable name="figure-id" select="@xml:id"/>
+            <xsl:variable name="image-chapter-id" select="ancestor::tei:div[@xml:id][parent::tei:front | parent::tei:body | parent::tei:back]/@xml:id"/>
+            <xsl:variable name="sistoryPath">
+               <xsl:if test="$chapterAsSIstoryPublications='true'">
+                  <xsl:call-template name="sistoryPath">
+                     <xsl:with-param name="chapterID" select="$image-chapter-id"/>
+                  </xsl:call-template>
+               </xsl:if>
+            </xsl:variable>
+            <li>
+               <a href="{concat($sistoryPath,$image-chapter-id,'.html#',$figure-id)}">
+                  <!-- V kazalih slik pri naslovih slik prikažem le besediilo naslova, brez besedila opombe -->
+                  <xsl:apply-templates select="tei:head" mode="slika"/>
+               </a>
+            </li>
+         </xsl:for-each>
+      </ul><!-- konec procesiranja slik -->
+   </xsl:template>
+   
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc>V kazalih slik pri naslovih slik prikažem le besediilo naslova, brez besedila opombe</desc>
+   </doc>
+   <xsl:template match="tei:head" mode="slika">
+      <xsl:apply-templates mode="slika"/>
+   </xsl:template>
+   
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc>V kazalih slik pri naslovih slik prikažem le besediilo naslova, brez besedila opombe</desc>
+   </doc>
+   <xsl:template match="tei:note" mode="slika">
+      
+   </xsl:template>
+   
+   <!-- KAZALO TABEL -->
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc>Namesto tei:table procesira tei:figure[@type='table']</desc>
+      <param name="thisLanguage"></param>
+   </doc>
+   <xsl:template name="tables">
+      <xsl:param name="thisLanguage"/>
+      <!-- izpiše vse tabele, ki imajo naslov (s tem filtriramo tiste tabele, ki so v okviru grafikonov) -->
+      <ul class="circel">
+         <xsl:for-each select="//tei:figure[@type='table'][if ($languages-locale='true') then ancestor::tei:div[@xml:id][@xml:lang=$thisLanguage] else @xml:id][tei:head]">
+            <xsl:variable name="table-id" select="@xml:id"/>
+            <xsl:variable name="table-chapter-id" select="ancestor::tei:div[@xml:id][parent::tei:front | parent::tei:body | parent::tei:back]/@xml:id"/>
+            <xsl:variable name="sistoryPath">
+               <xsl:if test="$chapterAsSIstoryPublications='true'">
+                  <xsl:call-template name="sistoryPath">
+                     <xsl:with-param name="chapterID" select="$table-chapter-id"/>
+                  </xsl:call-template>
+               </xsl:if>
+            </xsl:variable>
+            <li>
+               <a href="{concat($sistoryPath,$table-chapter-id,'.html#',$table-id)}">
+                  <!-- V kazalih slik pri naslovih slik prikažem le besediilo naslova, brez besedila opombe -->
+                  <xsl:apply-templates select="tei:head" mode="slika"/>
+               </a>
+            </li>
+         </xsl:for-each>
+      </ul><!-- konec procesiranja slik -->
+   </xsl:template>
+   
    
 </xsl:stylesheet>

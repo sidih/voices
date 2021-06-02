@@ -4,6 +4,7 @@
         <fileDesc>
             <titleStmt>
                 <title xml:lang="en">Voices of the Parliament</title>
+                <title xml:lang="en">A Corpus Approach to Parliamentary Discourse Research</title>
                 <title xml:lang="sl">»Prvič, sem političarka in ne politik, drugič pa …«</title>
                 <title xml:lang="sl">Korpusni pristop k raziskovanju parlamentarnega
                     diskurza</title>
@@ -46,9 +47,10 @@
         <front>
             <titlePage>
                 <docTitle>
-                    <titlePart>Voices of the Parliament</titlePart>
-                    <titlePart>»Prvič, sem političarka in ne politik, drugič pa …«</titlePart>
-                    <titlePart>Korpusni pristop k raziskovanju parlamentarnega diskurza</titlePart>
+                    <titlePart xml:lang="en">Voices of the Parliament</titlePart>
+                    <titlePart xml:lang="en">A Corpus Approach to Parliamentary Discourse Research</titlePart>
+                    <titlePart xml:lang="sl">»Prvič, sem političarka in ne politik, drugič pa …«</titlePart>
+                    <titlePart xml:lang="sl">Korpusni pristop k raziskovanju parlamentarnega diskurza</titlePart>
                 </docTitle>
                 <docAuthor>Darja Fišer</docAuthor>
                 <docAuthor>Kristina Pahor de Maiti</docAuthor>
@@ -75,6 +77,12 @@
             </divGen>
             <divGen type="toc" xml:id="sl-images" xml:lang="sl" corresp="#images">
                 <head>Seznam slik</head>
+            </divGen>
+            <divGen type="toc" xml:id="tables" xml:lang="en" corresp="#sl-tables">
+                <head>List of Tables</head>
+            </divGen>
+            <divGen type="toc" xml:id="sl-tables" xml:lang="sl" corresp="#tables">
+                <head>Seznam tabel</head>
             </divGen>
             <divGen type="search" xml:id="search" xml:lang="en" corresp="#sl-search">
                 <head>Search</head>
@@ -127,12 +135,15 @@
                     those <ref target="introduction">available through CLARIN</ref>.</p>
             </div>
             <div type="preface" xml:id="preface1-sl" xml:lang="sl" corresp="#preface1">
-                <head xml:id="sl-head-10">1 Uvod<note place="foot" xml:id="ftn1-sl" n="1">Avtorica
-                            <ref
+                <head xml:id="sl-head-10">1 Uvod</head>
+                <cit xml:id="sl-cit-1">
+                    <quote>»Prvič, sem političarka in ne politik, drugič pa …«</quote>
+                    <bibl>Cvetka Zalokar Oražem<note place="foot" xml:id="ftn1-sl" n="1">Avtorica
+                        <ref
                             target="https://www.clarin.si/noske/run.cgi/first?iquery=Prvi%C4%8D+%2C%09sem+politi%C4%8Darka%09in+ne+politik&amp;corpname=siparl20&amp;corpus-search-form=true"
                             >naslovne izjave</ref> z redne seje 4. 6. 2003 je Cvetka Zalokar Oražem
-                        (LDS).</note>
-                </head>
+                        (LDS).</note></bibl>
+                </cit>
                 <p xml:id="sl-p-8">V parlamentu se odvija glavnina političnih razprav, na podlagi
                     katerih se oblikuje zakonodaja, ki nato neposredno vpliva na vsakdanje življenje
                     vseh prebivalcev in prebivalk določene države. V parlamentarnem diskurzu se tudi
@@ -825,7 +836,7 @@
                         the topics by first learning <hi rend="bold">how to extract keywords</hi>
                         from the subcorpora. Next, in order to analyse their usage in context, we
                         will learn <hi rend="bold">how to perform concordance analysis</hi>.</item>
-                    <item>In <ref target="#ch6.3">Task 3</ref>, we will <hi rend="italic"
+                    <item>In <ref target="#ch6.4">Task 3</ref>, we will <hi rend="italic"
                             >investigate how topics related to women have been debated by female and
                             male speakers in the past 25 years</hi>. We will first learn <hi
                             rend="bold">how to use and compare relative frequencies</hi> in
@@ -1126,7 +1137,7 @@
                                 1</ref>. Visualization of the results can be seen in <ref
                                 target="#figure5">Figure 5</ref> and <ref target="#figure6">Figure
                                 6</ref>.</p>
-                        <figure xml:id="table1">
+                        <figure xml:id="table1" type="table">
                             <graphic url="media/table1.jpg"/>
                             <head>Table 1. Overview of the sizes of the siParl 2.0 subcorpora.<note
                                     place="foot" xml:id="ftn3" n="3">Due to an error in corpus
@@ -1334,13 +1345,13 @@
                             or to procedural matters). Illustrative examples of manual annotation of
                             the 10 top-ranking keywords by female and by male MPs are given in <ref
                                 target="#table3">Table 3</ref>.</p>
-                        <figure xml:id="table2">
+                        <figure xml:id="table2" type="table">
                             <graphic url="media/table2.jpg"/>
                             <head>Table 2. Keyword annotation categories. We use upper case for the
                                 last four function categories in order to separate them from content
                                 categories.</head>
                         </figure>
-                        <figure xml:id="table3">
+                        <figure xml:id="table3" type="table">
                             <graphic url="media/table3.jpg"/>
                             <head>Table 3: Illustrative example of manual topic annotation of 10
                                 top-ranking keywords from speeches by female and male MPs in
@@ -1353,12 +1364,12 @@
                             is comparable through time and between the genders. Despite the similar
                             number of identified topics, men and women differ a great deal in their
                             most prominent one.</p>
-                        <figure xml:id="table4">
+                        <figure xml:id="table4" type="table">
                             <graphic url="media/table4.jpg"/>
                             <head>Table 4: Topics of the 100 top-ranking keywords in speeches by
                                 female and male MPs in Term1.</head>
                         </figure>
-                        <figure xml:id="table5">
+                        <figure xml:id="table5" type="table">
                             <graphic url="media/table5.jpg"/>
                             <head>Table 5: Topics of the 100 top-ranking keywords in speeches by
                                 female and male MPs in Term7.</head>
@@ -1520,7 +1531,7 @@
                                         rend="italic">Item 2</hi>).</head>
                             </figure>
                         </note>
-                        <figure xml:id="table6">
+                        <figure xml:id="table6" type="table">
                             <graphic url="media/table6.jpg"/>
                             <head>Table 6. Raw and normalized frequencies of the lemma
                                 “ženska/female” in siParl 2.0.</head>
@@ -1528,7 +1539,7 @@
                         <p xml:id="p-72">Overall, the normalized frequency of the word for the
                             entire time period is nearly five times higher in the subcorpus of
                             female MPs compared to their male counterparts (221.21 vs. 45.99). As
-                            can be seen from <ref target="#figure10b">Figure 10</ref>, female MPs in general tend to talk more
+                            can be seen from <ref target="#figure11">Figure 11</ref>, female MPs in general tend to talk more
                             about women than their male counterparts. However, if the period between
                             Term2 and Term4 (1996–2008) saw a strong emphasis on topics about women
                             among female MPs in comparison to male MPs, we can observe a steep
@@ -1563,9 +1574,9 @@
                             amount of words they uttered, these results again show that a higher
                             number of female MPs does not guarantee a strong discussion of issues
                             related to women in the Slovenian Parliament.</p>
-                        <figure xml:id="figure10b">
-                            <graphic url="media/figure10b.jpg"/>
-                            <head>Figure 10: Normalized frequency of mentions of “ženska/female” by
+                        <figure xml:id="figure11">
+                            <graphic url="media/figure11.jpg"/>
+                            <head>Figure 11: Normalized frequency of mentions of “ženska/female” by
                                 female and male MPs in siParl 2.0.</head>
                         </figure>
                     </div>
@@ -1637,7 +1648,7 @@
                             candidates that are grammatical words (such as prepositions) and are not
                             used in concordances with a prevailing theme are assigned the label <hi
                                 rend="italic">Multiple</hi>.</p>
-                        <figure xml:id="table7">
+                        <figure xml:id="table7" type="table">
                             <graphic url="media/table7.jpg"/>
                             <head>Table 7: Examples of collocation clusters.</head>
                         </figure>
@@ -1651,7 +1662,7 @@
                             representation of women (e.g., “participacija/participation”), their
                             social status (e.g., “samski/single”) and equality (e.g.,
                             “emancipacija/emancipation”).</p>
-                        <figure xml:id="table8">
+                        <figure xml:id="table8" type="table">
                             <graphic url="media/table8.jpg"/>
                             <head>Table 8: Frequencies of thematic clusters for the 100 top-ranking
                                 collocation candidates in speeches by female and male MPs in all
@@ -2011,7 +2022,7 @@
                             pomagamo tako, da podatke ročno vnesemo v preglednico, kot prikazuje
                             <ref target="#table1-sl">Tabela 1</ref>. Grafični prikaz rezultatov si lahko ogledate na <ref target="#figure5-sl">Sliki 5</ref> in
                             <ref target="#figure6-sl">Sliki 6</ref>.</p>
-                        <figure xml:id="table1-sl">
+                        <figure xml:id="table1-sl" type="table">
                             <graphic url="media/table1-sl.jpg"/>
                             <head>Tabela 1. Pregled velikosti podkorpusov siParl 2.0.<note
                                     place="foot" xml:id="ftn7-sl" n="7">Zaradi napake v metapodatkih
@@ -2153,7 +2164,7 @@
                         </figure>
                         <figure xml:id="figure8-sl">
                             <graphic url="media/figure8-sl.jpg"/>
-                            <head>Figure 8: Prvih 20 ključnih besed poslancev v primerjavi s
+                            <head>Slika 8: Prvih 20 ključnih besed poslancev v primerjavi s
                                 poslankami v prvem mandatu.</head>
                         </figure>
                     </div>
@@ -2212,15 +2223,15 @@
                             druge poslance ali pa so del postopkovnika. V <ref target="#table3-sl">Tabeli 3</ref> so navedeni
                             ponazoritveni primeri ročno pripisanih tem za prvih 10 ključnih besed
                             poslank in poslancev.</p>
-                        <figure xml:id="table2-sl">
+                        <figure xml:id="table2-sl" type="table">
                             <graphic url="media/table2-sl.jpg"/>
-                            <head>Table 2. Kategorije za označevanje ključnih besed. Zadnje štiri
+                            <head>Tabela 2. Kategorije za označevanje ključnih besed. Zadnje štiri
                                 kategorije zapisujemo z velikimi tiskanimi črkami, da jih tako
                                 ločimo od vsebinskih kategorij.</head>
                         </figure>
-                        <figure xml:id="table3-sl">
+                        <figure xml:id="table3-sl" type="table">
                             <graphic url="media/table3-sl.jpg"/>
-                            <head>Table 3: Ponazoritveni primeri ročno pripisanih oznak glede na
+                            <head>Tabela 3: Ponazoritveni primeri ročno pripisanih oznak glede na
                                 temo za prvih 10 ključnih besed poslank in poslancev v prvem
                                 mandatu.</head>
                         </figure>
@@ -2230,12 +2241,12 @@
                             spoloma primerljiv. Kljub podobnemu številu opredeljenih vsebinskih tem
                             se poslanci in poslanke pri najbolj izpostavljenih tematikah zelo
                             razlikujejo.</p>
-                        <figure xml:id="table4-sl">
+                        <figure xml:id="table4-sl" type="table">
                             <graphic url="media/table4-sl.jpg"/>
                             <head>Tabela 4: Teme prvih 100 ključnih besed poslank in poslancev v
                                 prvem mandatu.</head>
                         </figure>
-                        <figure xml:id="table5-sl">
+                        <figure xml:id="table5-sl" type="table">
                             <graphic url="media/table5-sl.jpg"/>
                             <head>Tabela 5: Teme prvih 100 ključnih besed poslank in poslancev v
                                 sedmem mandatu.</head>
@@ -2398,7 +2409,7 @@
                                     frekvenco (številka 2).</head>
                             </figure>
                         </note>
-                        <figure xml:id="table6-sl">
+                        <figure xml:id="table6-sl" type="table">
                             <graphic url="media/table6-sl.jpg"/>
                             <head>Tabela 6. Podatki o absolutni in normalizirani frekvenci za lemo
                                 samostalnika »ženska« v korpusu siParl 2.0.</head>
@@ -2406,7 +2417,7 @@
                         <p xml:id="sl-p-151">Na splošno je normalizirana frekvenca iskane besede za
                             celotno časovno obdobje, ki ga zajema korpus siParl 2.0, skoraj petkrat
                             višja v podkorpusu govorov poslank kot v podkorpusu govorov poslancev
-                            (221,21 proti 45,99). Kot je razvidno iz <ref target="#figure10b-sl">Slike 10</ref>, poslanke v svojih
+                            (221,21 proti 45,99). Kot je razvidno iz <ref target="#figure11-sl">Slike 11</ref>, poslanke v svojih
                             govorih pogosteje omenjajo ženske kot poslanci. Čeprav je v obdobju med
                             drugim in četrtim mandatom (1996–2008) mogoče opaziti intenzivnejšo
                             obravnavo teh področij pri poslankah, je v zadnjih mandatih njihovo
@@ -2439,9 +2450,9 @@
                             številom besed, ki so jih izrekle, ti rezultati znova kažejo, da zgolj
                             večje število poslank ne zagotavlja intenzivnejše razprave o tematikah,
                             ki zadevajo ženske.</p>
-                        <figure xml:id="figure10b-sl">
-                            <graphic url="media/figure10b-sl.jpg"/>
-                            <head>Slika 10: Normalizirana frekvenca za lemo samostalnika »ženska« v
+                        <figure xml:id="figure11-sl">
+                            <graphic url="media/figure11-sl.jpg"/>
+                            <head>Slika 11: Normalizirana frekvenca za lemo samostalnika »ženska« v
                                 govorih poslank in poslancev v korpusu siParl 2.0.</head>
                         </figure>
                     </div>
@@ -2517,7 +2528,7 @@
                             Tabela 7. Kolokacijskim kandidatom, ki so slovnične besede (na primer
                             predlogi) in niso uporabljeni v konkordancah na eno prevladujočo temo,
                             pripišemo oznako <hi rend="italic">Razno</hi>.</p>
-                        <figure xml:id="table7-sl">
+                        <figure xml:id="table7-sl" type="table">
                             <graphic url="media/table7-sl.jpg"/>
                             <head>Tabela 7: Primeri sklopov kolokacij.</head>
                         </figure>
@@ -2530,7 +2541,7 @@
                                 zaposlitev</hi>, in se nanaša na koncepte, povezane z zastopanostjo
                             žensk (npr. »participacija«), njihovim družbenim položajem (npr.
                             »samski«) in enakostjo (npr. »emancipacija«).</p>
-                        <figure xml:id="table8-sl">
+                        <figure xml:id="table8-sl" type="table">
                             <graphic url="media/table8-sl.jpg"/>
                             <head>Tabela 8: Frekvenca tematskih sklopov za prvih 100 kolokacijskih
                                 kandidatov v govorih poslank in poslancev v vseh sedmih
