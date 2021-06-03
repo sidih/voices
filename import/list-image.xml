@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <figure n="figure1.jpg">
+      <title xml:lang="en">Excerpt from a linguistically annotated and TEI encoded corpus.</title>
+      <graphic>figure1.jpg</graphic>
+   </figure>
+   <figure n="figure1-sl.jpg">
+      <title xml:lang="sl">Izvleček iz jezikoslovno označenega korpusa v zapisu TEI.</title>
+      <graphic>figure1-sl.jpg</graphic>
+   </figure>
+   <figure n="figure2.jpg">
+      <title xml:lang="en">Comparison of official records and verbatim transcriptions from the EU
+         Parliament.</title>
+      <graphic>figure2.jpg</graphic>
+   </figure>
+   <figure n="figure2-sl.jpg">
+      <title xml:lang="sl">Primerjava uradnega sejnega zapisa in dobesedne transkripcije iz
+         Državnega zbora RS.</title>
+      <graphic>figure2-sl.jpg</graphic>
+   </figure>
+   <figure n="figure3a.jpg">
+      <title xml:lang="en">The siParl 2.0 information page.</title>
+      <graphic>figure3a.jpg</graphic>
+   </figure>
+   <figure n="figure3b.jpg">
+      <title xml:lang="en">The siParl 2.0 information page with extended section “Structures and
+         attributes”.</title>
+      <graphic>figure3b.jpg</graphic>
+   </figure>
+   <figure n="figure4.jpg">
+      <title xml:lang="en">Frequency lists for the female MPs from Term1. we show the number of
+         speeches they have made, and the number of tokens in these speeches.</title>
+      <graphic>figure4.jpg</graphic>
+   </figure>
+   <figure n="table1.jpg">
+      <title xml:lang="en">Overview of the sizes of the siParl 2.0 subcorpora. </title>
+      <graphic>table1.jpg</graphic>
+   </figure>
+   <figure n="figure5.jpg">
+      <title xml:lang="en">Share of male and female MPs in siParl 2.0 over time.</title>
+      <graphic>figure5.jpg</graphic>
+   </figure>
+   <figure n="figure6.jpg">
+      <title xml:lang="en">Contribution of male and female MPs in siParl 2.0 measured in uttered
+         tokens over time.</title>
+      <graphic>figure6.jpg</graphic>
+   </figure>
+   <figure n="figure7.jpg">
+      <title xml:lang="en">Twenty top-ranking keywords of female MPs (with their English
+         translations in blue) in Term1 compared to those of their male counterparts.</title>
+      <graphic>figure7.jpg</graphic>
+   </figure>
+   <figure n="figure8.jpg">
+      <title xml:lang="en">Twenty top-ranking keywords of male MPs (with their English translations
+         in blue) in Term1 compared to those of their female counterparts.</title>
+      <graphic>figure8.jpg</graphic>
+   </figure>
+   <figure n="figure9.jpg">
+      <title xml:lang="en">Extended context for the first hit in the of the keyword
+         “proporcionalen/proportional”.</title>
+      <title xml:lang="sl">Razširjeni kontekst za prvi zadetek v za ključno besedo
+         »proporcionalen«.</title>
+      <graphic>figure9.jpg</graphic>
+   </figure>
+   <figure n="table2.jpg">
+      <title xml:lang="en">Keyword annotation categories. We use upper case for the last four
+         function categories in order to separate them from content categories.</title>
+      <graphic>table2.jpg</graphic>
+   </figure>
+   <figure n="table3.jpg">
+      <title xml:lang="en">Illustrative example of manual topic annotation of 10 top-ranking
+         keywords from speeches by female and male MPs in Term1.</title>
+      <graphic>table3.jpg</graphic>
+   </figure>
+   <figure n="table4.jpg">
+      <title xml:lang="en">Topics of the 100 top-ranking keywords in speeches by female and male MPs
+         in Term1.</title>
+      <graphic>table4.jpg</graphic>
+   </figure>
+   <figure n="table5.jpg">
+      <title xml:lang="en">Topics of the 100 top-ranking keywords in speeches by female and male MPs
+         in Term7.</title>
+      <graphic>table5.jpg</graphic>
+   </figure>
+   <figure n="figure10.jpg">
+      <title xml:lang="en">The beginning of the concordance list for the lemma of the noun
+         “ženska/female” with raw frequency (number 1) and normalized frequency (number 2).</title>
+      <title xml:lang="en">Začetek konkordančnega niza za lemo samostalnika »ženska« z absolutno
+         frekvenco (številka 1) in normalizirano frekvenco (številka 2).</title>
+      <graphic>figure10.jpg</graphic>
+   </figure>
+   <figure n="table6.jpg">
+      <title xml:lang="en">Raw and normalized frequencies of the lemma “ženska/female” in siParl
+         2.0.</title>
+      <graphic>table6.jpg</graphic>
+   </figure>
+   <figure n="figure11.jpg">
+      <title xml:lang="en">Normalized frequency of mentions of “ženska/female” by female and male
+         MPs in siParl 2.0.</title>
+      <graphic>figure11.jpg</graphic>
+   </figure>
+   <figure n="table7.jpg">
+      <title xml:lang="en">Examples of collocation clusters.</title>
+      <graphic>table7.jpg</graphic>
+   </figure>
+   <figure n="table8.jpg">
+      <title xml:lang="en">Frequencies of thematic clusters for the 100 top-ranking collocation
+         candidates in speeches by female and male MPs in all seven parliamentary terms.</title>
+      <graphic>table8.jpg</graphic>
+   </figure>
+   <figure n="figure3a-sl.jpg">
+      <title xml:lang="sl">Osnovne informacije o korpusu siParl 2.0.</title>
+      <graphic>figure3a-sl.jpg</graphic>
+   </figure>
+   <figure n="figure3b-sl.jpg">
+      <title xml:lang="sl">Razširjene informacije o strukturnih atributih v korpusu siParl
+         2.0.</title>
+      <graphic>figure3b-sl.jpg</graphic>
+   </figure>
+   <figure n="figure4-sl.jpg">
+      <title xml:lang="sl">Frekvenčna seznama za poslanke iz prvega mandata. je prikazano število
+         govorov, ki jih je posamezna poslanka prispevala, pa je število pojavnic v teh
+         govorih.</title>
+      <graphic>figure4-sl.jpg</graphic>
+   </figure>
+   <figure n="table1-sl.jpg">
+      <title xml:lang="sl">Pregled velikosti podkorpusov siParl 2.0. </title>
+      <graphic>table1-sl.jpg</graphic>
+   </figure>
+   <figure n="figure5-sl.jpg">
+      <title xml:lang="sl">Delež poslank in poslancev v korpusu siParl 2.0 skozi čas.</title>
+      <graphic>figure5-sl.jpg</graphic>
+   </figure>
+   <figure n="figure6-sl.jpg">
+      <title xml:lang="sl">Prispevek poslank in poslancev v korpusu siParl 2.0, izmerjen v izrečenih
+         pojavnicah skozi čas.</title>
+      <graphic>figure6-sl.jpg</graphic>
+   </figure>
+   <figure n="figure7-sl.jpg">
+      <title xml:lang="sl">Prvih 20 ključnih besed poslank v primerjavi s poslanci v prvem
+         mandatu.</title>
+      <graphic>figure7-sl.jpg</graphic>
+   </figure>
+   <figure n="figure8-sl.jpg">
+      <title xml:lang="sl">Prvih 20 ključnih besed poslancev v primerjavi s poslankami v prvem
+         mandatu.</title>
+      <graphic>figure8-sl.jpg</graphic>
+   </figure>
+   <figure n="table2-sl.jpg">
+      <title xml:lang="sl">Kategorije za označevanje ključnih besed. Zadnje štiri kategorije
+         zapisujemo z velikimi tiskanimi črkami, da jih tako ločimo od vsebinskih kategorij.</title>
+      <graphic>table2-sl.jpg</graphic>
+   </figure>
+   <figure n="table3-sl.jpg">
+      <title xml:lang="sl">Ponazoritveni primeri ročno pripisanih oznak glede na temo za prvih 10
+         ključnih besed poslank in poslancev v prvem mandatu.</title>
+      <graphic>table3-sl.jpg</graphic>
+   </figure>
+   <figure n="table4-sl.jpg">
+      <title xml:lang="sl">Teme prvih 100 ključnih besed poslank in poslancev v prvem
+         mandatu.</title>
+      <graphic>table4-sl.jpg</graphic>
+   </figure>
+   <figure n="table5-sl.jpg">
+      <title xml:lang="sl">Teme prvih 100 ključnih besed poslank in poslancev v sedmem
+         mandatu.</title>
+      <graphic>table5-sl.jpg</graphic>
+   </figure>
+   <figure n="table6-sl.jpg">
+      <title xml:lang="sl">Podatki o absolutni in normalizirani frekvenci za lemo samostalnika
+         »ženska« v korpusu siParl 2.0.</title>
+      <graphic>table6-sl.jpg</graphic>
+   </figure>
+   <figure n="figure11-sl.jpg">
+      <title xml:lang="sl">Normalizirana frekvenca za lemo samostalnika »ženska« v govorih poslank
+         in poslancev v korpusu siParl 2.0.</title>
+      <graphic>figure11-sl.jpg</graphic>
+   </figure>
+   <figure n="table7-sl.jpg">
+      <title xml:lang="sl">Primeri sklopov kolokacij.</title>
+      <graphic>table7-sl.jpg</graphic>
+   </figure>
+   <figure n="table8-sl.jpg">
+      <title xml:lang="sl">Frekvenca tematskih sklopov za prvih 100 kolokacijskih kandidatov v
+         govorih poslank in poslancev v vseh sedmih mandatih.</title>
+      <graphic>table8-sl.jpg</graphic>
+   </figure>
+</root>

@@ -342,7 +342,7 @@
                         contextualization of the search results but can also be used for more
                         fine-grained corpus queries.</p>
                     <figure xml:id="figure1">
-                        <graphic url="media/figure1.jpg"/>
+                        <graphic url="https://sidih.si/cdn/120/figure1.jpg"/>
                         <head>Figure 1. Excerpt from a linguistically annotated and TEI encoded
                             corpus.</head>
                     </figure>
@@ -444,7 +444,7 @@
                         vendar se lahko uporabljajo tudi za izvajanje natančnejših korpusnih
                         poizvedb.</p>
                     <figure xml:id="figure1-sl">
-                        <graphic url="media/figure1-sl.jpg"/>
+                        <graphic url="https://sidih.si/cdn/120/figure1-sl.jpg"/>
                         <head>Slika 1. Izvleček iz jezikoslovno označenega korpusa v zapisu
                             TEI.</head>
                     </figure>
@@ -592,7 +592,7 @@
                         determiners, frequency of hesitations or false starts, or even the use of
                         spontaneous humour in parliamentary speech.</p>
                     <figure xml:id="figure2">
-                        <graphic url="media/figure2.jpg"/>
+                        <graphic url="https://sidih.si/cdn/120/figure2.jpg"/>
                         <head>Figure 2. Comparison of official records and verbatim transcriptions
                             from the EU Parliament.</head>
                     </figure>
@@ -693,7 +693,7 @@
                         spontanega govora, kot so napačni začetki, premori, raba mašil ali
                         ponovitev.</p>
                     <figure xml:id="figure2-sl">
-                        <graphic url="media/figure2-sl.jpg"/>
+                        <graphic url="https://sidih.si/cdn/120/figure2-sl.jpg"/>
                         <head>Slika 2. Primerjava uradnega sejnega zapisa in dobesedne transkripcije
                             iz Državnega zbora RS.</head>
                     </figure>
@@ -898,11 +898,11 @@
                                 3b</ref>).</item>
                     </list>
                     <figure xml:id="figure3a">
-                        <graphic url="media/figure3a.jpg"/>
+                        <graphic url="https://sidih.si/cdn/120/figure3a.jpg"/>
                         <head>Figure 3a: The siParl 2.0 information page.</head>
                     </figure>
                     <figure xml:id="figure3b">
-                        <graphic url="media/figure3b.jpg"/>
+                        <graphic url="https://sidih.si/cdn/120/figure3b.jpg"/>
                         <head>Figure 3b: The siParl 2.0 information page with extended section
                             “Structures and attributes”.</head>
                     </figure>
@@ -1073,17 +1073,15 @@
                             <p>An example of two frequency lists can be seen in Figure 4.</p>
                         </note>
                         <figure xml:id="figure4">
-                            <graphic url="media/figure4.jpg"/>
-                            <head>
-                                <hi rend="bold">Figure 4. Frequency lists for the female MPs from
+                            <graphic url="https://sidih.si/cdn/120/figure4.jpg"/>
+                            <head>Figure 4. Frequency lists for the female MPs from
                                     Term1. <ref
                                         target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat1-%C5%BDenske--Term1-Female&amp;wlattr=speech.name&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=1&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;include_nonwords=1&amp;wlnums=docf&amp;wltype=simple">
                                         <hi rend="bold">On the left</hi>
                                     </ref> we show the number of speeches they have made, and <ref
                                         target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat1-%C5%BDenske--Term1-Female&amp;wlattr=speech.name&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=1&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;include_nonwords=1&amp;wlnums=frq&amp;wltype=simple">
                                         <hi rend="bold">on the right</hi>
-                                    </ref> the number of tokens in these speeches.</hi>
-                            </head>
+                                    </ref> the number of tokens in these speeches.</head>
                         </figure>
                         <p xml:id="p-47">As can be seen from <ref target="#figure4">Figure 4</ref>,
                             there were a total of 14 female MPs in Term1 who collectively uttered
@@ -1138,7 +1136,7 @@
                                 target="#figure5">Figure 5</ref> and <ref target="#figure6">Figure
                                 6</ref>.</p>
                         <figure xml:id="table1" type="table">
-                            <graphic url="media/table1.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table1.jpg"/>
                             <head>Table 1. Overview of the sizes of the siParl 2.0 subcorpora.<note
                                     place="foot" xml:id="ftn3" n="3">Due to an error in corpus
                                     metadata attributed to one MP (specifically, to an MP named Geza
@@ -1152,12 +1150,12 @@
                             </head>
                         </figure>
                         <figure xml:id="figure5">
-                            <graphic url="media/figure5.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure5.jpg"/>
                             <head>Figure 5: Share of male and female MPs in siParl 2.0 over
                                 time.</head>
                         </figure>
                         <figure xml:id="figure6">
-                            <graphic url="media/figure6.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure6.jpg"/>
                             <head>Figure 6: Contribution of male and female MPs in siParl 2.0
                                 measured in uttered tokens over time.</head>
                         </figure>
@@ -1274,13 +1272,13 @@
                                 <hi rend="italic">Foreign affairs</hi>, <hi rend="italic"
                                 >Infrastructure</hi> and <hi rend="italic">Justice</hi>.</p>
                         <figure xml:id="figure7">
-                            <graphic url="media/figure7.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure7.jpg"/>
                             <head>Figure 7: Twenty top-ranking keywords of female MPs (with their
                                 English translations in blue) in Term1 compared to those of their
                                 male counterparts.</head>
                         </figure>
                         <figure xml:id="figure8">
-                            <graphic url="media/figure8.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure8.jpg"/>
                             <head>Figure 8: Twenty top-ranking keywords of male MPs (with their
                                 English translations in blue) in Term1 compared to those of their
                                 female counterparts.</head>
@@ -1317,7 +1315,7 @@
                                     6</hi>) and display more metadata or a wider context.</item>
                         </list>
                         <figure xml:id="figure9">
-                            <graphic url="media/figure9.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure9.jpg"/>
                             <head>Figure 9: Extended context for the first hit in the <ref
                                     target="https://www.clarin.si/noske/run.cgi/view?corpname=siparl20;usesubcorp=Mandat1-Mo%C5%A1ki--Term1-Male;q=q%5Blemma_lc%3D%3D%22proporcionalen%22%5D;complement_subc=0"
                                     >concordance list</ref> of the keyword
@@ -1346,13 +1344,13 @@
                             the 10 top-ranking keywords by female and by male MPs are given in <ref
                                 target="#table3">Table 3</ref>.</p>
                         <figure xml:id="table2" type="table">
-                            <graphic url="media/table2.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table2.jpg"/>
                             <head>Table 2. Keyword annotation categories. We use upper case for the
                                 last four function categories in order to separate them from content
                                 categories.</head>
                         </figure>
                         <figure xml:id="table3" type="table">
-                            <graphic url="media/table3.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table3.jpg"/>
                             <head>Table 3: Illustrative example of manual topic annotation of 10
                                 top-ranking keywords from speeches by female and male MPs in
                                 Term1.</head>
@@ -1365,12 +1363,12 @@
                             number of identified topics, men and women differ a great deal in their
                             most prominent one.</p>
                         <figure xml:id="table4" type="table">
-                            <graphic url="media/table4.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table4.jpg"/>
                             <head>Table 4: Topics of the 100 top-ranking keywords in speeches by
                                 female and male MPs in Term1.</head>
                         </figure>
                         <figure xml:id="table5" type="table">
-                            <graphic url="media/table5.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table5.jpg"/>
                             <head>Table 5: Topics of the 100 top-ranking keywords in speeches by
                                 female and male MPs in Term7.</head>
                         </figure>
@@ -1524,7 +1522,7 @@
                                 </item>
                             </list>
                             <figure xml:id="figure10">
-                                <graphic url="media/figure10.jpg"/>
+                                <graphic url="https://sidih.si/cdn/120/figure10.jpg"/>
                                 <head>Figure 10: The beginning of the concordance list for the lemma
                                     of the noun “ženska/female” with raw frequency (<hi
                                         rend="italic">Item 1</hi>) and normalized frequency (<hi
@@ -1532,7 +1530,7 @@
                             </figure>
                         </note>
                         <figure xml:id="table6" type="table">
-                            <graphic url="media/table6.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table6.jpg"/>
                             <head>Table 6. Raw and normalized frequencies of the lemma
                                 “ženska/female” in siParl 2.0.</head>
                         </figure>
@@ -1575,7 +1573,7 @@
                             number of female MPs does not guarantee a strong discussion of issues
                             related to women in the Slovenian Parliament.</p>
                         <figure xml:id="figure11">
-                            <graphic url="media/figure11.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure11.jpg"/>
                             <head>Figure 11: Normalized frequency of mentions of “ženska/female” by
                                 female and male MPs in siParl 2.0.</head>
                         </figure>
@@ -1649,7 +1647,7 @@
                             used in concordances with a prevailing theme are assigned the label <hi
                                 rend="italic">Multiple</hi>.</p>
                         <figure xml:id="table7" type="table">
-                            <graphic url="media/table7.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table7.jpg"/>
                             <head>Table 7: Examples of collocation clusters.</head>
                         </figure>
                         <p xml:id="p-83">The results presented in <ref target="#table8">Table 8</ref> show that just over half
@@ -1663,7 +1661,7 @@
                             social status (e.g., “samski/single”) and equality (e.g.,
                             “emancipacija/emancipation”).</p>
                         <figure xml:id="table8" type="table">
-                            <graphic url="media/table8.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table8.jpg"/>
                             <head>Table 8: Frequencies of thematic clusters for the 100 top-ranking
                                 collocation candidates in speeches by female and male MPs in all
                                 seven parliamentary terms.</head>
@@ -1799,11 +1797,11 @@
                         </item>
                     </list>
                     <figure xml:id="figure3a-sl">
-                        <graphic url="media/figure3a-sl.jpg"/>
+                        <graphic url="https://sidih.si/cdn/120/figure3a-sl.jpg"/>
                         <head>Slika 3a: Osnovne informacije o korpusu siParl 2.0.</head>
                     </figure>
                     <figure xml:id="figure3b-sl">
-                        <graphic url="media/figure3b-sl.jpg"/>
+                        <graphic url="https://sidih.si/cdn/120/figure3b-sl.jpg"/>
                         <head>Slika 3b: Razširjene informacije o strukturnih atributih v korpusu
                             siParl 2.0.</head>
                     </figure>
@@ -1969,7 +1967,7 @@
                             <p>Slika 4 prikazuje primer dveh frekvenčnih seznamov.</p>
                         </note>
                         <figure xml:id="figure4-sl">
-                            <graphic url="media/figure4-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure4-sl.jpg"/>
                             <head>Slika 4. Frekvenčna seznama za poslanke iz prvega mandata. <ref
                                     target="https://www.clarin.si/noske/run.cgi/wordlist?corpname=siparl20&amp;attrs=word&amp;ctxattrs=word&amp;structs=session%2Cspeech%2Cgap%2Cg&amp;refs=%3Dspeech.name&amp;pagesize=50&amp;wlmaxitems=100&amp;wlsort=f&amp;subcnorm=freq&amp;corpname=siparl20&amp;reload=&amp;usesubcorp=Mandat1-%C5%BDenske--Term1-Female&amp;wlattr=speech.name&amp;usengrams=0&amp;ngrams_n=2&amp;ngrams_max_n=2&amp;nest_ngrams=0&amp;wlpat=&amp;wlminfreq=1&amp;wlmaxfreq=0&amp;wlfile=&amp;wlblacklist=&amp;include_nonwords=1&amp;wlnums=docf&amp;wltype=simple"
                                     >Na levi</ref> je prikazano število govorov, ki jih je posamezna
@@ -2023,7 +2021,7 @@
                             <ref target="#table1-sl">Tabela 1</ref>. Grafični prikaz rezultatov si lahko ogledate na <ref target="#figure5-sl">Sliki 5</ref> in
                             <ref target="#figure6-sl">Sliki 6</ref>.</p>
                         <figure xml:id="table1-sl" type="table">
-                            <graphic url="media/table1-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table1-sl.jpg"/>
                             <head>Tabela 1. Pregled velikosti podkorpusov siParl 2.0.<note
                                     place="foot" xml:id="ftn7-sl" n="7">Zaradi napake v metapodatkih
                                     korpusa, ki so bili pripisani enemu od poslancev (in sicer
@@ -2037,12 +2035,12 @@
                             </head>
                         </figure>
                         <figure xml:id="figure5-sl">
-                            <graphic url="media/figure5-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure5-sl.jpg"/>
                             <head>Slika 5: Delež poslank in poslancev v korpusu siParl 2.0 skozi
                                 čas.</head>
                         </figure>
                         <figure xml:id="figure6-sl">
-                            <graphic url="media/figure6-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure6-sl.jpg"/>
                             <head>Slika 6: Prispevek poslank in poslancev v korpusu siParl 2.0,
                                 izmerjen v izrečenih pojavnicah skozi čas.</head>
                         </figure>
@@ -2158,12 +2156,12 @@
                             zdravstvenega varstva, medtem ko ključne besede govorov poslancev
                             pripadajo področjem zunanjih zadev, infrastrukture in pravosodja.</p>
                         <figure xml:id="figure7-sl">
-                            <graphic url="media/figure7-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure7-sl.jpg"/>
                             <head>Slika 7: Prvih 20 ključnih besed poslank v primerjavi s poslanci v
                                 prvem mandatu.</head>
                         </figure>
                         <figure xml:id="figure8-sl">
-                            <graphic url="media/figure8-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure8-sl.jpg"/>
                             <head>Slika 8: Prvih 20 ključnih besed poslancev v primerjavi s
                                 poslankami v prvem mandatu.</head>
                         </figure>
@@ -2194,7 +2192,7 @@
                                 metapodatkov ali širši kontekst.</item>
                         </list>
                         <figure xml:id="figure9-sl">
-                            <graphic url="media/figure9.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure9.jpg"/>
                             <head>Slika 9: Razširjeni kontekst za prvi zadetek v <ref
                                     target="https://www.clarin.si/noske/run.cgi/view?corpname=siparl20;usesubcorp=Mandat1-Mo%C5%A1ki--Term1-Male;q=q%5Blemma_lc%3D%3D%22proporcionalen%22%5D;complement_subc=0"
                                     >konkordančnem nizu</ref> za ključno besedo
@@ -2224,13 +2222,13 @@
                             ponazoritveni primeri ročno pripisanih tem za prvih 10 ključnih besed
                             poslank in poslancev.</p>
                         <figure xml:id="table2-sl" type="table">
-                            <graphic url="media/table2-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table2-sl.jpg"/>
                             <head>Tabela 2. Kategorije za označevanje ključnih besed. Zadnje štiri
                                 kategorije zapisujemo z velikimi tiskanimi črkami, da jih tako
                                 ločimo od vsebinskih kategorij.</head>
                         </figure>
                         <figure xml:id="table3-sl" type="table">
-                            <graphic url="media/table3-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table3-sl.jpg"/>
                             <head>Tabela 3: Ponazoritveni primeri ročno pripisanih oznak glede na
                                 temo za prvih 10 ključnih besed poslank in poslancev v prvem
                                 mandatu.</head>
@@ -2242,12 +2240,12 @@
                             se poslanci in poslanke pri najbolj izpostavljenih tematikah zelo
                             razlikujejo.</p>
                         <figure xml:id="table4-sl" type="table">
-                            <graphic url="media/table4-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table4-sl.jpg"/>
                             <head>Tabela 4: Teme prvih 100 ključnih besed poslank in poslancev v
                                 prvem mandatu.</head>
                         </figure>
                         <figure xml:id="table5-sl" type="table">
-                            <graphic url="media/table5-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table5-sl.jpg"/>
                             <head>Tabela 5: Teme prvih 100 ključnih besed poslank in poslancev v
                                 sedmem mandatu.</head>
                         </figure>
@@ -2403,14 +2401,14 @@
                                 </item>
                             </list>
                             <figure xml:id="figure10-sl">
-                                <graphic url="media/figure10.jpg"/>
+                                <graphic url="https://sidih.si/cdn/120/figure10.jpg"/>
                                 <head>Slika 10: Začetek konkordančnega niza za lemo samostalnika
                                     »ženska« z absolutno frekvenco (številka 1) in normalizirano
                                     frekvenco (številka 2).</head>
                             </figure>
                         </note>
                         <figure xml:id="table6-sl" type="table">
-                            <graphic url="media/table6-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table6-sl.jpg"/>
                             <head>Tabela 6. Podatki o absolutni in normalizirani frekvenci za lemo
                                 samostalnika »ženska« v korpusu siParl 2.0.</head>
                         </figure>
@@ -2451,7 +2449,7 @@
                             večje število poslank ne zagotavlja intenzivnejše razprave o tematikah,
                             ki zadevajo ženske.</p>
                         <figure xml:id="figure11-sl">
-                            <graphic url="media/figure11-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure11-sl.jpg"/>
                             <head>Slika 11: Normalizirana frekvenca za lemo samostalnika »ženska« v
                                 govorih poslank in poslancev v korpusu siParl 2.0.</head>
                         </figure>
@@ -2529,7 +2527,7 @@
                             predlogi) in niso uporabljeni v konkordancah na eno prevladujočo temo,
                             pripišemo oznako <hi rend="italic">Razno</hi>.</p>
                         <figure xml:id="table7-sl" type="table">
-                            <graphic url="media/table7-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table7-sl.jpg"/>
                             <head>Tabela 7: Primeri sklopov kolokacij.</head>
                         </figure>
                         <p xml:id="sl-p-162">Rezultati, predstavljeni v <ref target="#table8-sl">Tabeli 8</ref>, kažejo, da se
@@ -2542,7 +2540,7 @@
                             žensk (npr. »participacija«), njihovim družbenim položajem (npr.
                             »samski«) in enakostjo (npr. »emancipacija«).</p>
                         <figure xml:id="table8-sl" type="table">
-                            <graphic url="media/table8-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table8-sl.jpg"/>
                             <head>Tabela 8: Frekvenca tematskih sklopov za prvih 100 kolokacijskih
                                 kandidatov v govorih poslank in poslancev v vseh sedmih
                                 mandatih.</head>
