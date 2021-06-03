@@ -324,5 +324,83 @@
       </ul><!-- konec procesiranja slik -->
    </xsl:template>
    
+   <xsldoc:doc xmlns:xsldoc="http://www.oxygenxml.com/ns/doc/xsl">
+      <xsldoc:desc> NASLOVNA STRAN </xsldoc:desc>
+   </xsldoc:doc>
+   <xsl:template match="tei:titlePage">
+      <!-- avtor -->
+      <p  class="naslovnicaAvtor">
+         <xsl:for-each select="tei:docAuthor">
+            <xsl:choose>
+               <xsl:when test="tei:forename or tei:surname">
+                  <xsl:for-each select="tei:forename">
+                     <xsl:value-of select="."/>
+                     <xsl:if test="position() ne last()">
+                        <xsl:text> </xsl:text>
+                     </xsl:if>
+                  </xsl:for-each>
+                  <xsl:if test="tei:surname">
+                     <xsl:text> </xsl:text>
+                  </xsl:if>
+                  <xsl:for-each select="tei:surname">
+                     <xsl:value-of select="."/>
+                     <xsl:if test="position() ne last()">
+                        <xsl:text> </xsl:text>
+                     </xsl:if>
+                  </xsl:for-each>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:apply-templates/>
+               </xsl:otherwise>
+            </xsl:choose>
+            <xsl:if test="position() ne last()">
+               <br/>
+            </xsl:if>
+         </xsl:for-each>
+      </p>
+      <br/>
+      <!-- naslov: spremenjeno procesiranje naslovov -->
+      <xsl:for-each select="tei:docTitle/tei:titlePart[@xml:lang='en']">
+         <h1 class="text-center"><xsl:value-of select="."/></h1>
+      </xsl:for-each>
+      <hr/>
+      <xsl:for-each select="tei:docTitle/tei:titlePart[@xml:lang='sl']">
+         <h1 class="text-center"><xsl:value-of select="."/></h1>
+      </xsl:for-each>
+      <br/>
+      <xsl:if test="tei:figure">
+         <div class="text-center">
+            <p>
+               <img src="{tei:figure/tei:graphic/@url}" alt="naslovna slika"/>
+            </p>
+         </div>
+      </xsl:if>
+      <xsl:if test="tei:graphic">
+         <div class="text-center">
+            <p>
+               <img src="{tei:graphic/@url}" alt="naslovna slika"/>
+            </p>
+         </div>
+      </xsl:if>
+      <br/>
+      <p class="text-center">
+         <!-- založnik -->
+         <xsl:for-each select="tei:docImprint/tei:publisher">
+            <xsl:value-of select="."/>
+            <br/>
+         </xsl:for-each>
+         <!-- kraj izdaje -->
+         <xsl:for-each select="tei:docImprint/tei:pubPlace">
+            <xsl:value-of select="."/>
+            <br/>
+         </xsl:for-each>
+         <!-- leto izdaje -->
+         <xsl:for-each select="tei:docImprint/tei:docDate">
+            <xsl:value-of select="."/>
+            <br/>
+         </xsl:for-each>
+      </p>
+   </xsl:template>
+   
    
 </xsl:stylesheet>
