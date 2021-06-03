@@ -592,7 +592,7 @@
                         determiners, frequency of hesitations or false starts, or even the use of
                         spontaneous humour in parliamentary speech.</p>
                     <figure xml:id="figure2">
-                        <graphic url="https://sidih.si/cdn/120/figure2.jpg"/>
+                        <graphic url="https://sidih.si/cdn/120/figure2.jpg" height="459px"/>
                         <head>Figure 2. Comparison of official records and verbatim transcriptions
                             from the EU Parliament.</head>
                     </figure>
@@ -1150,12 +1150,12 @@
                             </head>
                         </figure>
                         <figure xml:id="figure5">
-                            <graphic url="https://sidih.si/cdn/120/figure5.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure5.jpg" height="545px"/>
                             <head>Figure 5: Share of male and female MPs in siParl 2.0 over
                                 time.</head>
                         </figure>
                         <figure xml:id="figure6">
-                            <graphic url="https://sidih.si/cdn/120/figure6.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure6.jpg" height="545px"/>
                             <head>Figure 6: Contribution of male and female MPs in siParl 2.0
                                 measured in uttered tokens over time.</head>
                         </figure>
@@ -1522,7 +1522,7 @@
                                 </item>
                             </list>
                             <figure xml:id="figure10">
-                                <graphic url="https://sidih.si/cdn/120/figure10.jpg"/>
+                                <graphic url="https://sidih.si/cdn/120/figure10.jpg" height="303px"/>
                                 <head>Figure 10: The beginning of the concordance list for the lemma
                                     of the noun “ženska/female” with raw frequency (<hi
                                         rend="italic">Item 1</hi>) and normalized frequency (<hi
@@ -1530,7 +1530,7 @@
                             </figure>
                         </note>
                         <figure xml:id="table6" type="table">
-                            <graphic url="https://sidih.si/cdn/120/table6.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table6.jpg" height="460px"/>
                             <head>Table 6. Raw and normalized frequencies of the lemma
                                 “ženska/female” in siParl 2.0.</head>
                         </figure>
@@ -1573,7 +1573,7 @@
                             number of female MPs does not guarantee a strong discussion of issues
                             related to women in the Slovenian Parliament.</p>
                         <figure xml:id="figure11">
-                            <graphic url="https://sidih.si/cdn/120/figure11.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure11.jpg" height="449px"/>
                             <head>Figure 11: Normalized frequency of mentions of “ženska/female” by
                                 female and male MPs in siParl 2.0.</head>
                         </figure>
@@ -1647,7 +1647,7 @@
                             used in concordances with a prevailing theme are assigned the label <hi
                                 rend="italic">Multiple</hi>.</p>
                         <figure xml:id="table7" type="table">
-                            <graphic url="https://sidih.si/cdn/120/table7.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table7.jpg" height="561px"/>
                             <head>Table 7: Examples of collocation clusters.</head>
                         </figure>
                         <p xml:id="p-83">The results presented in <ref target="#table8">Table 8</ref> show that just over half
@@ -2035,12 +2035,12 @@
                             </head>
                         </figure>
                         <figure xml:id="figure5-sl">
-                            <graphic url="https://sidih.si/cdn/120/figure5-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure5-sl.jpg" height="545px"/>
                             <head>Slika 5: Delež poslank in poslancev v korpusu siParl 2.0 skozi
                                 čas.</head>
                         </figure>
                         <figure xml:id="figure6-sl">
-                            <graphic url="https://sidih.si/cdn/120/figure6-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure6-sl.jpg" height="545px"/>
                             <head>Slika 6: Prispevek poslank in poslancev v korpusu siParl 2.0,
                                 izmerjen v izrečenih pojavnicah skozi čas.</head>
                         </figure>
@@ -2408,7 +2408,7 @@
                             </figure>
                         </note>
                         <figure xml:id="table6-sl" type="table">
-                            <graphic url="https://sidih.si/cdn/120/table6-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table6-sl.jpg" height="481px"/>
                             <head>Tabela 6. Podatki o absolutni in normalizirani frekvenci za lemo
                                 samostalnika »ženska« v korpusu siParl 2.0.</head>
                         </figure>
@@ -2449,7 +2449,7 @@
                             večje število poslank ne zagotavlja intenzivnejše razprave o tematikah,
                             ki zadevajo ženske.</p>
                         <figure xml:id="figure11-sl">
-                            <graphic url="https://sidih.si/cdn/120/figure11-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/figure11-sl.jpg" height="449px"/>
                             <head>Slika 11: Normalizirana frekvenca za lemo samostalnika »ženska« v
                                 govorih poslank in poslancev v korpusu siParl 2.0.</head>
                         </figure>
@@ -2527,7 +2527,7 @@
                             predlogi) in niso uporabljeni v konkordancah na eno prevladujočo temo,
                             pripišemo oznako <hi rend="italic">Razno</hi>.</p>
                         <figure xml:id="table7-sl" type="table">
-                            <graphic url="https://sidih.si/cdn/120/table7-sl.jpg"/>
+                            <graphic url="https://sidih.si/cdn/120/table7-sl.jpg" height="561px"/>
                             <head>Tabela 7: Primeri sklopov kolokacij.</head>
                         </figure>
                         <p xml:id="sl-p-162">Rezultati, predstavljeni v <ref target="#table8-sl">Tabeli 8</ref>, kažejo, da se

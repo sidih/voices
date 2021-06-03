@@ -125,8 +125,10 @@
       <desc>Slike, ki imajo vključeno možnost povečanja slike z imageviewer</desc>
    </doc>
    <xsl:template match="tei:figure">
+      <xsl:variable name="image-file-name" select="tokenize(tei:graphic/@url,'/')[last()]"/>
+      <xsl:variable name="height" select="if (tei:graphic/@height) then 'max' else ',600'"/>
       <figure id="{@xml:id}">
-         <img class="imageviewer" src="{concat(substring-before(tei:graphic/@url,'.jpg'),'-norm.jpg')}" data-high-res-src="{tei:graphic[1]/@url}" alt="{normalize-space(tei:head)}"/>
+         <img class="imageviewer" src="{concat('https://sidih.si/iiif/2/entity|1-1000|120|',$image-file-name,'/full/',$height,'/0/default.jpg')}" data-high-res-src="{concat('https://sidih.si/cdn/120/',$image-file-name)}" alt="{normalize-space(tei:head)}"/>
          <figcaption>
             <xsl:apply-templates select="tei:head"/>
          </figcaption>
