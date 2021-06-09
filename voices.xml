@@ -27,7 +27,8 @@
             <publicationStmt>
                 <authority>CLARIN.SI</authority>
                 <authority>DARIAH-SI</authority>
-                <publisher>Inštitut za novejšo zgodovino / Institute of Contemporary History</publisher>
+                <publisher>Inštitut za novejšo zgodovino / Institute of Contemporary
+                    History</publisher>
                 <date when="2021">2021</date>
                 <availability>
                     <licence>http://creativecommons.org/licenses/by-nc-nd/4.0/</licence>
@@ -102,6 +103,7 @@
                 </docTitle>
                 <docAuthor>Darja Fišer</docAuthor>
                 <docAuthor>Kristina Pahor de Maiti</docAuthor>
+                <graphic url="https://sidih.si/cdn/120/thumbnail.jpg"/>
                 <docImprint>
                     <publisher>Inštitut za novejšo zgodovino / Institute of Contemporary
                         History</publisher>
@@ -849,10 +851,11 @@
                     korpuse razprav iz švedskega, danskega oz. ganskega parlamenta, so odkrili, da
                     so ženske pogosteje kot moški govorile o temah, ki se tičejo t. i. <hi
                         rend="italic">mehkih zakonodajnih področij</hi> (po Wängnerud, 1996, npr.
-                    makroekonomija, energetika, promet, bančništvo, finance, vesolje, znanost in
-                    tehnologija ter komunikacija), medtem ko moški pogosteje razpravljajo o temah s
-                    t. i. <hi rend="italic">trdih zakonodajnih področij</hi> (npr. zdravstvo, delo,
-                    zaposlitev in priseljevanje, izobraževanje ter socialno varstvo).</p>
+                    zdravstvo, delo, zaposlitev in priseljevanje, izobraževanje ter socialno
+                    varstvo), medtem ko moški pogosteje razpravljajo o temah s t. i. <hi
+                        rend="italic">trdih zakonodajnih področij</hi> (npr. makroekonomija,
+                    energetika, promet, bančništvo, finance, vesolje, znanost in tehnologija ter
+                    komunikacija).</p>
                 <p xml:id="sl-p-49">Upoštevati je treba, da na uporabo jezika vplivajo različni
                     dejavniki (npr. družbeni razred, kontekst, starost, hierarhija), pri čemer je
                     spol le eden od mnogih (<ref target="#Coates.1997.sl">Coates, 1997</ref>; <ref

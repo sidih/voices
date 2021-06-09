@@ -329,7 +329,7 @@
    </xsldoc:doc>
    <xsl:template match="tei:titlePage">
       <!-- avtor -->
-      <p  class="naslovnicaAvtor">
+      <!--<p  class="naslovnicaAvtor">
          <xsl:for-each select="tei:docAuthor">
             <xsl:choose>
                <xsl:when test="tei:forename or tei:surname">
@@ -359,7 +359,7 @@
          </xsl:for-each>
       </p>
       <br/>
-      <!-- naslov: spremenjeno procesiranje naslovov -->
+      <!-\- naslov: spremenjeno procesiranje naslovov -\->
       <xsl:for-each select="tei:docTitle/tei:titlePart[@xml:lang='en']">
          <h1 class="text-center"><xsl:value-of select="."/></h1>
       </xsl:for-each>
@@ -374,32 +374,32 @@
                <img src="{tei:figure/tei:graphic/@url}" alt="naslovna slika"/>
             </p>
          </div>
-      </xsl:if>
+      </xsl:if>-->
       <xsl:if test="tei:graphic">
          <div class="text-center">
             <p>
-               <img src="{tei:graphic/@url}" alt="naslovna slika"/>
+               <img src="{tei:graphic/@url}" alt="naslovna slika" style="max-height: 800px;"/>
             </p>
          </div>
       </xsl:if>
-      <br/>
+      <!--<br/>
       <p class="text-center">
-         <!-- založnik -->
+         <!-\- založnik -\->
          <xsl:for-each select="tei:docImprint/tei:publisher">
             <xsl:value-of select="."/>
             <br/>
          </xsl:for-each>
-         <!-- kraj izdaje -->
+         <!-\- kraj izdaje -\->
          <xsl:for-each select="tei:docImprint/tei:pubPlace">
             <xsl:value-of select="."/>
             <br/>
          </xsl:for-each>
-         <!-- leto izdaje -->
+         <!-\- leto izdaje -\->
          <xsl:for-each select="tei:docImprint/tei:docDate">
             <xsl:value-of select="."/>
             <br/>
          </xsl:for-each>
-      </p>
+      </p>-->
    </xsl:template>
    
    
