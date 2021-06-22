@@ -402,5 +402,33 @@
       </p>-->
    </xsl:template>
    
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc>Dodatno za kolofon: procesiranje idno</desc>
+   </doc>
+   <xsl:template match="tei:publicationStmt" mode="kolofon">
+      <xsl:apply-templates select="tei:publisher" mode="kolofon"/>
+      <xsl:apply-templates select="tei:date" mode="kolofon"/>
+      <xsl:apply-templates select="tei:pubPlace" mode="kolofon"/>
+      <xsl:apply-templates select="tei:availability" mode="kolofon"/>
+      <xsl:apply-templates select="tei:idno" mode="kolofon"/>
+   </xsl:template>
+   
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc></desc>
+   </doc>
+   <xsl:template match="tei:idno" mode="kolofon">
+      <p>
+         <xsl:choose>
+            <xsl:when test="matches(.,'https?://')">
+               <a href="{.}">
+                  <xsl:value-of select="."/>
+               </a>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="concat(@type,' ',.)"/>
+            </xsl:otherwise>
+         </xsl:choose>
+      </p>
+   </xsl:template>
    
 </xsl:stylesheet>
